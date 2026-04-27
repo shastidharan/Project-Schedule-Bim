@@ -8999,7 +8999,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.c
 
   function ac(n){if(!n)return '#64748b';var h=0;for(var i=0;i<n.length;i++)h=(h*31+n.charCodeAt(i))>>>0;return AV[h%AV.length];}
   function ini(n){if(!n)return '?';return n.split(' ').map(function(w){return w[0]||'';}).filter(Boolean).slice(0,2).join('').toUpperCase();}
-  function fmt(d){if(!d)return String.fromCharCode(8212);try{return new Date(d).toLocaleDateString('en-GB',{day:'2-digit',month:'short'});}catch(e){return String.fromCharCode(8212);}}
+  function fmt(d){if(!d)return '-';try{return new Date(d).toLocaleDateString('en-GB',{day:'2-digit',month:'short'});}catch(e){return '-';}}
   function dB(a,b){return Math.round((new Date(b)-new Date(a))/86400000);}
   function tc(g){return TC[g]||'#64748b';}
   function rgba(hex,a){var r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);return 'rgba('+r+','+g+','+b+','+a+')';}
@@ -9030,9 +9030,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.c
   }
 
   function chipHtml(days,st){
-    var em=String.fromCharCode(8212);
     if(st==='done')return '<span class="remaining-chip remaining-done">Done</span>';
-    if(days===null||days===undefined)return '<span class="remaining-chip remaining-ok">'+em+'</span>';
+    if(days===null||days===undefined)return '<span class="remaining-chip remaining-ok">-</span>';
     if(days<0)return '<span class="remaining-chip remaining-overdue">'+Math.abs(days)+'d over</span>';
     if(days===0)return '<span class="remaining-chip remaining-soon">Due today</span>';
     if(days<=7)return '<span class="remaining-chip remaining-soon">'+days+'d left</span>';
@@ -9053,8 +9052,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.c
     var avQ=p.qaqc?'<div class="ap-person-row"><div class="ap-av" style="background:'+ac((p.qaqc||'').toLowerCase())+'">'+ini(p.qaqc||'')+'</div><div><div class="ap-pname">'+p.qaqc+'</div><div class="ap-prole">QA</div></div></div>':'';
     return '<div class="ap-row">'+
       '<div><div class="ap-proj-name"><span style="display:inline-block;width:5px;height:5px;border-radius:50%;background:'+priCol+';margin-right:5px;vertical-align:middle"></span>'+(p.title||'Untitled')+'</div>'+(pplStr?'<div class="ap-proj-people">'+pplStr+'</div>':'')+
-      '</div><div><span class="stage-pill stage-'+sl+'">'+(p.stage||String.fromCharCode(8212))+'</span></div>'+
-      '<div class="ap-tl"><span>'+fmt(p.startDate)+'</span><span style="color:#94a3b8">&#8595;</span><span>'+fmt(p.endDate)+'</span></div>'+
+      '</div><div><span class="stage-pill stage-'+sl+'">'+(p.stage||'-')+'</span></div>'+
+      '<div class="ap-tl"><span>'+fmt(p.startDate)+'</span><span style="color:#94a3b8">|</span><span>'+fmt(p.endDate)+'</span></div>'+
       '<div class="ap-prog-wrap"><div class="ap-prog-top"><span class="ap-prog-pct">'+r.v+'%</span><span class="ap-prog-st">'+r.st+'</span></div><div class="ap-prog-track"><div class="ap-prog-fill" style="width:'+r.v+'%;background:'+pgCol(r.st)+'"></div></div></div>'+
       '<div class="ap-person-cell">'+avL+avQ+'</div>'+
       '<div style="text-align:right">'+chipHtml(remaining,r.st)+'</div>'+
@@ -9104,16 +9103,18 @@ ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.c
 
     var root=document.createElement('div');
     root.id='bim-modal-root';
-    root.style.cssText='position:fixed;inset:0;z-index:9999;display:flex;align-items:flex-start;justify-content:center;padding:24px 16px;background:rgba(15,23,42,0.5);backdrop-filter:blur(5px)';
+    root.style.cssText='position:fixed;inset:0;z-index:99999;display:flex;align-items:flex-start;justify-content:center;padding:24px 16px;background:rgba(15,23,42,0.55);backdrop-filter:blur(4px)';
 
     var modal=document.createElement('div');
-    modal.style.cssText='background:#fff;border-radius:20px;box-shadow:0 28px 70px rgba(0,0,0,0.25);width:100%;max-width:1180px;max-height:90vh;display:flex;flex-direction:column;overflow:hidden';
+    modal.style.cssText='background:#fff;border-radius:20px;box-shadow:0 28px 70px rgba(0,0,0,0.25);width:100%;max-width:1180px;max-height:90vh;display:flex;flex-direction:column;overflow:hidden;margin-top:0';
     root.appendChild(modal);
 
     function close(){if(document.body.contains(root))document.body.removeChild(root);document.removeEventListener('keydown',onKey);}
     function onKey(e){if(e.key==='Escape')close();}
     document.addEventListener('keydown',onKey);
     root.addEventListener('click',function(e){if(e.target===root)close();});
+
+    var sBtns=[{key:'In-progress',label:'In Progress',cls:'active-inprogress'},{key:'Done',label:'Done',cls:'active-done'},{key:'To do',label:'To Do',cls:'active-todo'},{key:'TBC',label:'TBC',cls:'active-tbc'}];
 
     function getFiltered(){
       return base.filter(function(p){
@@ -9125,8 +9126,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.c
       });
     }
 
-    var sBtns=[{key:'In-progress',label:'In Progress',cls:'active-inprogress'},{key:'Done',label:'Done',cls:'active-done'},{key:'To do',label:'To Do',cls:'active-todo'},{key:'TBC',label:'TBC',cls:'active-tbc'}];
-
     function render(){
       var f=getFiltered();
       var gm={};
@@ -9134,50 +9133,76 @@ ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.c
       var grouped=Object.keys(gm).sort().map(function(k){return[k,gm[k]];});
 
       modal.innerHTML=
-        '<div style="display:flex;align-items:flex-start;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid #f1f5f9;flex-shrink:0">'+
+        // HEADER
+        '<div style="display:flex;align-items:flex-start;justify-content:space-between;padding:20px 24px 16px;border-bottom:1px solid #f1f5f9;flex-shrink:0">'+
           '<div>'+
-            '<div style="display:inline-flex;align-items:center;gap:5px;background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0;border-radius:20px;font-size:10px;font-weight:700;padding:2px 9px;margin-bottom:4px"><span style="width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block"></span>LIVE &middot; '+f.length+' PROJECTS</div>'+
+            '<div style="display:inline-flex;align-items:center;gap:5px;background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0;border-radius:20px;font-size:10px;font-weight:700;padding:2px 9px;margin-bottom:5px">'+
+              '<span style="width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block"></span>'+
+              'LIVE &middot; '+f.length+' PROJECTS'+
+            '</div>'+
             '<div style="font-size:20px;font-weight:800;color:#0f172a;letter-spacing:-0.02em">'+titleText+'</div>'+
-            '<div style="font-size:12px;color:#94a3b8">'+period.label+'</div>'+
+            '<div style="font-size:12px;color:#94a3b8;margin-top:2px">'+period.label+'</div>'+
           '</div>'+
-          '<div style="display:flex;align-items:center;gap:8px;flex-shrink:0">'+
-            '<button id="bim-csv-btn" style="display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:9px;font-size:11.5px;font-weight:600;border:1px solid #e2e8f0;background:#fff;color:#475569;cursor:pointer;font-family:inherit">&#8595; CSV</button>'+
-            '<button id="bim-pdf-btn" style="display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:9px;font-size:11.5px;font-weight:600;border:1px solid #6366f1;background:#6366f1;color:#fff;cursor:pointer;font-family:inherit;box-shadow:0 2px 6px rgba(99,102,241,0.3)">&#9113; PDF</button>'+
-            '<button id="bim-close-btn" style="width:32px;height:32px;border-radius:8px;border:none;background:transparent;cursor:pointer;font-size:16px;color:#94a3b8;font-family:inherit">&#10005;</button>'+
+          '<div style="display:flex;align-items:center;gap:8px;padding-top:4px">'+
+            '<button id="bim-csv-btn" style="padding:8px 16px;border-radius:9px;font-size:12px;font-weight:600;border:1px solid #e2e8f0;background:#fff;color:#475569;cursor:pointer;font-family:inherit">&#8595; CSV</button>'+
+            '<button id="bim-pdf-btn" style="padding:8px 16px;border-radius:9px;font-size:12px;font-weight:600;border:none;background:#6366f1;color:#fff;cursor:pointer;font-family:inherit;box-shadow:0 2px 8px rgba(99,102,241,0.35)">&#9113; PDF</button>'+
+            '<button id="bim-close-btn" style="width:34px;height:34px;border-radius:8px;border:none;background:#f1f5f9;cursor:pointer;font-size:17px;color:#64748b;font-family:inherit;line-height:1">&#10005;</button>'+
           '</div>'+
         '</div>'+
-        '<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 24px;background:#fafafa;border-bottom:1px solid #f1f5f9;flex-shrink:0">'+
-          sBtns.map(function(b){var on=statusSel.indexOf(b.key)>=0;return '<button class="ap-status-btn'+(on?' '+b.cls:'')+'" data-bstatus="'+b.key+'" style="font-family:inherit">'+b.label+'</button>';}).join('')+
-          '<div style="width:1px;height:18px;background:#e2e8f0;margin:0 4px"></div>'+
-          '<input id="bim-search-inp" style="font-family:inherit;font-size:12px;padding:5px 10px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;color:#334155;outline:none;width:180px" placeholder="Search projects, people..." value="'+search.replace(/"/g,'&quot;')+'"/>'+
-          (teams.length>1?'<select id="bim-team-sel" style="font-family:inherit;font-size:11.5px;padding:5px 10px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;color:#334155;outline:none"><option value="all">All Teams</option>'+teams.map(function(t){return '<option value="'+t+'"'+(teamF===t?' selected':'')+'>'+t+'</option>';}).join('')+'</select>':'')+
-          (stages.length>1?'<select id="bim-stage-sel" style="font-family:inherit;font-size:11.5px;padding:5px 10px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;color:#334155;outline:none"><option value="all">All Stages</option>'+stages.map(function(s){return '<option value="'+s+'"'+(stageF===s?' selected':'')+'>'+s+'</option>';}).join('')+'</select>':'')+
+        // FILTER BAR
+        '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 24px;background:#fafafa;border-bottom:1px solid #f1f5f9;flex-shrink:0">'+
+          sBtns.map(function(b){
+            var on=statusSel.indexOf(b.key)>=0;
+            return '<button class="ap-status-btn'+(on?' '+b.cls:'')+'" data-bstatus="'+b.key+'" style="font-family:inherit;cursor:pointer">'+b.label+'</button>';
+          }).join('')+
+          '<div style="width:1px;height:18px;background:#e2e8f0;margin:0 2px"></div>'+
+          '<input id="bim-search-inp" style="font-family:inherit;font-size:12px;padding:6px 10px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;color:#334155;outline:none;width:180px" placeholder="Search projects, people..." value="'+search.replace(/"/g,'&quot;')+'"/>'+
+          (teams.length>1?'<select id="bim-team-sel" style="font-family:inherit;font-size:12px;padding:6px 10px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;color:#334155;outline:none"><option value="all">All Teams</option>'+teams.map(function(t){return '<option value="'+t+'"'+(teamF===t?' selected':'')+'>'+t+'</option>';}).join('')+'</select>':'')+
+          (stages.length>1?'<select id="bim-stage-sel" style="font-family:inherit;font-size:12px;padding:6px 10px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;color:#334155;outline:none"><option value="all">All Stages</option>'+stages.map(function(s){return '<option value="'+s+'"'+(stageF===s?' selected':'')+'>'+s+'</option>';}).join('')+'</select>':'')+
           '<div style="flex:1"></div>'+
-          (search||teamF!=='all'||stageF!=='all'||statusSel.length?'<button id="bim-clear-btn" style="font-size:11px;color:#94a3b8;border:none;background:none;cursor:pointer;padding:4px 8px;border-radius:6px;font-family:inherit">Clear</button>':'')+
+          (search||teamF!=='all'||stageF!=='all'||statusSel.length?'<button id="bim-clear-btn" style="font-size:11px;color:#94a3b8;border:none;background:none;cursor:pointer;padding:4px 8px;border-radius:6px;font-family:inherit">Clear filters</button>':'')+
         '</div>'+
+        // CONTENT
         '<div style="flex:1;overflow-y:auto;padding:20px 24px">'+
           (grouped.length===0
-            ?'<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px;color:#94a3b8"><div style="font-size:36px;margin-bottom:10px">&#128269;</div><div style="font-size:14px;font-weight:700;color:#334155">No projects match</div></div>'
+            ?'<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px;color:#94a3b8"><div style="font-size:40px;margin-bottom:12px">&#128269;</div><div style="font-size:15px;font-weight:700;color:#334155">No projects match</div><div style="font-size:12px;margin-top:4px">Adjust filters above</div></div>'
             :'<div class="ap-grid">'+grouped.map(function(g){return teamSectionHtml(g[0],g[1],ref);}).join('')+'</div>'
           )+
         '</div>';
 
-      document.getElementById('bim-close-btn').onclick=close;
-      document.getElementById('bim-csv-btn').onclick=function(){exportCSV(getFiltered(),titleText);};
-      document.getElementById('bim-pdf-btn').onclick=function(){
-        var pr=document.createElement('div');pr.id='bim-print-root';
-        pr.innerHTML='<style>@media print{body>*:not(#bim-print-root){display:none!important;}#bim-print-root{display:block!important;position:static!important;}#bim-print-root>div{position:static!important;background:none!important;padding:0!important;}#bim-print-root>div>div{max-height:none!important;box-shadow:none!important;border-radius:0!important;}[id$="-btn"]{display:none!important;}.ap-grid{grid-template-columns:1fr 1fr!important;}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}@page{margin:1cm;size:A3 landscape;}}</style>';
-        var cl=root.cloneNode(true);pr.appendChild(cl);
+      // Wire events
+      document.getElementById('bim-close-btn').onclick=function(e){e.stopPropagation();close();};
+
+      document.getElementById('bim-csv-btn').onclick=function(e){e.stopPropagation();exportCSV(getFiltered(),titleText);};
+
+      document.getElementById('bim-pdf-btn').onclick=function(e){
+        e.stopPropagation();
+        var pr=document.createElement('div');
+        pr.id='bim-print-root';
+        pr.innerHTML='<style>@media print{body>*:not(#bim-print-root){display:none!important;}#bim-print-root{display:block!important;position:static!important;background:none!important;padding:0!important;}#bim-print-root>div{position:static!important;max-height:none!important;overflow:visible!important;box-shadow:none!important;border-radius:0!important;}[id$="-btn"]{display:none!important;}.ap-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:12px!important;}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}@page{margin:1cm;size:A3 landscape;}}</style>';
+        var cl=modal.cloneNode(true);
+        pr.appendChild(cl);
         document.body.appendChild(pr);
-        setTimeout(function(){window.print();setTimeout(function(){if(document.body.contains(pr))document.body.removeChild(pr);},1000);},150);
+        setTimeout(function(){window.print();setTimeout(function(){if(document.body.contains(pr))document.body.removeChild(pr);},1000);},200);
       };
 
-      var si=document.getElementById('bim-search-inp');if(si)si.oninput=function(){search=si.value;render();};
-      var ti=document.getElementById('bim-team-sel');if(ti)ti.onchange=function(){teamF=ti.value;render();};
-      var sti=document.getElementById('bim-stage-sel');if(sti)sti.onchange=function(){stageF=sti.value;render();};
-      var cl=document.getElementById('bim-clear-btn');if(cl)cl.onclick=function(){search='';teamF='all';stageF='all';statusSel=[];render();};
+      var si=document.getElementById('bim-search-inp');
+      if(si)si.oninput=function(){search=si.value;render();};
+      var ti=document.getElementById('bim-team-sel');
+      if(ti)ti.onchange=function(){teamF=ti.value;render();};
+      var sti=document.getElementById('bim-stage-sel');
+      if(sti)sti.onchange=function(){stageF=sti.value;render();};
+      var cl2=document.getElementById('bim-clear-btn');
+      if(cl2)cl2.onclick=function(){search='';teamF='all';stageF='all';statusSel=[];render();};
+
       modal.querySelectorAll('[data-bstatus]').forEach(function(btn){
-        btn.onclick=function(){var s=btn.getAttribute('data-bstatus');var idx=statusSel.indexOf(s);if(idx>=0)statusSel.splice(idx,1);else statusSel.push(s);render();};
+        btn.onclick=function(e){
+          e.stopPropagation();
+          var s=btn.getAttribute('data-bstatus');
+          var idx=statusSel.indexOf(s);
+          if(idx>=0)statusSel.splice(idx,1);else statusSel.push(s);
+          render();
+        };
       });
     }
 
@@ -9185,21 +9210,48 @@ ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.c
     document.body.appendChild(root);
   };
 
-  // Event delegation in CAPTURE phase — fires before React's handlers
-  document.addEventListener('click',function(e){
-    var card=e.target.closest('.kpi');
-    if(!card)return;
-    var lbl=card.querySelector('.kpi-label');
-    if(!lbl)return;
-    var txt=lbl.textContent.toUpperCase();
-    if(txt.indexOf('ACTIVE THIS PERIOD')>=0){
-      e.stopPropagation();
-      window.renderBIMModal('active');
-    } else if(txt.indexOf('OVERDUE')>=0){
-      e.stopPropagation();
-      window.renderBIMModal('overdue');
-    }
-  },true);
+  // ── Inject floating shortcut buttons (guaranteed to work) ────────────────
+  function injectFloatingButtons(){
+    if(document.getElementById('bim-float-btns'))return;
+    var wrap=document.createElement('div');
+    wrap.id='bim-float-btns';
+    wrap.style.cssText='position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:9998;display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #e2e8f0;border-radius:40px;padding:8px 16px;box-shadow:0 4px 20px rgba(0,0,0,0.12)';
+    wrap.innerHTML=
+      '<span style="font-size:11px;font-weight:700;color:#94a3b8;letter-spacing:0.08em;text-transform:uppercase;margin-right:4px">Quick View</span>'+
+      '<button id="bim-act-btn" style="padding:7px 16px;border-radius:20px;font-size:12px;font-weight:600;border:none;background:#eef2ff;color:#6366f1;cursor:pointer;font-family:inherit">Active This Period</button>'+
+      '<button id="bim-ov-btn" style="padding:7px 16px;border-radius:20px;font-size:12px;font-weight:600;border:none;background:#fef2f2;color:#dc2626;cursor:pointer;font-family:inherit">Overdue</button>';
+    document.body.appendChild(wrap);
+    document.getElementById('bim-act-btn').onclick=function(){window.renderBIMModal('active');};
+    document.getElementById('bim-ov-btn').onclick=function(){window.renderBIMModal('overdue');};
+  }
+
+  // ── Also try patching KPI cards ──────────────────────────────────────────
+  function patchKPIs(){
+    document.querySelectorAll('.kpi').forEach(function(card){
+      var lbl=card.querySelector('.kpi-label');
+      if(!lbl)return;
+      var txt=lbl.textContent.toUpperCase();
+      if(txt.indexOf('ACTIVE THIS PERIOD')>=0&&!card._bimPatched){
+        card._bimPatched=true;
+        card.addEventListener('click',function(e){e.stopPropagation();window.renderBIMModal('active');},true);
+      }
+      if(txt.indexOf('OVERDUE')>=0&&!card._bimOvPatched){
+        card._bimOvPatched=true;
+        card.addEventListener('click',function(e){e.stopPropagation();window.renderBIMModal('overdue');},true);
+      }
+    });
+  }
+
+  // Start polling
+  var tick=0;
+  var iv=setInterval(function(){
+    patchKPIs();
+    if(tick===0)injectFloatingButtons();
+    tick++;
+    if(tick>20)clearInterval(iv);
+  },500);
+
+  new MutationObserver(patchKPIs).observe(document.body,{childList:true,subtree:true});
 
 })();
 </script>
