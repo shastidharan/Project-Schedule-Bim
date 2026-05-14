@@ -1,27 +1,6 @@
 {
   "projects": [
     {
-      "title": "3862- RAK Nikki Beach Collection Villas",
-      "qaqc": "ABILASH",
-      "assignee": "Akshaya Jayakrishnan",
-      "team": "Akshaya, Sreelakshmi, Athira, Arya",
-      "status": "In-progress",
-      "priority": "Medium",
-      "description": "SD SUBMISSION ON JUN 12TH",
-      "group": "TEAM1",
-      "stage": "SD",
-      "startDate": "2026-05-07",
-      "endDate": "2026-06-12",
-      "milestones": [],
-      "people": [
-        "akshaya",
-        "sreelakshmi",
-        "athira",
-        "arya"
-      ],
-      "peopleCount": 4
-    },
-    {
       "title": "4232- ADEK School at Jabal Hafeet",
       "qaqc": "TBC",
       "assignee": "Jovanie Apa",
@@ -68,7 +47,7 @@
       "title": "4180- BNW - Branded Residences & Hotel Apartment on Plot R-03D & R-03E at RAK Central",
       "qaqc": "TBC",
       "assignee": "Akshaya Jayakrishnan",
-      "team": "Akshaya, Lincy, Sreelakshmi",
+      "team": "Akshaya, Sreelakshmi",
       "status": "To do",
       "priority": "Medium",
       "description": "",
@@ -79,10 +58,9 @@
       "milestones": [],
       "people": [
         "akshaya",
-        "lincy",
         "sreelakshmi"
       ],
-      "peopleCount": 3
+      "peopleCount": 2
     },
     {
       "title": "3735- Dubai South - AGD Residential - Plot RF-48,49 & 50",
@@ -358,7 +336,7 @@
         "sreelakshmi"
       ],
       "peopleCount": 3,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "SD SUBMISSION ON JAN 7TH,DD SUBMISSION IS ON MARCH 31 REVISED DD ON APRIL 30TH ",
       "group": "TEAM1",
@@ -434,7 +412,7 @@
         "bareera"
       ],
       "peopleCount": 9,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "High",
       "description": "50% DD SUBMISSION ON FEB 25 AND 100%DD ON MARCH 13TH ",
       "group": "TEAM1",
@@ -881,15 +859,18 @@
       "title": "3762- DID-Plot DIB-MU-0005",
       "qaqc": "ABILASH",
       "assignee": "Aparna Lakshmi",
-      "team": "aparna, Rashid, shasti, Naveen, Jose",
+      "team": "aparna, Rashid, shasti, Naveen, Jose, Adthiyan, Jovanie, Bareera",
       "people": [
         "aparna",
         "rashid",
         "shasti",
         "naveen",
-        "jose"
+        "jose",
+        "adthiyan",
+        "jovanie",
+        "bareera"
       ],
-      "peopleCount": 5,
+      "peopleCount": 8,
       "status": "In-progress",
       "priority": "Low",
       "description": "CONCEPT MODEL IS DONE, NEW LAYOUT OD MODEL IS SUBMIITED ON NOV 3RD , SD SUBMISSION ON JAN 14 TH SD RESUBMISSION ON JUN 1ST",
@@ -921,7 +902,7 @@
       "group": "TEAM 2",
       "stage": "DD",
       "startDate": "2025-02-16",
-      "endDate": "2026-05-13",
+      "endDate": "2026-05-15",
       "milestones": [
         "2025-02-16"
       ]
@@ -1789,11 +1770,11 @@
       "peopleCount": 6,
       "status": "In-progress",
       "priority": "High",
-      "description": "50% SD SUBMISSION ON 28 NOV, 100%SD ON DEC 12TH,REVISED SD SUBMISSION ON JAN 13TH TENDER ADDENDUM ON APRIL 7TH, TENDER ADDENDUM 02 ON APR 29 IFC SUBMISSION ON MAY 12TH",
+      "description": "50% SD SUBMISSION ON 28 NOV, 100%SD ON DEC 12TH,REVISED SD SUBMISSION ON JAN 13TH TENDER ADDENDUM ON APRIL 7TH, TENDER ADDENDUM 02 ON APR 29 IFC SUBMISSION ON MAY 22TH",
       "group": "TEAM 4",
       "stage": "IFC",
       "startDate": "2024-11-28",
-      "endDate": "2026-05-12",
+      "endDate": "2026-05-22",
       "milestones": [
         "2024-11-28",
         "2024-12-12",
@@ -1817,11 +1798,11 @@
       "peopleCount": 6,
       "status": "In-progress",
       "priority": "Medium",
-      "description": "100% DD DIRECT ON APTIL 7TH MODEL COORDINATION IS GOING ON APRIL 24TH",
+      "description": "100% DD DIRECT ON APTIL 7TH MODEL COORDINATION IS GOING ON APRIL 24TH,REVISED SHEETS ON MAY 15TH",
       "group": "TEAM 4",
       "stage": "REVISED DD",
       "startDate": "2026-01-07",
-      "endDate": "2026-05-11",
+      "endDate": "2026-05-15",
       "milestones": []
     },
     {
@@ -1838,13 +1819,13 @@
         "jegan"
       ],
       "peopleCount": 6,
-      "status": "Done",
-      "priority": "High",
-      "description": "SD SUBMISSION 30TH APRIL ",
+      "status": "In-progress",
+      "priority": "Medium",
+      "description": "SD SUBMISSION 30TH APRIL REVISED SD ON MAY 15TH",
       "group": "TEAM 4",
       "stage": "SD",
       "startDate": "2025-04-08",
-      "endDate": "2026-04-27",
+      "endDate": "2026-05-15",
       "milestones": [
         "2025-04-30"
       ]
@@ -2038,13 +2019,13 @@
         "sheikh yahya"
       ],
       "peopleCount": 6,
-      "status": "Done",
+      "status": "In-progress",
       "priority": "Medium",
-      "description": "SD SUBMISSIION ON FEB 23 FINAL PACKAGE ON 27, TENDER ON MAY 8TH ",
+      "description": "SD SUBMISSIION ON FEB 23 FINAL PACKAGE ON 27, TENDER ON MAY 8TH REVISED TENDER ON MAY 18TH",
       "group": "TEAM 6",
       "stage": "REVISED DD",
       "startDate": "2025-02-23",
-      "endDate": "2026-05-08",
+      "endDate": "2026-05-18",
       "milestones": [
         "2025-02-23",
         "2025-04-21"
@@ -2176,6 +2157,29 @@
         "2024-11-14",
         "2025-01-20"
       ]
+    },
+    {
+      "title": "3862- RAK Nikki Beach Collection Villas",
+      "qaqc": "ABILASH",
+      "assignee": "Akshaya Jayakrishnan",
+      "team": "Akshaya, Sreelakshmi, Athira, Arya, Shasti, Ananthu",
+      "status": "In-progress",
+      "priority": "Medium",
+      "description": "SD SUBMISSION ON JUN 12TH",
+      "group": "TEAM1",
+      "stage": "SD",
+      "startDate": "2026-05-07",
+      "endDate": "2026-06-12",
+      "milestones": [],
+      "people": [
+        "akshaya",
+        "sreelakshmi",
+        "athira",
+        "arya",
+        "shasti",
+        "ananthu"
+      ],
+      "peopleCount": 6
     }
   ],
   "leaves": [
@@ -2218,7 +2222,55 @@
       "to": "2026-05-01",
       "note": "",
       "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "shasti",
+      "type": "Annual",
+      "from": "2026-03-08",
+      "to": "2026-04-10",
+      "note": "",
+      "id": "lv-1776846307441-7on8"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "jesto",
+      "type": "Annual",
+      "from": "2026-02-16",
+      "to": "2026-02-24",
+      "note": "",
+      "id": "lv-1776858121067-kuk0"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
     }
   ],
-  "exportedAt": "2026-05-12T05:25:25.725Z"
+  "exportedAt": "2026-05-14T10:37:33.843Z"
 }
