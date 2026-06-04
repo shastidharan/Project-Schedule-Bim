@@ -10,8 +10,8 @@
       "description": "",
       "group": "TEAM 3",
       "stage": "SD",
-      "startDate": "2026-05-12",
-      "endDate": "2026-06-30",
+      "startDate": "2026-07-01",
+      "endDate": "2026-08-13",
       "milestones": [],
       "people": [
         "jovanie",
@@ -30,8 +30,8 @@
       "description": "",
       "group": "TEAM 6",
       "stage": "SD",
-      "startDate": "2026-05-11",
-      "endDate": "2026-06-30",
+      "startDate": "2026-07-09",
+      "endDate": "2026-08-07",
       "milestones": [],
       "people": [
         "safas",
@@ -47,20 +47,22 @@
       "title": "4180- BNW - Branded Residences & Hotel Apartment on Plot R-03D & R-03E at RAK Central",
       "qaqc": "TBC",
       "assignee": "Akshaya Jayakrishnan",
-      "team": "Akshaya, Sreelakshmi",
+      "team": "Akshaya, Athira, Sreelakshmi, Arya",
       "status": "To do",
       "priority": "Medium",
       "description": "",
       "group": "TEAM1",
       "stage": "SD",
-      "startDate": "2026-05-11",
-      "endDate": "2026-06-30",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-15",
       "milestones": [],
       "people": [
         "akshaya",
-        "sreelakshmi"
+        "athira",
+        "sreelakshmi",
+        "arya"
       ],
-      "peopleCount": 2
+      "peopleCount": 4
     },
     {
       "title": "3735- Dubai South - AGD Residential - Plot RF-48,49 & 50",
@@ -72,8 +74,8 @@
       "description": "",
       "group": "TEAM 4",
       "stage": "SD",
-      "startDate": "2026-05-11",
-      "endDate": "2026-06-30",
+      "startDate": "2026-07-09",
+      "endDate": "2026-08-20",
       "milestones": [],
       "people": [
         "asif",
@@ -94,8 +96,8 @@
       "priority": "Medium",
       "description": "",
       "group": "COMMON",
-      "stage": "",
-      "startDate": "2026-04-22",
+      "stage": "SD",
+      "startDate": "2026-07-01",
       "endDate": "2026-07-22",
       "milestones": [],
       "people": [],
@@ -111,8 +113,8 @@
       "description": "",
       "group": "TEAM 6",
       "stage": "SD",
-      "startDate": "2026-05-04",
-      "endDate": "2026-06-30",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-31",
       "milestones": [],
       "people": [
         "safas",
@@ -126,26 +128,24 @@
     },
     {
       "title": "4067- ALEF - The Palace Branded Residences",
-      "qaqc": "TBC",
+      "qaqc": "ABILASH",
       "assignee": "Aparna Lakshmi",
-      "team": "Aparna, Rashid, Jose, Naveen, Bareera, Shasti",
+      "team": "Bareera, Shasti, Harirao, Swapna",
       "status": "In-progress",
       "priority": "Medium",
-      "description": "SD SUBMISSION TBC",
+      "description": "SD SUBMISSION JUN 12TH",
       "group": "TEAM 2",
       "stage": "SD",
       "startDate": "2026-04-27",
-      "endDate": "2026-06-01",
+      "endDate": "2026-06-12",
       "milestones": [],
       "people": [
-        "aparna",
-        "rashid",
-        "jose",
-        "naveen",
         "bareera",
-        "shasti"
+        "shasti",
+        "harirao",
+        "swapna"
       ],
-      "peopleCount": 6
+      "peopleCount": 4
     },
     {
       "title": "3788-LAC 718-719 - City View Bu Kadra",
@@ -157,8 +157,8 @@
       "description": "",
       "group": "TEAM1",
       "stage": "SD",
-      "startDate": "2026-05-25",
-      "endDate": "2026-05-30",
+      "startDate": "2026-07-01",
+      "endDate": "2026-08-27",
       "milestones": [],
       "people": [
         "akshaya",
@@ -177,8 +177,8 @@
       "priority": "Low",
       "description": "",
       "group": "COMMON",
-      "stage": "",
-      "startDate": "2026-04-22",
+      "stage": "SD",
+      "startDate": "2026-07-01",
       "endDate": "2026-07-22",
       "milestones": [],
       "people": [],
@@ -252,7 +252,7 @@
     },
     {
       "title": "3166-Marina Residential Apartments, Island B PLOT 10",
-      "qaqc": "AJAY",
+      "qaqc": "PRASANA",
       "assignee": "Akshaya Jayakrishnan",
       "team": "akshaya, athira, Sreelakshmi, Lincy, Arya",
       "people": [
@@ -263,13 +263,13 @@
         "arya"
       ],
       "peopleCount": 5,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "SD SUBMISSION SUBMITTED ON APR 21 PROGRESSING ON REVISING DRAWING for 50 % DD ON JUN 17TH, 100% DD SUBMITTED ON SPET 25,TENDER SUBMISSION ON FEB 5TH , IFC SUBMISSION ON MAY 22ND",
       "group": "TEAM1",
       "stage": "TENDER",
       "startDate": "2024-04-21",
-      "endDate": "2026-05-22",
+      "endDate": "2026-06-01",
       "milestones": [
         "2024-04-21",
         "2024-06-17",
@@ -313,7 +313,7 @@
         "sreelakshmi"
       ],
       "peopleCount": 4,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "SD SUBMITTED ON AUG 7TH AND 50% DD IS ON 20TH FEB AND 100 % DD ON MARCH 20TH  REVISED DD ON 18TH MAY",
       "group": "TEAM1",
@@ -503,7 +503,7 @@
         "jasna"
       ],
       "peopleCount": 3,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Low",
       "description": "IFC SUBMISSION, Variation changes submission on NOV 5th, IFC SUBMISSION TARGET DATE MAY 15TH",
       "group": "COMMON",
@@ -675,8 +675,8 @@
         "naveen"
       ],
       "peopleCount": 5,
-      "status": "In-progress",
-      "priority": "High",
+      "status": "Done",
+      "priority": "Low",
       "description": "REVISED SD SUBMISSION ON APRIL 22 DD SUBMISSION IS DONE ON JUN 15 , TENDER SUBMISSION ON SEPT 25TH TENDER ADDENDUM SUBMITTED ON OCT 6 IFC SUBMISSION ON MAY 22ND",
       "group": "TEAM 2",
       "stage": "IFC",
@@ -877,7 +877,7 @@
       "group": "TEAM 2",
       "stage": "SD",
       "startDate": "2024-11-03",
-      "endDate": "2026-06-01",
+      "endDate": "2026-06-05",
       "milestones": [
         "2024-11-03",
         "2025-01-14",
@@ -888,15 +888,14 @@
       "title": "4059- Dubai South - Beachfront Plot- RN-795",
       "qaqc": "PRASANA",
       "assignee": "Aparna Lakshmi",
-      "team": "aparna, Rashid, Naveen, Bareera",
+      "team": "Rashid, Naveen, Bareera",
       "people": [
-        "aparna",
         "rashid",
         "naveen",
         "bareera"
       ],
-      "peopleCount": 4,
-      "status": "In-progress",
+      "peopleCount": 3,
+      "status": "Done",
       "priority": "Medium",
       "description": "SD RESUBMISSION ON FEB 16TH, SD CLOSE OUT ON 24TH APRIL, DD SUBMISSION IS ON 13TH MAY",
       "group": "TEAM 2",
@@ -1167,7 +1166,7 @@
       "group": "TEAM 5",
       "stage": "SD",
       "startDate": "2026-02-13",
-      "endDate": "2026-05-31",
+      "endDate": "2026-06-05",
       "milestones": []
     },
     {
@@ -1228,12 +1227,12 @@
       ],
       "peopleCount": 4,
       "status": "In-progress",
-      "priority": "Medium",
+      "priority": "High",
       "description": "50 % SD SUBMISSION ON SEPT 12TH,100% DD IS SUBMITTED ON MAR 18TH, MODEL COORDINATION GOING ON, REVISED DD ON MAY 18",
       "group": "TEAM 3",
-      "stage": "REVISED DD",
+      "stage": "TENDER",
       "startDate": "2024-09-12",
-      "endDate": "2026-05-18",
+      "endDate": "2026-06-03",
       "milestones": [
         "2024-09-12",
         "2025-03-18"
@@ -1297,13 +1296,13 @@
         "rammeshkhan"
       ],
       "peopleCount": 7,
-      "status": "Done",
+      "status": "In-progress",
       "priority": "Medium",
-      "description": "SD SUBMISSION ON 11 MARCH _DD SUBISSMISION ON APRIL 24TH ",
+      "description": "SD SUBMISSION ON 11 MARCH _DD SUBISSMISION ON APRIL 24TH ,ATHURITY SUBMISSION ON MODEL ON JUN 5TH ",
       "group": "TEAM 3",
-      "stage": "SD",
+      "stage": "REVISED DD",
       "startDate": "2025-03-11",
-      "endDate": "2026-04-24",
+      "endDate": "2026-06-05",
       "milestones": [
         "2025-03-11",
         "2025-04-24"
@@ -1329,7 +1328,7 @@
       "group": "TEAM 3",
       "stage": "DD",
       "startDate": "2025-04-29",
-      "endDate": "2026-05-30",
+      "endDate": "2026-06-09",
       "milestones": [
         "2025-04-29"
       ]
@@ -1768,7 +1767,7 @@
         "akhila"
       ],
       "peopleCount": 6,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "High",
       "description": "50% SD SUBMISSION ON 28 NOV, 100%SD ON DEC 12TH,REVISED SD SUBMISSION ON JAN 13TH TENDER ADDENDUM ON APRIL 7TH, TENDER ADDENDUM 02 ON APR 29 IFC SUBMISSION ON MAY 22TH",
       "group": "TEAM 4",
@@ -1802,7 +1801,7 @@
       "group": "TEAM 4",
       "stage": "REVISED DD",
       "startDate": "2026-01-07",
-      "endDate": "2026-05-15",
+      "endDate": "2026-06-25",
       "milestones": []
     },
     {
@@ -1823,9 +1822,9 @@
       "priority": "Medium",
       "description": "SD SUBMISSION 30TH APRIL REVISED SD ON MAY 15TH",
       "group": "TEAM 4",
-      "stage": "SD",
+      "stage": "DD",
       "startDate": "2025-04-08",
-      "endDate": "2026-05-15",
+      "endDate": "2026-06-30",
       "milestones": [
         "2025-04-30"
       ]
@@ -1971,13 +1970,13 @@
         "sheikh yahya"
       ],
       "peopleCount": 6,
-      "status": "Done",
+      "status": "In-progress",
       "priority": "High",
-      "description": "SD SUBMITTED ON DEC 10TH, DD SUBMISSION ON APIRL 28TH ",
+      "description": "SD SUBMITTED ON DEC 10TH, DD SUBMISSION ON APIRL 28TH , TENDER SUBMISSION ON JUN 12TH",
       "group": "TEAM 6",
-      "stage": "DD",
+      "stage": "TENDER",
       "startDate": "2024-12-10",
-      "endDate": "2026-04-27",
+      "endDate": "2026-06-12",
       "milestones": [
         "2024-12-10"
       ]
@@ -2023,9 +2022,9 @@
       "priority": "Medium",
       "description": "SD SUBMISSIION ON FEB 23 FINAL PACKAGE ON 27, TENDER ON MAY 8TH REVISED TENDER ON MAY 18TH",
       "group": "TEAM 6",
-      "stage": "REVISED DD",
+      "stage": "TENDER",
       "startDate": "2025-02-23",
-      "endDate": "2026-05-18",
+      "endDate": "2026-06-12",
       "milestones": [
         "2025-02-23",
         "2025-04-21"
@@ -2069,7 +2068,7 @@
     },
     {
       "title": "3043-MODON - East and West",
-      "qaqc": "AJAY",
+      "qaqc": "PRASANA",
       "assignee": "shastidharan",
       "team": "jesto, Syed, Anshu, Shasti",
       "people": [
@@ -2079,13 +2078,13 @@
         "shasti"
       ],
       "peopleCount": 4,
-      "status": "Done",
+      "status": "In-progress",
       "priority": "Medium",
-      "description": "ADDENDUM TENDER SUBMISSION/MODEL , TENDER ADDENDUM SUBMITTED ON 3 VILLA ON NOV 3RD MODEL CLASHES WITH SHEET CHANGES, MINOR UPDATE TO SUBMIT ON 29TH APRIL ",
+      "description": "ADDENDUM TENDER SUBMISSION/MODEL , TENDER ADDENDUM SUBMITTED ON 3 VILLA ON NOV 3RD MODEL CLASHES WITH SHEET CHANGES, MINOR UPDATE TO SUBMIT ON 29TH APRIL ,IFC 3 REVISED JUN 5TH",
       "group": "COMMON",
       "stage": "IFC",
       "startDate": "2024-11-03",
-      "endDate": "2026-04-29",
+      "endDate": "2026-06-05",
       "milestones": [
         "2024-11-03"
       ]
@@ -2272,5 +2271,5 @@
       "id": "lv-1776858159917-8we0"
     }
   ],
-  "exportedAt": "2026-05-14T10:37:33.843Z"
+  "exportedAt": "2026-06-04T06:15:03.038Z"
 }
