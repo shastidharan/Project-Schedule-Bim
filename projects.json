@@ -2269,7 +2269,95 @@
       "to": "2026-05-01",
       "note": "",
       "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "shasti",
+      "type": "Annual",
+      "from": "2026-03-08",
+      "to": "2026-04-10",
+      "note": "",
+      "id": "lv-1776846307441-7on8"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "jesto",
+      "type": "Annual",
+      "from": "2026-02-16",
+      "to": "2026-02-24",
+      "note": "",
+      "id": "lv-1776858121067-kuk0"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "shasti",
+      "type": "Annual",
+      "from": "2026-03-08",
+      "to": "2026-04-10",
+      "note": "",
+      "id": "lv-1776846307441-7on8"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "jesto",
+      "type": "Annual",
+      "from": "2026-02-16",
+      "to": "2026-02-24",
+      "note": "",
+      "id": "lv-1776858121067-kuk0"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
     }
   ],
-  "exportedAt": "2026-06-04T07:13:49.925Z"
+  "exportedAt": "2026-06-04T07:34:29.720Z"
 }
