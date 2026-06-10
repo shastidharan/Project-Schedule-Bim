@@ -305,21 +305,21 @@
       "title": "3227-Lehbab Staff Accommodation",
       "qaqc": "ABILASH",
       "assignee": "Akshaya Jayakrishnan",
-      "team": "Akshaya, Lincy, Athira, Sreelakshmi",
+      "team": "Akshaya, Athira, Sreelakshmi, Arya",
       "people": [
         "akshaya",
-        "lincy",
         "athira",
-        "sreelakshmi"
+        "sreelakshmi",
+        "arya"
       ],
       "peopleCount": 4,
-      "status": "Done",
+      "status": "In-progress",
       "priority": "Medium",
-      "description": "SD SUBMITTED ON AUG 7TH AND 50% DD IS ON 20TH FEB AND 100 % DD ON MARCH 20TH  REVISED DD ON 18TH MAY",
+      "description": "SD SUBMITTED ON AUG 7TH AND 50% DD IS ON 20TH FEB AND 100 % DD ON MARCH 20TH  REVISED DD ON 18TH MAY,CLOUD UPDATE SUBMISSION ON JUN 10TH",
       "group": "TEAM1",
       "stage": "REVISED DD",
       "startDate": "2024-08-07",
-      "endDate": "2026-05-21",
+      "endDate": "2026-06-10",
       "milestones": [
         "2024-08-07",
         "2025-02-20"
@@ -526,7 +526,7 @@
         "jesto"
       ],
       "peopleCount": 4,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "100% SD SUBMISSION ON MAY 16TH 100% DD SUBMISSION ON JUN19TH, REVISED DD IS SUBMITTED ON AUG 6TH, MODEL IS UPDATING AS PER THE LATEST IFC SUBMISSION ON 23TH MAR,IFC 3 PACKAGE ON MAY 15TH",
       "group": "TEAM 5",
@@ -783,13 +783,13 @@
         "rashid"
       ],
       "peopleCount": 2,
-      "status": "Done",
+      "status": "In-progress",
       "priority": "Medium",
-      "description": "SD submission on MARCH 6TH",
+      "description": "SD submission on MARCH 6TH,50% DD SUBMISSION ON 18TH JUNE",
       "group": "TEAM 2",
       "stage": "SD",
       "startDate": "2025-02-20",
-      "endDate": "2026-03-30",
+      "endDate": "2026-06-18",
       "milestones": [
         "2025-02-20"
       ]
@@ -873,7 +873,7 @@
       "peopleCount": 8,
       "status": "In-progress",
       "priority": "Low",
-      "description": "CONCEPT MODEL IS DONE, NEW LAYOUT OD MODEL IS SUBMIITED ON NOV 3RD , SD SUBMISSION ON JAN 14 TH SD RESUBMISSION ON JUN 1ST",
+      "description": "CONCEPT MODEL IS DONE, NEW LAYOUT OD MODEL IS SUBMIITED ON NOV 3RD , SD SUBMISSION ON JAN 14 TH SD RESUBMISSION ON JUN 5TH, DD PROGESS IS GOING ON ",
       "group": "TEAM 2",
       "stage": "SD",
       "startDate": "2024-11-03",
@@ -1113,7 +1113,7 @@
         "jesto"
       ],
       "peopleCount": 3,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "CONCEPT MODEL IS IN PROGESS, \nSD SUBMISSION  IS ON NOV 5TH",
       "group": "TEAM 5",
@@ -1161,12 +1161,12 @@
       ],
       "peopleCount": 3,
       "status": "In-progress",
-      "priority": "High",
-      "description": "SD SUBMISSION IS ON MAY MID",
+      "priority": "Medium",
+      "description": "SD SUBMISSION IS ON MAY MID, MODEL SUBMISSION IS GOING ON JUN 9TH",
       "group": "TEAM 5",
       "stage": "SD",
       "startDate": "2026-02-13",
-      "endDate": "2026-06-05",
+      "endDate": "2026-06-09",
       "milestones": []
     },
     {
@@ -1232,7 +1232,7 @@
       "group": "TEAM 3",
       "stage": "TENDER",
       "startDate": "2024-09-12",
-      "endDate": "2026-06-03",
+      "endDate": "2026-06-19",
       "milestones": [
         "2024-09-12",
         "2025-03-18"
@@ -1296,7 +1296,7 @@
         "rammeshkhan"
       ],
       "peopleCount": 7,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "SD SUBMISSION ON 11 MARCH _DD SUBISSMISION ON APRIL 24TH ,ATHURITY SUBMISSION ON MODEL ON JUN 5TH ",
       "group": "TEAM 3",
@@ -2084,7 +2084,7 @@
       "group": "COMMON",
       "stage": "IFC",
       "startDate": "2024-11-03",
-      "endDate": "2026-06-05",
+      "endDate": "2026-06-12",
       "milestones": [
         "2024-11-03"
       ]
@@ -2359,5 +2359,5 @@
       "id": "lv-1776858159917-8we0"
     }
   ],
-  "exportedAt": "2026-06-04T07:34:29.720Z"
+  "exportedAt": "2026-06-09T10:52:09.010Z"
 }
