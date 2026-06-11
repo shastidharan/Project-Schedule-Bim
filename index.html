@@ -1917,20 +1917,24 @@ function App() {
     }, '*');
     return () => window.removeEventListener('message', onMsg);
   }, []);
+  const syncProjects = useCallback(next => {
+    window.__BIM_PROJECTS__ = next;
+    return next;
+  }, []);
   const updateProject = useCallback((title, patch) => {
-    setProjects(ps => ps.map(p => p.title === title ? normalizeProject({
+    setProjects(ps => syncProjects(ps.map(p => p.title === title ? normalizeProject({
       ...p,
       ...patch
-    }) : p));
-  }, []);
+    }) : p)));
+  }, [syncProjects]);
   const deleteProject = useCallback(title => {
     if (!confirm(`Delete "${title}"?`)) return;
-    setProjects(ps => ps.filter(p => p.title !== title));
+    setProjects(ps => syncProjects(ps.filter(p => p.title !== title)));
     setEditingProject(null);
-  }, []);
+  }, [syncProjects]);
   const addProject = useCallback(p => {
-    setProjects(ps => [normalizeProject(p), ...ps]);
-  }, []);
+    setProjects(ps => syncProjects([normalizeProject(p), ...ps]));
+  }, [syncProjects]);
 
   // ==== Leaves ====
   const addLeave = useCallback(leave => {
@@ -2286,15 +2290,19 @@ function Dashboard(props) {
       sumPct += computeProgress(p, refDate).pct;
     });
     const overallPct = filtered.length ? Math.round(sumPct / filtered.length) : 0;
-    const workingPeople = new Set();
-    activeInPeriod.forEach(p => p.people.forEach(x => workingPeople.add(x)));
+    // People Active now follows Resource Used: if Resource People is filled, use that number;
+    // otherwise fall back to the number of named people in Working Team.
+    const peopleActive = activeInPeriod.reduce((sum, p) => {
+      const rp = Number(p.resourcePeople || 0);
+      return sum + (rp > 0 ? rp : ((p.people && p.people.length) || 0));
+    }, 0);
     return {
       total: filtered.length,
       activeToday: activeInPeriod.length,
       doneCount,
       overdueCount,
       overallPct,
-      peopleActive: workingPeople.size,
+      peopleActive,
       activeList: activeInPeriod,
       overdueList: filtered.filter(p => p.status !== 'Done' && p.endDate && new Date(p.endDate) < new Date(refDate))
     };
@@ -2305,25 +2313,33 @@ function Dashboard(props) {
   // Then total % = sum of project efforts. A person at 100% is fully loaded.
   const resourceLoad = useMemo(() => {
     const periodDays = daysBetween(period.start, period.end) + 1;
-    const map = new Map(); // person -> {count, projects:[{title,days,share}], totalDays}
+    const map = new Map(); // person -> {count, projects:[{title,days,share}], effortDays}
     filtered.forEach(p => {
       if (!isActiveInRange(p, period.start, period.end)) return;
       const pStart = p.startDate ? new Date(p.startDate) : period.start;
       const pEnd = p.endDate ? new Date(p.endDate) : period.end;
       const overlapStart = pStart > period.start ? pStart : period.start;
       const overlapEnd = pEnd < period.end ? pEnd : period.end;
-      const days = Math.max(1, daysBetween(overlapStart, overlapEnd) + 1);
+      const activeDays = Math.max(1, daysBetween(overlapStart, overlapEnd) + 1);
+
+      const assignedPeople = p.people && p.people.length ? p.people : [];
       const plannedPeople = Number(p.resourcePeople || 0);
       const plannedDays = Number(p.resourceDays || 0);
-      const assignedPeople = p.people && p.people.length ? p.people : plannedPeople > 0 ? ['unassigned'] : [];
-      if (!assignedPeople.length) return;
+
       // Resource logic:
-      // - Working Team decides WHO receives the load.
-      // - Resource Days decides HOW MUCH total effort is planned for that project.
-      // - If Resource Days is blank, it falls back to active calendar days in the selected period.
-      const effortDays = plannedDays > 0 ? plannedDays : days;
-      const share = 1 / Math.max(1, assignedPeople.length);
-      assignedPeople.forEach(person => {
+      // - Working Team decides WHO receives named load.
+      // - Resource People + Resource Days decide HOW MUCH total effort is planned.
+      // - If Resource People is blank, use number of names in Working Team.
+      // - If Resource Days is blank, use active calendar days in the selected period.
+      // - If no names are entered but Resource People is entered, show the effort as Unassigned.
+      const effectivePeople = plannedPeople > 0 ? plannedPeople : assignedPeople.length;
+      const effectiveDays = plannedDays > 0 ? plannedDays : activeDays;
+      const totalEffortDays = Math.max(0, effectivePeople) * Math.max(0, effectiveDays);
+      const loadPeople = assignedPeople.length ? assignedPeople : (effectivePeople > 0 ? ['unassigned'] : []);
+      if (!loadPeople.length || totalEffortDays <= 0) return;
+
+      const shareEffortDays = totalEffortDays / Math.max(1, loadPeople.length);
+      loadPeople.forEach(person => {
         if (!map.has(person)) map.set(person, {
           count: 0,
           projects: [],
@@ -2333,13 +2349,15 @@ function Dashboard(props) {
         r.count++;
         r.projects.push({
           title: p.title,
-          days: effortDays,
-          share,
+          days: shareEffortDays,
+          share: 1 / Math.max(1, loadPeople.length),
           status: p.status,
           group: p.group,
-          stage: p.stage
+          stage: p.stage,
+          resourcePeople: effectivePeople,
+          resourceDays: effectiveDays
         });
-        r.effortDays += effortDays * share;
+        r.effortDays += shareEffortDays;
       });
     });
     return [...map.entries()].map(([name, r]) => ({
