@@ -777,22 +777,25 @@
       "title": "3574-City View-Sofitel Project",
       "qaqc": "VIPIN",
       "assignee": "Aparna Lakshmi",
-      "team": "aparna, Rashid",
+      "team": "aparna, Naveen",
       "people": [
         "aparna",
-        "rashid"
+        "naveen"
       ],
       "peopleCount": 2,
       "status": "In-progress",
       "priority": "Medium",
       "description": "SD submission on MARCH 6TH,50% DD SUBMISSION ON 18TH JUNE",
       "group": "TEAM 2",
-      "stage": "SD",
+      "stage": "DD",
       "startDate": "2025-02-20",
       "endDate": "2026-06-18",
       "milestones": [
         "2025-02-20"
-      ]
+      ],
+      "invoiceable": "Yes",
+      "resourcePeople": "3",
+      "resourceDays": "20"
     },
     {
       "title": "3521- Plot GB 19 at Emaar South Development",
@@ -873,16 +876,19 @@
       "peopleCount": 8,
       "status": "In-progress",
       "priority": "Low",
-      "description": "CONCEPT MODEL IS DONE, NEW LAYOUT OD MODEL IS SUBMIITED ON NOV 3RD , SD SUBMISSION ON JAN 14 TH SD RESUBMISSION ON JUN 5TH, DD PROGESS IS GOING ON ",
+      "description": "CONCEPT MODEL IS DONE, NEW LAYOUT OD MODEL IS SUBMIITED ON NOV 3RD , SD SUBMISSION ON JAN 14 TH SD RESUBMISSION ON JUN 5TH, Revised SD ON jun 26th",
       "group": "TEAM 2",
-      "stage": "SD",
+      "stage": "REVISED SD",
       "startDate": "2024-11-03",
-      "endDate": "2026-06-05",
+      "endDate": "2026-06-26",
       "milestones": [
         "2024-11-03",
         "2025-01-14",
         "2025-06-01"
-      ]
+      ],
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": ""
     },
     {
       "title": "4059- Dubai South - Beachfront Plot- RN-795",
@@ -2087,7 +2093,10 @@
       "endDate": "2026-06-12",
       "milestones": [
         "2024-11-03"
-      ]
+      ],
+      "invoiceable": "No",
+      "resourcePeople": "5",
+      "resourceDays": ""
     },
     {
       "title": "3983- Abu Dhabi Project 4 Plots",
@@ -2162,7 +2171,7 @@
       "qaqc": "ABILASH",
       "assignee": "Akshaya Jayakrishnan",
       "team": "Akshaya, Sreelakshmi, Athira, Arya, Shasti, Ananthu",
-      "status": "In-progress",
+      "status": "TBC",
       "priority": "Medium",
       "description": "SD SUBMISSION ON JUN 12TH",
       "group": "TEAM1",
@@ -2178,7 +2187,10 @@
         "shasti",
         "ananthu"
       ],
-      "peopleCount": 6
+      "peopleCount": 6,
+      "invoiceable": "No",
+      "resourcePeople": "",
+      "resourceDays": ""
     }
   ],
   "leaves": [
@@ -2191,28 +2203,12 @@
       "id": "lv-1776846236035-qwgw"
     },
     {
-      "person": "shasti",
-      "type": "Annual",
-      "from": "2026-03-08",
-      "to": "2026-04-10",
-      "note": "",
-      "id": "lv-1776846307441-7on8"
-    },
-    {
       "person": "syed",
       "type": "Annual",
       "from": "2026-05-08",
       "to": "2026-06-02",
       "note": "",
       "id": "lv-1776857945904-7vcw"
-    },
-    {
-      "person": "jesto",
-      "type": "Annual",
-      "from": "2026-02-16",
-      "to": "2026-02-24",
-      "note": "",
-      "id": "lv-1776858121067-kuk0"
     },
     {
       "person": "akshaya",
@@ -2239,28 +2235,12 @@
       "id": "lv-1776846236035-qwgw"
     },
     {
-      "person": "shasti",
-      "type": "Annual",
-      "from": "2026-03-08",
-      "to": "2026-04-10",
-      "note": "",
-      "id": "lv-1776846307441-7on8"
-    },
-    {
       "person": "syed",
       "type": "Annual",
       "from": "2026-05-08",
       "to": "2026-06-02",
       "note": "",
       "id": "lv-1776857945904-7vcw"
-    },
-    {
-      "person": "jesto",
-      "type": "Annual",
-      "from": "2026-02-16",
-      "to": "2026-02-24",
-      "note": "",
-      "id": "lv-1776858121067-kuk0"
     },
     {
       "person": "akshaya",
@@ -2279,28 +2259,12 @@
       "id": "lv-1776846236035-qwgw"
     },
     {
-      "person": "shasti",
-      "type": "Annual",
-      "from": "2026-03-08",
-      "to": "2026-04-10",
-      "note": "",
-      "id": "lv-1776846307441-7on8"
-    },
-    {
       "person": "syed",
       "type": "Annual",
       "from": "2026-05-08",
       "to": "2026-06-02",
       "note": "",
       "id": "lv-1776857945904-7vcw"
-    },
-    {
-      "person": "jesto",
-      "type": "Annual",
-      "from": "2026-02-16",
-      "to": "2026-02-24",
-      "note": "",
-      "id": "lv-1776858121067-kuk0"
     },
     {
       "person": "akshaya",
@@ -2327,14 +2291,6 @@
       "id": "lv-1776846236035-qwgw"
     },
     {
-      "person": "shasti",
-      "type": "Annual",
-      "from": "2026-03-08",
-      "to": "2026-04-10",
-      "note": "",
-      "id": "lv-1776846307441-7on8"
-    },
-    {
       "person": "syed",
       "type": "Annual",
       "from": "2026-05-08",
@@ -2343,21 +2299,29 @@
       "id": "lv-1776857945904-7vcw"
     },
     {
-      "person": "jesto",
-      "type": "Annual",
-      "from": "2026-02-16",
-      "to": "2026-02-24",
-      "note": "",
-      "id": "lv-1776858121067-kuk0"
-    },
-    {
       "person": "akshaya",
       "type": "Annual",
       "from": "2026-04-27",
       "to": "2026-05-01",
       "note": "",
       "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "jesto",
+      "type": "Annual",
+      "from": "2026-06-12",
+      "to": "2026-06-29",
+      "note": "",
+      "id": "lv-1781173540030-4ktc"
+    },
+    {
+      "person": "anshu",
+      "type": "Annual",
+      "from": "2026-06-30",
+      "to": "2026-07-31",
+      "note": "",
+      "id": "lv-1781173664540-k52w"
     }
   ],
-  "exportedAt": "2026-06-11T09:00:53.494Z"
+  "exportedAt": "2026-06-11T10:34:35.898Z"
 }
