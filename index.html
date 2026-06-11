@@ -1784,10 +1784,16 @@ function parsePeople(s) {
   if (!s) return [];
   return [...new Set(s.split(/[,\/]/).map(x => x.trim()).filter(Boolean))];
 }
+function normalizeInvoiceable(v) {
+  const t = String(v == null ? '' : v).trim().toLowerCase();
+  if (['no', 'n', 'false', '0', 'non-invoiceable', 'non invoiceable', 'not invoiceable'].includes(t)) return 'No';
+  return 'Yes';
+}
 function normalizeProject(p) {
   const people = parsePeople(p.team || '');
   return {
     ...p,
+    invoiceable: normalizeInvoiceable(p.invoiceable),
     people: people.map(x => x.toLowerCase()),
     peopleCount: people.length
   };
@@ -2175,7 +2181,7 @@ function App() {
         return s.includes(',') || s.includes('"') || s.includes('\n') ? '"' + s.replace(/"/g, '""') + '"' : s;
       };
       const rows = [headers.join(',')];
-      projects.forEach(p => rows.push([p.title, p.qaqc, p.assignee, p.team, p.status, p.priority, p.description, p.group, p.startDate, p.endDate, p.bimDate||'', p.stage, p.invoiceable||'Yes', p.resourcePeople||'', p.resourceDays||''].map(esc).join(',')));
+      projects.forEach(p => rows.push([p.title, p.qaqc, p.assignee, p.team, p.status, p.priority, p.description, p.group, p.startDate, p.endDate, p.bimDate||'', p.stage, normalizeInvoiceable(p.invoiceable), p.resourcePeople||'', p.resourceDays||''].map(esc).join(',')));
       const blob = new Blob([rows.join('\n')], {
         type: 'text/csv'
       });
@@ -2307,8 +2313,17 @@ function Dashboard(props) {
       const overlapStart = pStart > period.start ? pStart : period.start;
       const overlapEnd = pEnd < period.end ? pEnd : period.end;
       const days = Math.max(1, daysBetween(overlapStart, overlapEnd) + 1);
-      const share = 1 / Math.max(1, p.peopleCount);
-      p.people.forEach(person => {
+      const plannedPeople = Number(p.resourcePeople || 0);
+      const plannedDays = Number(p.resourceDays || 0);
+      const assignedPeople = p.people && p.people.length ? p.people : plannedPeople > 0 ? ['unassigned'] : [];
+      if (!assignedPeople.length) return;
+      // Resource logic:
+      // - Working Team decides WHO receives the load.
+      // - Resource Days decides HOW MUCH total effort is planned for that project.
+      // - If Resource Days is blank, it falls back to active calendar days in the selected period.
+      const effortDays = plannedDays > 0 ? plannedDays : days;
+      const share = 1 / Math.max(1, assignedPeople.length);
+      assignedPeople.forEach(person => {
         if (!map.has(person)) map.set(person, {
           count: 0,
           projects: [],
@@ -2318,13 +2333,13 @@ function Dashboard(props) {
         r.count++;
         r.projects.push({
           title: p.title,
-          days,
+          days: effortDays,
           share,
           status: p.status,
           group: p.group,
           stage: p.stage
         });
-        r.effortDays += days * share;
+        r.effortDays += effortDays * share;
       });
     });
     return [...map.entries()].map(([name, r]) => ({
@@ -6334,7 +6349,7 @@ function EditModal({
     stage: project.stage || 'SD',
     startDate: project.startDate || '',
     endDate: project.endDate || '',
-    invoiceable: project.invoiceable || 'Yes',
+    invoiceable: normalizeInvoiceable(project.invoiceable),
     resourcePeople: project.resourcePeople || '',
     resourceDays: project.resourceDays || '',
     bimDate: project.bimDate || ''
@@ -6901,9 +6916,9 @@ function EditModal({
   }, peopleArr.length), " people \xB7 Change Team to auto-suggest members from that team's roster.")),
   /*#__PURE__*/React.createElement(Field, { label: "Invoiceable" },
     /*#__PURE__*/React.createElement("select", {
-      className: "inp", value: form.invoiceable || 'Yes',
+      className: "inp", value: normalizeInvoiceable(form.invoiceable),
       onChange: e => set('invoiceable', e.target.value),
-      style: { background: form.invoiceable === 'No' ? '#fef2f2' : '#f0fdf4', fontWeight: 600 }
+      style: { background: normalizeInvoiceable(form.invoiceable) === 'No' ? '#fef2f2' : '#f0fdf4', fontWeight: 600 }
     },
       /*#__PURE__*/React.createElement("option", { value: "Yes" }, "Yes \u2014 Invoiceable"),
       /*#__PURE__*/React.createElement("option", { value: "No" }, "No \u2014 Non-Invoiceable")
@@ -8985,24 +9000,33 @@ function barColor(p,st){
 var EK='bim-extras-v1';
 function getExtras(){try{var s=localStorage.getItem(EK);return s?JSON.parse(s):{};} catch(e){return {};}}
 function saveExtras(e){try{localStorage.setItem(EK,JSON.stringify(e));}catch(err){}}
+function normInv(v){
+  var t=String(v==null?'':v).trim().toLowerCase();
+  if(t==='no'||t==='n'||t==='false'||t==='0'||t==='non-invoiceable'||t==='non invoiceable'||t==='not invoiceable')return 'No';
+  return 'Yes';
+}
+function mergeProjectExtras(projects){
+  var extras=getExtras();
+  return (projects||[]).map(function(p){
+    var ex=extras[p.title]||{};
+    // Edit modal values must override default/static project values for these extra fields.
+    return Object.assign({},p,{
+      invoiceable: normInv(ex.invoiceable!==undefined&&ex.invoiceable!=='' ? ex.invoiceable : p.invoiceable),
+      resourcePeople: (ex.resourcePeople!==undefined&&ex.resourcePeople!=='')?ex.resourcePeople:(p.resourcePeople||''),
+      resourceDays: (ex.resourceDays!==undefined&&ex.resourceDays!=='')?ex.resourceDays:(p.resourceDays||''),
+      bimDate: (ex.bimDate!==undefined&&ex.bimDate!=='')?ex.bimDate:(p.bimDate||'')
+    });
+  });
+}
 
-/* ── MERGE: extras fill gaps, project wins for fields it HAS ── */
+/* ── MERGE: edit extras override static/default values ── */
 function getProjects(){
   try{
+    var projects=[];
     var s=localStorage.getItem('bim-projects-v3');
-    if(!s)return[];
-    var projects=JSON.parse(s);
-    var extras=getExtras();
-    return projects.map(function(p){
-      var ex=extras[p.title]||{};
-      // For new fields: use project value if it's a real value, else use extra
-      return Object.assign({},p,{
-        invoiceable: (p.invoiceable&&p.invoiceable!=='')?p.invoiceable:(ex.invoiceable||'Yes'),
-        resourcePeople: (p.resourcePeople!==undefined&&p.resourcePeople!=='')?p.resourcePeople:(ex.resourcePeople||''),
-        resourceDays: (p.resourceDays!==undefined&&p.resourceDays!=='')?p.resourceDays:(ex.resourceDays||''),
-        bimDate: (p.bimDate&&p.bimDate!=='')?p.bimDate:(ex.bimDate||'')
-      });
-    });
+    if(s)projects=JSON.parse(s);
+    else if(Array.isArray(window.__BIM_PROJECTS__))projects=window.__BIM_PROJECTS__;
+    return mergeProjectExtras(projects);
   }catch(e){return[];}
 }
 
@@ -9037,7 +9061,7 @@ function remChip(days,st){
   return mkChip('#f8fafc','#64748b','#e2e8f0',days+'d left');
 }
 function invChip(v){
-  return(!v||v==='Yes')
+  return(normInv(v)==='Yes')
     ?'<span style="padding:2px 7px;border-radius:10px;font-size:9px;font-weight:700;background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0">Yes</span>'
     :'<span style="padding:2px 7px;border-radius:10px;font-size:9px;font-weight:700;background:#fef2f2;color:#dc2626;border:1px solid #fecaca">No</span>';
 }
@@ -9248,7 +9272,7 @@ window.renderBIMModal=function(type){
     box.querySelector('#bim-csv').onclick=function(){
       var rows=[['Project','Team','Stage','Status','Lead','QA','Invoiceable','Resource People','Resource Days','End Date','BIM Date','Progress%']];
       var today=new Date();today.setHours(0,0,0,0);
-      projects.forEach(function(p){var pc=calcPct(p,ref),rem=p.endDate?Math.round((new Date(p.endDate)-today)/86400000):'';rows.push([p.title,p.group,p.stage,p.status,p.assignee||'',p.qaqc||'',p.invoiceable||'Yes',p.resourcePeople||'',p.resourceDays||'',p.endDate||'',p.bimDate||'',pc.v]);});
+      projects.forEach(function(p){var pc=calcPct(p,ref),rem=p.endDate?Math.round((new Date(p.endDate)-today)/86400000):'';rows.push([p.title,p.group,p.stage,p.status,p.assignee||'',p.qaqc||'',normalizeInvoiceable(p.invoiceable),p.resourcePeople||'',p.resourceDays||'',p.endDate||'',p.bimDate||'',pc.v]);});
       var csv=rows.map(function(r){return r.map(function(c){c=String(c||'');return c.indexOf(',')>=0?'"'+c+'"':c;}).join(',');}).join('\n');
       var a=document.createElement('a');a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csv);a.download=title.replace(/\s+/g,'_')+'.csv';document.body.appendChild(a);a.click();document.body.removeChild(a);
     };
@@ -9263,7 +9287,7 @@ window.renderBIMModal=function(type){
           var rem=p.endDate?Math.round((new Date(p.endDate)-today)/86400000):null;
           var bc=barColor(p,pc.st),sty=stageStyle(p.stage);
           var cs,ct;if(pc.st==='done'){cs='background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0';ct='Done';}else if(rem===null){cs='background:#f8fafc;color:#94a3b8;border:1px solid #e2e8f0';ct='—';}else if(rem<0){cs='background:#fef2f2;color:#dc2626;border:1px solid #fecaca';ct=Math.abs(rem)+'d over';}else if(rem<=7){cs='background:#fffbeb;color:#d97706;border:1px solid #fde68a';ct=rem+'d left';}else{cs='background:#f8fafc;color:#64748b;border:1px solid #e2e8f0';ct=rem+'d left';}
-          var inv=!p.invoiceable||p.invoiceable==='Yes';
+          var inv=normInv(p.invoiceable)==='Yes';
           var res=(p.resourcePeople?p.resourcePeople+'p':'—')+(p.resourceDays?' / '+p.resourceDays+'d':'');
           var isBimRow=p.status==='BIM Submission'||p.stage==='BIM Submission';
           var isRev=REVISED_RE.test(p.stage||'');
