@@ -137,7 +137,7 @@
       "group": "TEAM 2",
       "stage": "SD",
       "startDate": "2026-04-27",
-      "endDate": "2026-06-12",
+      "endDate": "2026-06-19",
       "milestones": [],
       "people": [
         "bareera",
@@ -1138,13 +1138,13 @@
         "mohan"
       ],
       "peopleCount": 6,
-      "status": "Done",
+      "status": "In-progress",
       "priority": "Medium",
-      "description": "SD SUBMISSION APRIL 14TH ",
+      "description": "SD SUBMISSION APRIL 14TH , DD SUBMISSION ON TBC",
       "group": "TEAM 5",
-      "stage": "SD",
+      "stage": "DD",
       "startDate": "2025-04-14",
-      "endDate": "2026-04-14",
+      "endDate": "2026-07-10",
       "milestones": [
         "2025-04-14"
       ]
@@ -1160,7 +1160,7 @@
         "mohan"
       ],
       "peopleCount": 3,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "SD SUBMISSION IS ON MAY MID, MODEL SUBMISSION IS GOING ON JUN 9TH",
       "group": "TEAM 5",
@@ -1324,11 +1324,11 @@
       "peopleCount": 6,
       "status": "In-progress",
       "priority": "High",
-      "description": "50 % DD SUBMISSION ON 30TH MAY",
+      "description": "50 % DD SUBMISSION ON 30TH MAY, 100% DD ON JULY 3RD ",
       "group": "TEAM 3",
       "stage": "DD",
       "startDate": "2025-04-29",
-      "endDate": "2026-06-09",
+      "endDate": "2026-07-03",
       "milestones": [
         "2025-04-29"
       ]
@@ -1972,11 +1972,11 @@
       "peopleCount": 6,
       "status": "In-progress",
       "priority": "High",
-      "description": "SD SUBMITTED ON DEC 10TH, DD SUBMISSION ON APIRL 28TH , TENDER SUBMISSION ON JUN 12TH",
+      "description": "SD SUBMITTED ON DEC 10TH, DD SUBMISSION ON APIRL 28TH , TENDER SUBMISSION ON JUN 18TH",
       "group": "TEAM 6",
       "stage": "TENDER",
       "startDate": "2024-12-10",
-      "endDate": "2026-06-12",
+      "endDate": "2026-06-18",
       "milestones": [
         "2024-12-10"
       ]
@@ -2359,5 +2359,5 @@
       "id": "lv-1776858159917-8we0"
     }
   ],
-  "exportedAt": "2026-06-09T10:52:09.010Z"
+  "exportedAt": "2026-06-11T09:00:53.494Z"
 }

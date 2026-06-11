@@ -1655,12 +1655,12 @@ const LEAVE_COLORS = {
 
 // ============ Team rosters (from org chart) ============
 const TEAM_ROSTERS = {
-  'TEAM1': ['akshaya', 'lincy', 'sreelakshmi', 'athira', 'fatima', 'arya', 'deepak(mars)'],
-  'TEAM 2': ['aparna', 'rashid', 'elbin', 'jose', 'afsal', 'naveen', 'bareera'],
-  'TEAM 3': ['jovanie', 'syed', 'adthiyan', 'vishnu', 'abhilash', 'rivin', 'arya(cad)', 'rammeshkanicadi', 'gnayaprakash'],
-  'TEAM 4': ['asif', 'laura', 'rahul', 'sandra', 'anathu', 'akhila', 'mohit', 'jegan'],
-  'TEAM 5': ['jesto', 'amna', 'jibin', 'narsha', 'jasna', 'mohan'],
-  'TEAM 6': ['safas', 'swapna', 'maznaz', 'karthik', 'sreekanth', 'karthik(mars)', 'sheikh yahya'],
+  'TEAM1': ['akshaya', 'sreelakshmi', 'athira', 'arya'],
+  'TEAM 2': ['aparna', 'rashid', 'jose', 'harirao', 'naveen', 'bareera'],
+  'TEAM 3': ['jovanie', 'syed', 'adthiyan', 'vishnu', 'abhilash', 'mohit das', 'rammeshkhan', 'gnayaprakash'],
+  'TEAM 4': ['asif', 'ananthu', 'rahul', 'akhila', 'mohit valapil', 'jegan'],
+  'TEAM 5': ['jesto', 'amna', 'narsha', 'jasna', 'jibin', 'mohan'],
+  'TEAM 6': ['safas', 'maznaz', 'sreekanth', 'sheikh yahya', 'swapna'],
   'COMMON': []
 };
 const TEAM_LEADS = {
@@ -1735,7 +1735,7 @@ const avatarColor = name => {
 const initials = name => name.split(/\s+/).map(w => w[0]).filter(Boolean).slice(0, 2).join('').toUpperCase();
 const STATUSES = ['In-progress', 'Done', 'To do', 'TBC'];
 const PRIORITIES = ['High', 'Medium', 'Low'];
-const STAGES_LIST = ['SD', 'DD', 'REVISED DD', 'TENDER', 'TENDER ADDENDUM', 'IFC'];
+const STAGES_LIST = ['SD', 'DD', 'REVISED DD', 'REVISED SD', 'TENDER', 'REVISED TENDER', 'TENDER ADDENDUM', 'IFC', 'REVISED IFC'];
 const TEAMS_LIST = ['TEAM1', 'TEAM 2', 'TEAM 3', 'TEAM 4', 'TEAM 5', 'TEAM 6', 'COMMON'];
 const QAQC_LIST = ['AJAY', 'ABILASH', 'ABHILASH', 'JITHIN', 'VIPIN', 'PRASANA', 'LINCY', 'TBC'];
 
@@ -2167,13 +2167,13 @@ function App() {
       a.click();
       URL.revokeObjectURL(url);
     } else {
-      const headers = ['Title', 'QA/QC', 'Assignee', 'Working Team', 'Status', 'Priority', 'Description', 'Group', 'Start Date', 'End Date', 'STAGE'];
+      const headers = ['Title', 'QA/QC', 'Assignee', 'Working Team', 'Status', 'Priority', 'Description', 'Group', 'Start Date', 'End Date', 'STAGE', 'Invoiceable', 'Resource People', 'Resource Days'];
       const esc = s => {
         s = s == null ? '' : String(s);
         return s.includes(',') || s.includes('"') || s.includes('\n') ? '"' + s.replace(/"/g, '""') + '"' : s;
       };
       const rows = [headers.join(',')];
-      projects.forEach(p => rows.push([p.title, p.qaqc, p.assignee, p.team, p.status, p.priority, p.description, p.group, p.startDate, p.endDate, p.stage].map(esc).join(',')));
+      projects.forEach(p => rows.push([p.title, p.qaqc, p.assignee, p.team, p.status, p.priority, p.description, p.group, p.startDate, p.endDate, p.stage, p.invoiceable || 'Yes', p.resourcePeople || '', p.resourceDays || ''].map(esc).join(',')));
       const blob = new Blob([rows.join('\n')], {
         type: 'text/csv'
       });
@@ -2472,6 +2472,9 @@ function Dashboard(props) {
         startDate: t,
         endDate: iso(endD),
         milestones: [],
+        invoiceable: 'Yes',
+        resourcePeople: '',
+        resourceDays: '',
         __isNew: true
       });
     },
@@ -6326,7 +6329,10 @@ function EditModal({
     group: project.group || 'TEAM1',
     stage: project.stage || 'SD',
     startDate: project.startDate || '',
-    endDate: project.endDate || ''
+    endDate: project.endDate || '',
+    invoiceable: project.invoiceable || 'Yes',
+    resourcePeople: project.resourcePeople || '',
+    resourceDays: project.resourceDays || ''
   });
   const [newPerson, setNewPerson] = useState('');
   const [initialGroup] = useState(project.group);
@@ -6880,7 +6886,44 @@ function EditModal({
       columnNumber: 48
     },
     "data-om-id": "jsx:/https:/65fca555-4ea6-4725-ad8a-4a442e668985.claudeusercontent.com/v1/design/projects/65fca555-4ea6-4725-ad8a-4a442e668985/serve/app.jsx:80590:1669:48"
-  }, peopleArr.length), " people \xB7 Change Team to auto-suggest members from that team's roster.")), /*#__PURE__*/React.createElement(Field, {
+  }, peopleArr.length), " people \xB7 Change Team to auto-suggest members from that team's roster.")),
+
+  /*#__PURE__*/React.createElement(Field, { label: "Invoiceable" },
+    /*#__PURE__*/React.createElement("select", {
+      className: "inp",
+      value: form.invoiceable,
+      onChange: e => set('invoiceable', e.target.value),
+      style: { background: form.invoiceable === 'No' ? '#fef2f2' : form.invoiceable === 'Yes' ? '#f0fdf4' : '' }
+    },
+      /*#__PURE__*/React.createElement("option", { value: "Yes" }, "Yes — Invoiceable"),
+      /*#__PURE__*/React.createElement("option", { value: "No" }, "No — Non-Invoiceable")
+    )
+  ),
+
+  /*#__PURE__*/React.createElement(Field, { label: "Resource Used" },
+    /*#__PURE__*/React.createElement("div", { style: { display: 'flex', gap: 8 } },
+      /*#__PURE__*/React.createElement("input", {
+        className: "inp",
+        type: "number",
+        min: 0,
+        placeholder: "People count",
+        value: form.resourcePeople,
+        onChange: e => set('resourcePeople', e.target.value),
+        style: { flex: 1 }
+      }),
+      /*#__PURE__*/React.createElement("input", {
+        className: "inp",
+        type: "number",
+        min: 0,
+        placeholder: "Planned days",
+        value: form.resourceDays,
+        onChange: e => set('resourceDays', e.target.value),
+        style: { flex: 1 }
+      })
+    )
+  ),
+
+  /*#__PURE__*/React.createElement(Field, {
     label: "Description / Notes",
     full: true,
     __source: {
@@ -9255,4 +9298,530 @@ ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.c
  */
 .mc-interactive-balloon{position:absolute;right:-50px;bottom:8px;box-shadow:rgba(0,0,0,.12) 0px 0px 10px;height:40px;width:40px;background:#1671ee;border-radius:20px;display:flex;justify-content:center;align-items:center}
 
-/*# sourceMappingURL=../sourceMap/chrome/css/interactive_balloon.css.map*/</style></template></div></body></html>
+/*# sourceMappingURL=../sourceMap/chrome/css/interactive_balloon.css.map*/</style></template></div>
+
+<script>
+/* ══════════════════════════════════════════════════════════════
+   BIM ENHANCEMENTS — Stage colours · Team Load tab · Settings ·
+   Updated Active/Overdue Modal · Autocomplete
+══════════════════════════════════════════════════════════════ */
+(function(){
+
+/* ─── 1. STAGE COLOUR HELPERS ─────────────────────────────── */
+var REVISED_RE = /^revised/i;
+function stageStyle(stage){
+  if(!stage)return '';
+  if(REVISED_RE.test(stage))return 'background:#fffbeb;color:#b45309;border-color:#fde68a'; // amber
+  var s=(stage||'').toUpperCase().replace(/\s+/g,'');
+  if(s==='IFC')return 'background:#eef2ff;color:#4338ca;border-color:#c7d2fe';
+  if(s==='DD')return 'background:#eff6ff;color:#2563eb;border-color:#bfdbfe';
+  if(s==='SD')return 'background:#f8fafc;color:#64748b;border-color:#e2e8f0';
+  if(s==='TENDER')return 'background:#fff7ed;color:#c2410c;border-color:#fed7aa';
+  if(s==='TENDERADDENDUM')return 'background:#fff7ed;color:#c2410c;border-color:#fed7aa';
+  return 'background:#f8fafc;color:#64748b;border-color:#e2e8f0';
+}
+
+/* ─── 2. TEAM ROSTERS (editable via Settings) ─────────────── */
+var DEFAULT_ROSTERS = {
+  'TEAM 1':['Akshaya','Sreelakshmi','Athira','Arya'],
+  'TEAM 2':['Aparna','Rashid','Jose','Harirao','Naveen','Bareera'],
+  'TEAM 3':['Jovanie','Syed','Adthiyan','Vishnu','Abhilash','Mohit Das','Rammeshkhan','Gnayaprakash'],
+  'TEAM 4':['Asif','Ananthu','Rahul','Akhila','Mohit Valapil','Jegan'],
+  'TEAM 5':['Jesto','Amna','Narsha','Jasna','Jibin','Mohan'],
+  'TEAM 6':['Safas','Maznaz','Sreekanth','Sheikh Yahya','Swapna']
+};
+function getRosters(){
+  try{var s=localStorage.getItem('bim-rosters-v2');return s?JSON.parse(s):DEFAULT_ROSTERS;}catch(e){return DEFAULT_ROSTERS;}
+}
+function saveRosters(r){localStorage.setItem('bim-rosters-v2',JSON.stringify(r));}
+
+/* ─── 3. TEAM COLORS ─────────────────────────────────────── */
+var TCOL={'TEAM 1':'#4f46e5','TEAM1':'#4f46e5','TEAM 2':'#0d9488','TEAM 3':'#d97706','TEAM 4':'#db2777','TEAM 5':'#7c3aed','TEAM 6':'#0284c7','COMMON':'#64748b'};
+function tc(g){return TCOL[g]||'#64748b';}
+function rgba(hex,a){var r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);return 'rgba('+r+','+g+','+b+','+a+')';}
+var AVC=['#4f46e5','#0d9488','#d97706','#db2777','#7c3aed','#0284c7','#059669','#dc2626'];
+function avCol(n){var h=0;for(var i=0;i<n.length;i++)h=(h*31+n.charCodeAt(i))>>>0;return AVC[h%AVC.length];}
+function avIni(n){return n.split(' ').map(function(w){return w[0]||'';}).filter(Boolean).slice(0,2).join('').toUpperCase()||'?';}
+
+/* ─── 4. HELPERS ─────────────────────────────────────────── */
+function getProjects(){try{var s=localStorage.getItem('bim-projects-v3');return s?JSON.parse(s):[];}catch(e){return[];}}
+function getRef(){return localStorage.getItem('bim-ref-date')||new Date().toISOString().slice(0,10);}
+function fmt(d){try{return d?new Date(d).toLocaleDateString('en-GB',{day:'2-digit',month:'short'}):'TBD';}catch(e){return 'TBD';}}
+function daysBetween(a,b){return Math.round((new Date(b)-new Date(a))/86400000);}
+function getPeriod(ref){
+  var d=new Date(ref);
+  return{start:new Date(d.getFullYear(),d.getMonth(),1),end:new Date(d.getFullYear(),d.getMonth()+1,0,23,59,59),label:d.toLocaleString('en',{month:'long',year:'numeric'})};
+}
+function isActivePeriod(p,ref){
+  var per=getPeriod(ref),s=p.startDate?new Date(p.startDate):null,e=p.endDate?new Date(p.endDate):null;
+  if(p.status==='Done')return e&&e>=per.start&&e<=per.end;
+  return s&&s<=per.end&&(!e||e>=per.start);
+}
+function calcPct(p,ref){
+  if(p.status==='Done')return{v:100,st:'done'};
+  var s=p.startDate?new Date(p.startDate):null,e=p.endDate?new Date(p.endDate):null,r=new Date(ref);
+  if(!s||!e)return{v:0,st:'na'};
+  if(r<=s)return{v:0,st:'upcoming'};
+  if(r>=e)return{v:100,st:'overdue'};
+  return{v:Math.round(((r-s)/(e-s))*100),st:'ok'};
+}
+function chipHtml(days,st){
+  if(st==='done')return chip('#f0fdf4','#16a34a','#bbf7d0','Done');
+  if(days===null||days===undefined)return chip('#f8fafc','#94a3b8','#e2e8f0','—');
+  if(days<0)return chip('#fef2f2','#dc2626','#fecaca',Math.abs(days)+'d over');
+  if(days===0)return chip('#fffbeb','#d97706','#fde68a','Due today');
+  if(days<=7)return chip('#fffbeb','#d97706','#fde68a',days+'d left');
+  return chip('#f8fafc','#64748b','#e2e8f0',days+'d left');
+}
+function chip(bg,fg,bd,txt){return '<span style="padding:3px 8px;border-radius:20px;font-size:9.5px;font-weight:700;white-space:nowrap;background:'+bg+';color:'+fg+';border:1px solid '+bd+'">'+txt+'</span>';}
+function invoiceChip(v){
+  if(!v||v==='Yes')return '<span style="padding:2px 7px;border-radius:10px;font-size:9.5px;font-weight:700;background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0">Yes</span>';
+  return '<span style="padding:2px 7px;border-radius:10px;font-size:9.5px;font-weight:700;background:#fef2f2;color:#dc2626;border:1px solid #fecaca">No</span>';
+}
+
+/* ─── 5. ACTIVE/OVERDUE MODAL ─────────────────────────────── */
+window.renderBIMModal=function(type){
+  try{
+    var old=document.getElementById('bim-overlay');if(old)old.parentNode.removeChild(old);
+    var all=getProjects(),ref=getRef(),per=getPeriod(ref);
+    var title=type==='active'?'Active This Period':'Overdue Projects';
+    var projects=all.filter(type==='active'
+      ?function(p){return isActivePeriod(p,ref);}
+      :function(p){return p.status!=='Done'&&p.endDate&&new Date(p.endDate)<new Date(ref);}
+    );
+    var groups={};
+    projects.forEach(function(p){var k=p.group||'OTHER';if(!groups[k])groups[k]=[];groups[k].push(p);});
+    var teamKeys=Object.keys(groups).sort();
+
+    var overlay=document.createElement('div');
+    overlay.id='bim-overlay';
+    overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;z-index:99999;background:rgba(0,0,0,0.5);display:flex;align-items:flex-start;justify-content:center;padding-top:24px';
+    overlay.onclick=function(e){if(e.target===overlay)overlay.parentNode.removeChild(overlay);};
+
+    var box=document.createElement('div');
+    box.style.cssText='background:#fff;border-radius:16px;width:94%;max-width:1240px;max-height:88vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.28)';
+    overlay.appendChild(box);
+
+    /* Header */
+    var hdr=document.createElement('div');
+    hdr.style.cssText='display:flex;align-items:center;justify-content:space-between;padding:18px 24px;border-bottom:1px solid #f1f5f9;flex-shrink:0';
+    hdr.innerHTML='<div><div style="font-size:18px;font-weight:800;color:#0f172a">'+title+'</div>'+
+      '<div style="font-size:12px;color:#94a3b8;margin-top:2px">'+per.label+' &middot; '+projects.length+' projects</div></div>'+
+      '<div style="display:flex;gap:8px">'+
+        '<button id="bim-dl-csv" style="padding:8px 16px;border-radius:8px;border:1px solid #e2e8f0;background:#fff;font-size:12px;font-weight:600;cursor:pointer;color:#475569;font-family:inherit">&#8595; CSV</button>'+
+        '<button id="bim-dl-pdf" style="padding:8px 16px;border-radius:8px;border:none;background:#4f46e5;font-size:12px;font-weight:600;cursor:pointer;color:#fff;font-family:inherit">Print / PDF</button>'+
+        '<button id="bim-cls" style="width:34px;height:34px;border-radius:8px;border:1px solid #e2e8f0;background:#fff;font-size:14px;cursor:pointer;color:#64748b;font-family:inherit">&#10005;</button>'+
+      '</div>';
+    box.appendChild(hdr);
+
+    /* Scrollable body */
+    var body=document.createElement('div');
+    body.style.cssText='flex:1;overflow-y:auto;padding:20px 24px';
+    box.appendChild(body);
+
+    /* Render grid */
+    function buildGrid(){
+      if(!projects.length){body.innerHTML='<div style="text-align:center;padding:60px;color:#94a3b8">No projects found</div>';return;}
+      var grid=document.createElement('div');
+      grid.style.cssText='display:grid;grid-template-columns:1fr 1fr;gap:16px';
+      body.innerHTML='';body.appendChild(grid);
+      teamKeys.forEach(function(team){
+        var ps=groups[team],color=tc(team);
+        var sec=document.createElement('div');
+        sec.style.cssText='border:1.5px solid '+rgba(color,0.25)+';border-radius:12px;overflow:hidden';
+        /* Team header */
+        sec.innerHTML='<div style="display:flex;align-items:center;gap:8px;padding:10px 14px;background:'+rgba(color,0.08)+';border-bottom:1px solid '+rgba(color,0.2)+'">'+
+          '<span style="width:10px;height:10px;border-radius:50%;background:'+color+';display:inline-block;flex-shrink:0"></span>'+
+          '<span style="font-size:12px;font-weight:800;color:'+color+'">'+team+'</span>'+
+          '<span style="margin-left:auto;background:'+rgba(color,0.15)+';color:'+color+';font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px">'+ps.length+'</span>'+
+        '</div>'+
+        /* Col headers */
+        '<div style="display:grid;grid-template-columns:1.8fr 0.7fr 0.9fr 0.7fr 0.55fr 0.65fr 0.75fr;padding:5px 12px;background:#f8fafc;border-bottom:1px solid #f1f5f9;font-size:9px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.07em">'+
+          '<span>Project</span><span>Stage</span><span>Timeline</span><span>Progress</span><span>Invoice</span><span>Resource</span><span style="text-align:right">Remaining</span>'+
+        '</div>';
+        ps.forEach(function(p){
+          var pc=calcPct(p,ref),today=new Date();today.setHours(0,0,0,0);
+          var rem=p.endDate?Math.round((new Date(p.endDate)-today)/86400000):null;
+          var barCol=pc.st==='done'?'#10b981':pc.st==='overdue'?'#ef4444':'#4f46e5';
+          var stageSty=stageStyle(p.stage);
+          var isRevised=REVISED_RE.test(p.stage||'');
+          var resText=(p.resourcePeople?p.resourcePeople+'p':'—')+(p.resourceDays?' / '+p.resourceDays+'d':'');
+          var row=document.createElement('div');
+          row.style.cssText='display:grid;grid-template-columns:1.8fr 0.7fr 0.9fr 0.7fr 0.55fr 0.65fr 0.75fr;align-items:center;padding:8px 12px;border-bottom:1px solid #f8fafc'+(isRevised?';background:#fffdf0':'');
+          row.innerHTML=
+            '<div><div style="font-size:11px;font-weight:700;color:#0f172a;margin-bottom:2px">'+(p.title||'Untitled')+'</div>'+(p.assignee?'<div style="font-size:9.5px;color:#94a3b8">'+p.assignee+(p.qaqc?' / '+p.qaqc:'')+'</div>':'')+
+            '</div>'+
+            '<div><span style="padding:2px 6px;border-radius:4px;font-size:9px;font-weight:700;border:1px solid;'+stageSty+'">'+(p.stage||'—')+'</span></div>'+
+            '<div style="font-size:9.5px;color:#334155;line-height:1.6">'+fmt(p.startDate)+'<br>'+fmt(p.endDate)+'</div>'+
+            '<div><div style="font-size:11px;font-weight:700;color:#334155;margin-bottom:3px">'+pc.v+'%</div>'+
+              '<div style="height:4px;background:#f1f5f9;border-radius:2px;overflow:hidden"><div style="height:100%;width:'+pc.v+'%;background:'+barCol+';border-radius:2px"></div></div>'+
+            '</div>'+
+            '<div>'+invoiceChip(p.invoiceable)+'</div>'+
+            '<div style="font-size:10px;color:#334155;font-weight:600">'+resText+'</div>'+
+            '<div style="text-align:right">'+chipHtml(rem,pc.st)+'</div>';
+          sec.appendChild(row);
+        });
+        grid.appendChild(sec);
+      });
+    }
+    buildGrid();
+
+    document.body.appendChild(overlay);
+
+    document.getElementById('bim-cls').onclick=function(){overlay.parentNode.removeChild(overlay);};
+    document.addEventListener('keydown',function esc(e){if(e.key==='Escape'){var o=document.getElementById('bim-overlay');if(o)o.parentNode.removeChild(o);document.removeEventListener('keydown',esc);}});
+
+    document.getElementById('bim-dl-csv').onclick=function(){
+      var rows=[['Project','Team','Stage','Status','Lead','QA','Invoiceable','Resource People','Resource Days','Start','End','Progress%','Remaining Days']];
+      projects.forEach(function(p){
+        var pc=calcPct(p,ref),today=new Date();today.setHours(0,0,0,0);
+        var rem=p.endDate?Math.round((new Date(p.endDate)-today)/86400000):'';
+        rows.push([p.title,p.group,p.stage,p.status,p.assignee||'',p.qaqc||'',p.invoiceable||'Yes',p.resourcePeople||'',p.resourceDays||'',p.startDate||'',p.endDate||'',pc.v,rem]);
+      });
+      var csv=rows.map(function(r){return r.map(function(c){c=String(c||'');return c.indexOf(',')>=0?'"'+c+'"':c;}).join(',');}).join('\n');
+      var a=document.createElement('a');a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csv);a.download=title.replace(/\s+/g,'_')+'.csv';document.body.appendChild(a);a.click();document.body.removeChild(a);
+    };
+
+    document.getElementById('bim-dl-pdf').onclick=function(){
+      var pw=window.open('','_blank','width=1300,height=900');
+      var periodLabel=per.label;
+      pw.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+title+'</title>'+
+        '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">'+
+        '<style>body{font-family:Inter,sans-serif;padding:20px;background:#fff;margin:0;font-size:12px}'+
+        'h1{font-size:18px;font-weight:800;margin:0 0 3px}p.sub{font-size:11px;color:#94a3b8;margin:0 0 16px}'+
+        '.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}'+
+        '.sec{border:1.5px solid #e2e8f0;border-radius:10px;overflow:hidden;break-inside:avoid;page-break-inside:avoid}'+
+        '.th{display:flex;align-items:center;gap:8px;padding:8px 12px;border-bottom:1px solid #e2e8f0}'+
+        '.dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}'+
+        '.ch{display:grid;grid-template-columns:1.8fr 0.7fr 0.9fr 0.7fr 0.55fr 0.65fr 0.75fr;padding:4px 10px;background:#f8fafc;border-bottom:1px solid #f1f5f9;font-size:8px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.07em}'+
+        '.row{display:grid;grid-template-columns:1.8fr 0.7fr 0.9fr 0.7fr 0.55fr 0.65fr 0.75fr;align-items:center;padding:7px 10px;border-bottom:1px solid #f8fafc}'+
+        '.row:last-child{border-bottom:none}'+
+        '.pn{font-size:10px;font-weight:700;color:#0f172a;margin-bottom:1px}'+
+        '.ps{font-size:8.5px;color:#94a3b8}'+
+        '.badge{padding:2px 5px;border-radius:4px;font-size:8px;font-weight:700;border:1px solid}'+
+        '.tl{font-size:8.5px;color:#334155;line-height:1.5}'+
+        '.bar-t{height:3px;background:#f1f5f9;border-radius:2px;overflow:hidden;margin-top:2px}'+
+        '.bar-f{height:100%;border-radius:2px}'+
+        '.chip{padding:2px 6px;border-radius:10px;font-size:8.5px;font-weight:700;white-space:nowrap}'+
+        '.inv-y{background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0}'+
+        '.inv-n{background:#fef2f2;color:#dc2626;border:1px solid #fecaca}'+
+        '*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}'+
+        '@page{size:A3 landscape;margin:1.2cm}</style></head><body>'+
+        '<h1>'+title+'</h1><p class="sub">'+periodLabel+' &middot; '+projects.length+' projects</p><div class="grid">');
+      teamKeys.forEach(function(team){
+        var ps=groups[team],color=tc(team);
+        pw.document.write('<div class="sec" style="border-color:'+rgba(color,0.25)+'">'+
+          '<div class="th" style="background:'+rgba(color,0.08)+';border-color:'+rgba(color,0.2)+'">'+
+            '<span class="dot" style="background:'+color+'"></span>'+
+            '<span style="font-size:11px;font-weight:800;color:'+color+'">'+team+'</span>'+
+            '<span style="margin-left:auto;background:'+rgba(color,0.15)+';color:'+color+';font-size:9px;font-weight:700;padding:2px 7px;border-radius:8px">'+ps.length+'</span>'+
+          '</div>'+
+          '<div class="ch"><span>Project</span><span>Stage</span><span>Timeline</span><span>Progress</span><span>Invoice</span><span>Resource</span><span>Remaining</span></div>');
+        ps.forEach(function(p){
+          var pc=calcPct(p,ref),today=new Date();today.setHours(0,0,0,0);
+          var rem=p.endDate?Math.round((new Date(p.endDate)-today)/86400000):null;
+          var barCol=pc.st==='done'?'#10b981':pc.st==='overdue'?'#ef4444':'#4f46e5';
+          var sty=stageStyle(p.stage);
+          var inv=(!p.invoiceable||p.invoiceable==='Yes');
+          var res=(p.resourcePeople?p.resourcePeople+'p':'—')+(p.resourceDays?' / '+p.resourceDays+'d':'');
+          var chipSty,chipTxt;
+          if(pc.st==='done'){chipSty='background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0';chipTxt='Done';}
+          else if(rem===null){chipSty='background:#f8fafc;color:#94a3b8;border:1px solid #e2e8f0';chipTxt='—';}
+          else if(rem<0){chipSty='background:#fef2f2;color:#dc2626;border:1px solid #fecaca';chipTxt=Math.abs(rem)+'d over';}
+          else if(rem<=7){chipSty='background:#fffbeb;color:#d97706;border:1px solid #fde68a';chipTxt=rem+'d left';}
+          else{chipSty='background:#f8fafc;color:#64748b;border:1px solid #e2e8f0';chipTxt=rem+'d left';}
+          pw.document.write('<div class="row"'+(REVISED_RE.test(p.stage||'')?' style="background:#fffdf0"':'')+'>'+
+            '<div><div class="pn">'+(p.title||'Untitled')+'</div>'+(p.assignee?'<div class="ps">'+p.assignee+(p.qaqc?' / '+p.qaqc:'')+'</div>':'')+
+            '</div>'+
+            '<div><span class="badge" style="'+sty+'">'+(p.stage||'—')+'</span></div>'+
+            '<div class="tl">'+fmt(p.startDate)+'<br>'+fmt(p.endDate)+'</div>'+
+            '<div><div style="font-size:10px;font-weight:700;color:#334155">'+pc.v+'%</div><div class="bar-t"><div class="bar-f" style="width:'+pc.v+'%;background:'+barCol+'"></div></div></div>'+
+            '<div><span class="chip '+(inv?'inv-y':'inv-n')+'">'+(inv?'Yes':'No')+'</span></div>'+
+            '<div style="font-size:9px;color:#334155;font-weight:600">'+res+'</div>'+
+            '<div><span class="chip" style="'+chipSty+'">'+chipTxt+'</span></div>'+
+          '</div>');
+        });
+        pw.document.write('</div>');
+      });
+      pw.document.write('</div></body></html>');
+      pw.document.close();
+      setTimeout(function(){try{pw.print();}catch(e){}},800);
+    };
+  }catch(err){alert('Modal error: '+err.message);}
+};
+
+/* ─── 6. QUICK VIEW FLOATING BAR ─────────────────────────── */
+function addFloatBar(){
+  if(document.getElementById('bim-float'))return;
+  var bar=document.createElement('div');
+  bar.id='bim-float';
+  bar.style.cssText='position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:9998;display:flex;gap:8px;align-items:center;background:#fff;border:1px solid #e2e8f0;border-radius:40px;padding:8px 18px;box-shadow:0 4px 24px rgba(0,0,0,0.12)';
+  bar.innerHTML='<span style="font-size:10px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.1em;margin-right:4px">Quick View</span>'+
+    '<button onclick="window.renderBIMModal(\'active\')" style="padding:7px 16px;border-radius:20px;font-size:12px;font-weight:600;border:none;background:#eef2ff;color:#4f46e5;cursor:pointer;font-family:inherit">Active This Period</button>'+
+    '<button onclick="window.renderBIMModal(\'overdue\')" style="padding:7px 16px;border-radius:20px;font-size:12px;font-weight:600;border:none;background:#fef2f2;color:#dc2626;cursor:pointer;font-family:inherit">Overdue</button>'+
+    '<button onclick="window.openSettings()" style="padding:7px 14px;border-radius:20px;font-size:12px;font-weight:600;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-family:inherit">&#9881; Settings</button>';
+  document.body.appendChild(bar);
+}
+
+/* ─── 7. SETTINGS PANEL ──────────────────────────────────── */
+window.openSettings=function(){
+  var old=document.getElementById('bim-settings-overlay');if(old)old.parentNode.removeChild(old);
+  var rosters=getRosters();
+
+  var overlay=document.createElement('div');
+  overlay.id='bim-settings-overlay';
+  overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;z-index:99999;background:rgba(0,0,0,0.4);display:flex;align-items:flex-start;justify-content:center;padding-top:40px';
+  overlay.onclick=function(e){if(e.target===overlay)closeSettings();};
+
+  var box=document.createElement('div');
+  box.style.cssText='background:#fff;border-radius:16px;width:90%;max-width:820px;max-height:82vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.25)';
+  overlay.appendChild(box);
+
+  function closeSettings(){if(document.body.contains(overlay))overlay.parentNode.removeChild(overlay);}
+
+  function render(){
+    rosters=getRosters();
+    box.innerHTML=
+      '<div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px;border-bottom:1px solid #f1f5f9;flex-shrink:0">'+
+        '<div><div style="font-size:17px;font-weight:800;color:#0f172a">&#9881; Settings</div>'+
+        '<div style="font-size:12px;color:#94a3b8;margin-top:2px">Team Rosters — add or remove members</div></div>'+
+        '<div style="display:flex;gap:8px">'+
+          '<button id="set-reset" style="padding:7px 14px;border-radius:8px;border:1px solid #fecaca;background:#fef2f2;font-size:12px;font-weight:600;cursor:pointer;color:#dc2626;font-family:inherit">Reset Defaults</button>'+
+          '<button id="set-close" style="width:32px;height:32px;border-radius:8px;border:none;background:#f1f5f9;cursor:pointer;font-size:14px;color:#64748b;font-family:inherit">&#10005;</button>'+
+        '</div>'+
+      '</div>'+
+      '<div style="flex:1;overflow-y:auto;padding:20px 24px">'+
+        '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px" id="set-grid"></div>'+
+      '</div>';
+
+    document.getElementById('set-close').onclick=closeSettings;
+    document.getElementById('set-reset').onclick=function(){
+      if(confirm('Reset all team rosters to default?')){saveRosters(DEFAULT_ROSTERS);render();}
+    };
+
+    var grid=document.getElementById('set-grid');
+    Object.keys(rosters).forEach(function(team){
+      var members=rosters[team];
+      var color=tc(team);
+      var card=document.createElement('div');
+      card.style.cssText='border:1.5px solid '+rgba(color,0.25)+';border-radius:12px;overflow:hidden';
+      card.innerHTML=
+        '<div style="display:flex;align-items:center;gap:8px;padding:10px 14px;background:'+rgba(color,0.08)+';border-bottom:1px solid '+rgba(color,0.2)+'">'+
+          '<span style="width:9px;height:9px;border-radius:50%;background:'+color+';display:inline-block"></span>'+
+          '<span style="font-size:12px;font-weight:800;color:'+color+'">'+team+'</span>'+
+          '<span style="margin-left:auto;background:'+rgba(color,0.15)+';color:'+color+';font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px">'+members.length+'</span>'+
+        '</div>'+
+        '<div id="chips-'+team.replace(/\s/g,'')+'" style="display:flex;flex-wrap:wrap;gap:6px;padding:12px 14px"></div>'+
+        '<div style="display:flex;gap:6px;padding:0 14px 12px">'+
+          '<input id="add-'+team.replace(/\s/g,'')+'" style="flex:1;padding:5px 10px;border:1px solid #e2e8f0;border-radius:8px;font-family:inherit;font-size:12px;outline:none" placeholder="Add member..."/>'+
+          '<button id="addbtn-'+team.replace(/\s/g,'')+'" style="padding:5px 12px;border-radius:8px;border:none;background:'+color+';color:#fff;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit">Add</button>'+
+        '</div>';
+
+      var chipsDiv=card.querySelector('#chips-'+team.replace(/\s/g,''));
+      function refreshChips(){
+        chipsDiv.innerHTML='';
+        (rosters[team]||[]).forEach(function(m){
+          var chip=document.createElement('div');
+          chip.style.cssText='display:inline-flex;align-items:center;gap:4px;background:'+rgba(color,0.1)+';color:'+color+';border:1px solid '+rgba(color,0.25)+';border-radius:20px;padding:3px 8px 3px 10px;font-size:11px;font-weight:600';
+          chip.innerHTML=m+' <button data-m="'+m+'" style="background:none;border:none;cursor:pointer;color:'+color+';font-size:12px;line-height:1;padding:0 0 0 2px;font-family:inherit">&#10005;</button>';
+          chip.querySelector('button').onclick=function(){
+            var name=this.getAttribute('data-m');
+            rosters[team]=rosters[team].filter(function(x){return x!==name;});
+            saveRosters(rosters);refreshChips();
+          };
+          chipsDiv.appendChild(chip);
+        });
+      }
+      refreshChips();
+
+      var addInp=card.querySelector('#add-'+team.replace(/\s/g,''));
+      var addBtn=card.querySelector('#addbtn-'+team.replace(/\s/g,''));
+      function doAdd(){
+        var v=addInp.value.trim();
+        if(!v)return;
+        if(!(rosters[team].map(function(x){return x.toLowerCase();}).includes(v.toLowerCase()))){
+          rosters[team].push(v);saveRosters(rosters);
+        }
+        addInp.value='';refreshChips();
+      }
+      addBtn.onclick=doAdd;
+      addInp.onkeydown=function(e){if(e.key==='Enter')doAdd();};
+      grid.appendChild(card);
+    });
+  }
+
+  render();
+  document.body.appendChild(overlay);
+};
+
+/* ─── 8. TEAM LOAD — TEAM TAB INJECTION ─────────────────── */
+function injectTeamTab(){
+  var toggleGroup=document.querySelector('.toggle-group');
+  if(!toggleGroup||toggleGroup._bimTeamTab)return;
+  toggleGroup._bimTeamTab=true;
+
+  var teamBtn=document.createElement('button');
+  teamBtn.className='tg';
+  teamBtn.textContent='Team';
+  teamBtn.title='Show team-level load %';
+  teamBtn.style.cssText='font-family:inherit;cursor:pointer';
+  toggleGroup.appendChild(teamBtn);
+
+  var resList=toggleGroup.closest('.card, .sidebar-card, [class*="card"]');
+  if(!resList)resList=toggleGroup.parentElement&&toggleGroup.parentElement.parentElement;
+
+  var teamPanel=document.createElement('div');
+  teamPanel.id='bim-team-panel';
+  teamPanel.style.cssText='display:none;padding:6px 0';
+
+  teamBtn.onclick=function(){
+    teamBtn.classList.add('active');
+    toggleGroup.querySelectorAll('.tg:not(#bim-team-tab)').forEach(function(b){b.classList.remove('active');});
+    // Hide individual resource list, show team panel
+    var rList=document.querySelector('.resource-list');
+    if(rList){rList.style.display='none';}
+
+    // Build team panel
+    var ref=getRef(),all=getProjects(),rosters=getRosters();
+    var per=getPeriod(ref);
+    var periodDays=daysBetween(per.start,per.end)+1;
+
+    var active=all.filter(function(p){return isActivePeriod(p,ref);});
+
+    var teamData=[];
+    Object.keys(rosters).forEach(function(team){
+      var members=rosters[team].map(function(m){return m.toLowerCase();});
+      var capacity=members.length*periodDays;
+      var effortDays=0;
+      active.forEach(function(p){
+        var pStart=p.startDate?new Date(p.startDate):per.start;
+        var pEnd=p.endDate?new Date(p.endDate):per.end;
+        var ovStart=pStart>per.start?pStart:per.start;
+        var ovEnd=pEnd<per.end?pEnd:per.end;
+        var days=Math.max(1,daysBetween(ovStart,ovEnd)+1);
+        var ppl=(p.team||'').split(',').map(function(x){return x.trim().toLowerCase();}).filter(Boolean);
+        var share=1/Math.max(1,ppl.length);
+        ppl.forEach(function(person){
+          if(members.indexOf(person)>=0)effortDays+=days*share;
+        });
+      });
+      var pct=capacity>0?Math.round(effortDays/capacity*100):0;
+      teamData.push({team:team,members:members,pct:pct,effortDays:Math.round(effortDays),capacity:capacity});
+    });
+    teamData.sort(function(a,b){return b.pct-a.pct;});
+
+    teamPanel.innerHTML='';
+    teamPanel.style.display='block';
+
+    teamData.forEach(function(td){
+      var color=tc(td.team);
+      var cls=td.pct>=100?'vhigh':td.pct>=70?'high':'';
+      var row=document.createElement('div');
+      row.style.cssText='display:flex;align-items:center;gap:8px;padding:8px 14px;cursor:pointer;border-bottom:1px solid #f1f5f9';
+      row.onmouseenter=function(){row.style.background='#f8fafc';};
+      row.onmouseleave=function(){row.style.background='';};
+      row.innerHTML=
+        '<div style="width:28px;height:28px;border-radius:50%;background:'+color+';display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:800;color:#fff;flex-shrink:0">'+
+          td.team.replace(/[^0-9]/g,'')+
+        '</div>'+
+        '<div style="flex:1;font-size:11.5px;font-weight:700;color:#1e293b">'+td.team+'</div>'+
+        '<div style="font-size:10px;color:#94a3b8;margin-right:4px">'+td.members.length+' people</div>'+
+        '<span class="pct-pill '+(cls)+'" style="font-family:monospace;font-size:10.5px;padding:2px 7px;border-radius:8px;font-weight:700">'+td.pct+'%</span>'+
+        '<div style="width:56px;height:5px;background:#f1f5f9;border-radius:3px;overflow:hidden;margin-left:4px">'+
+          '<div style="height:100%;width:'+Math.min(td.pct,100)+'%;background:'+color+';border-radius:3px"></div>'+
+        '</div>';
+      teamPanel.appendChild(row);
+    });
+
+    // Insert panel after resource-list
+    var rListEl=document.querySelector('.resource-list');
+    if(rListEl&&rListEl.parentElement&&!document.getElementById('bim-team-panel')){
+      rListEl.parentElement.appendChild(teamPanel);
+    } else if(!document.getElementById('bim-team-panel')&&resList){
+      resList.appendChild(teamPanel);
+    }
+    document.getElementById('bim-team-panel')||document.body.appendChild(teamPanel);
+  };
+
+  // When week/month buttons clicked, restore individual list
+  toggleGroup.querySelectorAll('.tg').forEach(function(b){
+    if(b===teamBtn)return;
+    var orig=b.onclick;
+    b.addEventListener('click',function(){
+      teamBtn.classList.remove('active');
+      var tp=document.getElementById('bim-team-panel');if(tp)tp.style.display='none';
+      var rList=document.querySelector('.resource-list');if(rList)rList.style.display='';
+    });
+  });
+}
+
+/* ─── 9. AUTOCOMPLETE ────────────────────────────────────── */
+var ALL_PEOPLE=["Abhilash","Adthiyan","Afsal","AJAY","Akhila","Akshaya","Akshaya Jayakrishnan","Amna","Ananthu","Anathu","Anshu","Anshu Jalaludeen","Aparna","Aparna Lakshmi","Arya","Asif","Athira","Bareera","Elbin","Fatima","Gnayaprakash","Harirao","Jaberdhueen","Jasna","Jegan","Jesto","Jesto Joy","Jibin","JITHIN","Jose","Jovanie","Karthik","Lincy","Maznaz","Mohamed asif","Mohan","Mohit Das","Mohit Valapil","Narsha","Naveen","PRASANA","Rahul","Rammeshkhan","Rashid","Safas","Safas Umar","Shasti","Sheikh Yahya","Sreelakshmi","Sreekanth","Swapna","Syed","TBC","Vishnu"];
+
+function removeDrop(){var d=document.getElementById('bim-ac-drop');if(d)d.parentNode.removeChild(d);}
+function setReactVal(input,val){
+  try{var s=Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype,'value').set;s.call(input,val);}catch(e){input.value=val;}
+  ['input','change'].forEach(function(ev){input.dispatchEvent(new Event(ev,{bubbles:true}));});
+}
+function showAC(input,matches,onPick){
+  removeDrop();if(!matches.length)return;
+  var rect=input.getBoundingClientRect();
+  var drop=document.createElement('div');
+  drop.id='bim-ac-drop';
+  drop.style.cssText='position:fixed;z-index:999999;top:'+(rect.bottom+3)+'px;left:'+rect.left+'px;min-width:'+Math.max(rect.width,200)+'px;max-height:220px;overflow-y:auto;background:#fff;border:1.5px solid #c7d2fe;border-radius:10px;box-shadow:0 8px 24px rgba(79,70,229,0.15);padding:4px';
+  matches.forEach(function(name,idx){
+    var item=document.createElement('div');
+    item.setAttribute('data-i',idx);
+    item.style.cssText='display:flex;align-items:center;gap:8px;padding:7px 12px;border-radius:7px;cursor:pointer;font-size:13px;color:#1e293b';
+    var av=document.createElement('div');
+    av.style.cssText='width:26px;height:26px;border-radius:50%;background:'+avCol(name.toLowerCase())+';display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:800;color:#fff;flex-shrink:0';
+    av.textContent=avIni(name);
+    var lbl=document.createElement('span');lbl.textContent=name;
+    item.appendChild(av);item.appendChild(lbl);
+    item.onmouseenter=function(){item.style.background='#eef2ff';};
+    item.onmouseleave=function(){item.style.background='';};
+    item.addEventListener('mousedown',function(e){e.preventDefault();onPick(name);removeDrop();});
+    drop.appendChild(item);
+  });
+  document.body.appendChild(drop);
+  setTimeout(function(){document.addEventListener('mousedown',function cl(e){if(!drop.contains(e.target))removeDrop();document.removeEventListener('mousedown',cl);});},0);
+}
+function attachAC(input){
+  if(input._bimAC)return;
+  var isAdd=input.placeholder&&input.placeholder.toLowerCase().indexOf('add person')>=0;
+  var isLead=input.placeholder&&(input.placeholder.toLowerCase().indexOf('akshaya')>=0||input.placeholder.toLowerCase().indexOf('assignee')>=0);
+  if(!isAdd&&!isLead)return;
+  input._bimAC=true;
+  input.addEventListener('input',function(){
+    var val=input.value.trim().toLowerCase();
+    if(!val){removeDrop();return;}
+    var matches=ALL_PEOPLE.filter(function(p){return p.toLowerCase().indexOf(val)>=0;}).slice(0,10);
+    showAC(input,matches,function(name){
+      if(isLead){setReactVal(input,name);}
+      else{
+        setReactVal(input,name);
+        setTimeout(function(){
+          var btn=input.closest('.person-add')?input.closest('.person-add').querySelector('button'):input.parentElement&&input.parentElement.querySelector('button');
+          if(btn)btn.click();
+        },60);
+      }
+    });
+  });
+  input.addEventListener('blur',function(){setTimeout(removeDrop,180);});
+}
+
+/* ─── 10. POLL / OBSERVE ─────────────────────────────────── */
+function scan(){
+  document.querySelectorAll('input.inp,input.inp.sm').forEach(attachAC);
+  injectTeamTab();
+}
+new MutationObserver(scan).observe(document.body,{childList:true,subtree:true});
+var ti=0;var iv=setInterval(function(){scan();ti++;if(ti>30)clearInterval(iv);},600);
+
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',function(){setTimeout(addFloatBar,1200);});}
+else{setTimeout(addFloatBar,1200);}
+
+})();
+</script>
+
+</body></html>
