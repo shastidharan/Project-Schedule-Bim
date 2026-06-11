@@ -130,7 +130,7 @@
       "title": "4067- ALEF - The Palace Branded Residences",
       "qaqc": "ABILASH",
       "assignee": "Aparna Lakshmi",
-      "team": "Bareera, Shasti, Harirao, Swapna",
+      "team": "Shasti, Harirao, Swapna, Jose",
       "status": "In-progress",
       "priority": "Medium",
       "description": "SD SUBMISSION JUN 12TH",
@@ -140,12 +140,16 @@
       "endDate": "2026-06-19",
       "milestones": [],
       "people": [
-        "bareera",
         "shasti",
         "harirao",
-        "swapna"
+        "swapna",
+        "jose"
       ],
-      "peopleCount": 4
+      "peopleCount": 4,
+      "invoiceable": "Yes",
+      "resourcePeople": "4",
+      "resourceDays": "25",
+      "bimDate": ""
     },
     {
       "title": "3788-LAC 718-719 - City View Bu Kadra",
@@ -188,21 +192,23 @@
       "title": "3941- EMAAR - Dubai Hills Estate- Plot F12-12",
       "qaqc": "TBC",
       "assignee": "Jesto Joy",
-      "team": "Jesto, Amna, Jibin",
+      "team": "Jesto",
       "status": "In-progress",
       "priority": "Medium",
       "description": "EXCEPTED SD SUBMISSION ON 30TH JUNE",
       "group": "TEAM 5",
-      "stage": "SD",
+      "stage": "BIM Submission",
       "startDate": "2026-05-08",
       "endDate": "2026-06-30",
       "milestones": [],
       "people": [
-        "jesto",
-        "amna",
-        "jibin"
+        "jesto"
       ],
-      "peopleCount": 3
+      "peopleCount": 1,
+      "invoiceable": "No",
+      "resourcePeople": "1",
+      "resourceDays": "60",
+      "bimDate": "2026-06-30"
     },
     {
       "title": "3247-ESD-PLOT GA12",
@@ -305,47 +311,53 @@
       "title": "3227-Lehbab Staff Accommodation",
       "qaqc": "ABILASH",
       "assignee": "Akshaya Jayakrishnan",
-      "team": "Akshaya, Athira, Sreelakshmi, Arya",
+      "team": "Athira, Sreelakshmi, Arya",
       "people": [
-        "akshaya",
         "athira",
         "sreelakshmi",
         "arya"
       ],
-      "peopleCount": 4,
+      "peopleCount": 3,
       "status": "In-progress",
       "priority": "Medium",
       "description": "SD SUBMITTED ON AUG 7TH AND 50% DD IS ON 20TH FEB AND 100 % DD ON MARCH 20TH  REVISED DD ON 18TH MAY,CLOUD UPDATE SUBMISSION ON JUN 10TH",
       "group": "TEAM1",
       "stage": "REVISED DD",
       "startDate": "2024-08-07",
-      "endDate": "2026-06-10",
+      "endDate": "2026-06-12",
       "milestones": [
         "2024-08-07",
         "2025-02-20"
-      ]
+      ],
+      "invoiceable": "No",
+      "resourcePeople": "3",
+      "resourceDays": "45",
+      "bimDate": "2026-06-10"
     },
     {
       "title": "3948- EMAAR - DHE- Plot F12-04",
       "qaqc": "JITHIN",
       "assignee": "Akshaya Jayakrishnan",
-      "team": "akshaya, athira, Sreelakshmi",
+      "team": "akshaya, Athira",
       "people": [
         "akshaya",
-        "athira",
-        "sreelakshmi"
+        "athira"
       ],
-      "peopleCount": 3,
-      "status": "Done",
+      "peopleCount": 2,
+      "status": "In-progress",
       "priority": "Medium",
       "description": "SD SUBMISSION ON JAN 7TH,DD SUBMISSION IS ON MARCH 31 REVISED DD ON APRIL 30TH ",
       "group": "TEAM1",
-      "stage": "REVISED DD",
+      "stage": "BIM Submission",
       "startDate": "2025-01-07",
       "endDate": "2026-04-29",
       "milestones": [
         "2025-01-07"
-      ]
+      ],
+      "invoiceable": "No",
+      "resourcePeople": "3",
+      "resourceDays": "35",
+      "bimDate": "2026-06-12"
     },
     {
       "title": "3797- Meraki-Production City",
@@ -777,17 +789,17 @@
       "title": "3574-City View-Sofitel Project",
       "qaqc": "VIPIN",
       "assignee": "Aparna Lakshmi",
-      "team": "aparna, Naveen",
+      "team": "Naveen, Aparna",
       "people": [
-        "aparna",
-        "naveen"
+        "naveen",
+        "aparna"
       ],
       "peopleCount": 2,
       "status": "In-progress",
       "priority": "Medium",
       "description": "SD submission on MARCH 6TH,50% DD SUBMISSION ON 18TH JUNE",
       "group": "TEAM 2",
-      "stage": "DD",
+      "stage": "50% DD",
       "startDate": "2025-02-20",
       "endDate": "2026-06-18",
       "milestones": [
@@ -795,7 +807,8 @@
       ],
       "invoiceable": "Yes",
       "resourcePeople": "3",
-      "resourceDays": "20"
+      "resourceDays": "45",
+      "bimDate": ""
     },
     {
       "title": "3521- Plot GB 19 at Emaar South Development",
@@ -862,20 +875,15 @@
       "title": "3762- DID-Plot DIB-MU-0005",
       "qaqc": "ABILASH",
       "assignee": "Aparna Lakshmi",
-      "team": "aparna, Rashid, shasti, Naveen, Jose, Adthiyan, Jovanie, Bareera",
+      "team": "Rashid, Jose, Jasna",
       "people": [
-        "aparna",
         "rashid",
-        "shasti",
-        "naveen",
         "jose",
-        "adthiyan",
-        "jovanie",
-        "bareera"
+        "jasna"
       ],
-      "peopleCount": 8,
+      "peopleCount": 3,
       "status": "In-progress",
-      "priority": "Low",
+      "priority": "Medium",
       "description": "CONCEPT MODEL IS DONE, NEW LAYOUT OD MODEL IS SUBMIITED ON NOV 3RD , SD SUBMISSION ON JAN 14 TH SD RESUBMISSION ON JUN 5TH, Revised SD ON jun 26th",
       "group": "TEAM 2",
       "stage": "REVISED SD",
@@ -886,31 +894,35 @@
         "2025-01-14",
         "2025-06-01"
       ],
-      "invoiceable": "Yes",
-      "resourcePeople": "",
-      "resourceDays": ""
+      "invoiceable": "No",
+      "resourcePeople": "3",
+      "resourceDays": "60",
+      "bimDate": ""
     },
     {
       "title": "4059- Dubai South - Beachfront Plot- RN-795",
       "qaqc": "PRASANA",
       "assignee": "Aparna Lakshmi",
-      "team": "Rashid, Naveen, Bareera",
+      "team": "Naveen, Aparna",
       "people": [
-        "rashid",
         "naveen",
-        "bareera"
+        "aparna"
       ],
-      "peopleCount": 3,
-      "status": "Done",
+      "peopleCount": 2,
+      "status": "In-progress",
       "priority": "Medium",
-      "description": "SD RESUBMISSION ON FEB 16TH, SD CLOSE OUT ON 24TH APRIL, DD SUBMISSION IS ON 13TH MAY",
+      "description": "SD RESUBMISSION ON FEB 16TH, SD CLOSE OUT ON 24TH APRIL, DD SUBMISSION IS ON 13TH MAY, Revised DD SUBMISSION 16TH JUN",
       "group": "TEAM 2",
-      "stage": "DD",
+      "stage": "REVISED DD",
       "startDate": "2025-02-16",
-      "endDate": "2026-05-15",
+      "endDate": "2026-06-16",
       "milestones": [
         "2025-02-16"
-      ]
+      ],
+      "invoiceable": "No",
+      "resourcePeople": "2",
+      "resourceDays": "45",
+      "bimDate": ""
     },
     {
       "title": "3096-Dalma Mens Club",
@@ -1134,16 +1146,13 @@
       "title": "3923- EMAAR - Dubai Creek Harbour - Plot F13",
       "qaqc": "PRASANA",
       "assignee": "Jesto Joy",
-      "team": "jesto, Amna, jibin, NARSHA, JASNA, Mohan",
+      "team": "NARSHA, Mohan, Jesto",
       "people": [
-        "jesto",
-        "amna",
-        "jibin",
         "narsha",
-        "jasna",
-        "mohan"
+        "mohan",
+        "jesto"
       ],
-      "peopleCount": 6,
+      "peopleCount": 3,
       "status": "In-progress",
       "priority": "Medium",
       "description": "SD SUBMISSION APRIL 14TH , DD SUBMISSION ON TBC",
@@ -1153,27 +1162,34 @@
       "endDate": "2026-07-10",
       "milestones": [
         "2025-04-14"
-      ]
+      ],
+      "invoiceable": "Yes",
+      "resourcePeople": "3",
+      "resourceDays": "25",
+      "bimDate": "2026-07-14"
     },
     {
       "title": "3920- EMAAR - Dubai Creek Harbour - Plot F6",
       "qaqc": "PRASANA",
       "assignee": "Jesto Joy",
-      "team": "jesto, Jibin, Mohan",
+      "team": "jesto, Mohit Das",
       "people": [
         "jesto",
-        "jibin",
-        "mohan"
+        "mohit das"
       ],
-      "peopleCount": 3,
+      "peopleCount": 2,
       "status": "Done",
       "priority": "Medium",
       "description": "SD SUBMISSION IS ON MAY MID, MODEL SUBMISSION IS GOING ON JUN 9TH",
       "group": "TEAM 5",
       "stage": "SD",
       "startDate": "2026-02-13",
-      "endDate": "2026-06-09",
-      "milestones": []
+      "endDate": "2026-06-05",
+      "milestones": [],
+      "invoiceable": "Yes",
+      "resourcePeople": "2",
+      "resourceDays": "45",
+      "bimDate": "2026-06-09"
     },
     {
       "title": "3310- Plot GA15",
@@ -1224,16 +1240,14 @@
       "title": "3166-Marina Residential Apartments, Island B PLOT 11",
       "qaqc": "JITHIN",
       "assignee": "Jovanie Apa",
-      "team": "jovanie, Adthiyan, Abhilash, Arya(cad)",
+      "team": "Syed, Gnayaprakash",
       "people": [
-        "jovanie",
-        "adthiyan",
-        "abhilash",
-        "arya(cad)"
+        "syed",
+        "gnayaprakash"
       ],
-      "peopleCount": 4,
+      "peopleCount": 2,
       "status": "In-progress",
-      "priority": "High",
+      "priority": "Medium",
       "description": "50 % SD SUBMISSION ON SEPT 12TH,100% DD IS SUBMITTED ON MAR 18TH, MODEL COORDINATION GOING ON, REVISED DD ON MAY 18",
       "group": "TEAM 3",
       "stage": "TENDER",
@@ -1242,7 +1256,11 @@
       "milestones": [
         "2024-09-12",
         "2025-03-18"
-      ]
+      ],
+      "invoiceable": "No",
+      "resourcePeople": "2",
+      "resourceDays": "45",
+      "bimDate": "2026-06-19"
     },
     {
       "title": "3993-New Shakhbout School",
@@ -1291,43 +1309,40 @@
       "title": "3946- ADEK Schools Lagoons",
       "qaqc": "PRASANA",
       "assignee": "Jovanie Apa",
-      "team": "jovanie, Syed, Adthiyan, Vishnu, Abhilash, Gnayaprakash, Rammeshkhan",
+      "team": "jovanie, Sreelakshmi, Arya",
       "people": [
         "jovanie",
-        "syed",
-        "adthiyan",
-        "vishnu",
-        "abhilash",
-        "gnayaprakash",
-        "rammeshkhan"
+        "sreelakshmi",
+        "arya"
       ],
-      "peopleCount": 7,
-      "status": "Done",
+      "peopleCount": 3,
+      "status": "In-progress",
       "priority": "Medium",
       "description": "SD SUBMISSION ON 11 MARCH _DD SUBISSMISION ON APRIL 24TH ,ATHURITY SUBMISSION ON MODEL ON JUN 5TH ",
       "group": "TEAM 3",
       "stage": "REVISED DD",
       "startDate": "2025-03-11",
-      "endDate": "2026-06-05",
+      "endDate": "2026-06-19",
       "milestones": [
         "2025-03-11",
         "2025-04-24"
-      ]
+      ],
+      "invoiceable": "No",
+      "resourcePeople": "3",
+      "resourceDays": "10",
+      "bimDate": "2026-06-26"
     },
     {
       "title": "4124- Damac Islands-Plot 1 & 2",
       "qaqc": "JITHIN",
       "assignee": "Jovanie Apa",
-      "team": "Jovanie, Syed, Adthiyan, Vishnu, Abhilash, Gnayaprakash",
+      "team": "Adthiyan, Abhilash, Jibin",
       "people": [
-        "jovanie",
-        "syed",
         "adthiyan",
-        "vishnu",
         "abhilash",
-        "gnayaprakash"
+        "jibin"
       ],
-      "peopleCount": 6,
+      "peopleCount": 3,
       "status": "In-progress",
       "priority": "High",
       "description": "50 % DD SUBMISSION ON 30TH MAY, 100% DD ON JULY 3RD ",
@@ -1337,7 +1352,11 @@
       "endDate": "2026-07-03",
       "milestones": [
         "2025-04-29"
-      ]
+      ],
+      "invoiceable": "Yes",
+      "resourcePeople": "4",
+      "resourceDays": "30",
+      "bimDate": ""
     },
     {
       "title": "3208-DHE 15.0005",
@@ -1763,77 +1782,79 @@
       "title": "3718- Beyond Development - Plot OS-07b (Office Building)",
       "qaqc": "ABILASH",
       "assignee": "Mohamed asif",
-      "team": "ASIF, LAURA, Rahul, Anathu, Mohit, Akhila",
+      "team": "Rahul, Mohit",
       "people": [
-        "asif",
-        "laura",
         "rahul",
-        "anathu",
-        "mohit",
-        "akhila"
+        "mohit"
       ],
-      "peopleCount": 6,
-      "status": "Done",
+      "peopleCount": 2,
+      "status": "In-progress",
       "priority": "High",
-      "description": "50% SD SUBMISSION ON 28 NOV, 100%SD ON DEC 12TH,REVISED SD SUBMISSION ON JAN 13TH TENDER ADDENDUM ON APRIL 7TH, TENDER ADDENDUM 02 ON APR 29 IFC SUBMISSION ON MAY 22TH",
+      "description": "50% SD SUBMISSION ON 28 NOV, 100%SD ON DEC 12TH,REVISED SD SUBMISSION ON JAN 13TH TENDER ADDENDUM ON APRIL 7TH, TENDER ADDENDUM 02 ON APR 29 IFC SUBMISSION ON MAY 22TH, IFC SUBMISSION ON JUN 19TH ",
       "group": "TEAM 4",
       "stage": "IFC",
       "startDate": "2024-11-28",
-      "endDate": "2026-05-22",
+      "endDate": "2026-06-19",
       "milestones": [
         "2024-11-28",
         "2024-12-12",
         "2025-01-13",
         "2025-04-07"
-      ]
+      ],
+      "invoiceable": "Yes",
+      "resourcePeople": "3",
+      "resourceDays": "10",
+      "bimDate": "2026-06-30"
     },
     {
       "title": "3642- GEN Al Multaqa on Plot No. 3466826 at Business Bay",
       "qaqc": "ABILASH",
       "assignee": "Mohamed asif",
-      "team": "Rahul, Anathu, Akhila, Jegan, Asif, Jose",
+      "team": "Akhila, Asif, Anathu",
       "people": [
-        "rahul",
-        "anathu",
         "akhila",
-        "jegan",
         "asif",
-        "jose"
+        "anathu"
       ],
-      "peopleCount": 6,
+      "peopleCount": 3,
       "status": "In-progress",
       "priority": "Medium",
       "description": "100% DD DIRECT ON APTIL 7TH MODEL COORDINATION IS GOING ON APRIL 24TH,REVISED SHEETS ON MAY 15TH",
       "group": "TEAM 4",
-      "stage": "REVISED DD",
+      "stage": "BIM Submission",
       "startDate": "2026-01-07",
-      "endDate": "2026-06-25",
-      "milestones": []
+      "endDate": "2026-05-15",
+      "milestones": [],
+      "invoiceable": "No",
+      "resourcePeople": "3",
+      "resourceDays": "30",
+      "bimDate": "2026-06-25"
     },
     {
       "title": "3994- NASG-Mosque Landscape",
       "qaqc": "JITHIN",
       "assignee": "Mohamed asif",
-      "team": "ASIF, Rahul, Anathu, Akhila, Mohit, Jegan",
+      "team": "ASIF, Rahul, Akhila",
       "people": [
         "asif",
         "rahul",
-        "anathu",
-        "akhila",
-        "mohit",
-        "jegan"
+        "akhila"
       ],
-      "peopleCount": 6,
+      "peopleCount": 3,
       "status": "In-progress",
-      "priority": "Medium",
-      "description": "SD SUBMISSION 30TH APRIL REVISED SD ON MAY 15TH",
+      "priority": "High",
+      "description": "SD SUBMISSION 30TH APRIL REVISED SD ON MAY 15TH, 100 % DD ON JUN 30TH ",
       "group": "TEAM 4",
       "stage": "DD",
       "startDate": "2025-04-08",
       "endDate": "2026-06-30",
       "milestones": [
         "2025-04-30"
-      ]
+      ],
+      "invoiceable": "Yes",
+      "resourcePeople": "3",
+      "resourceDays": "25",
+      "bimDate": "2026-07-06"
     },
     {
       "title": "3250-Dubai Creek Harbour-Plot A2",
@@ -1966,16 +1987,14 @@
       "title": "3734- Kifak Residential Project",
       "qaqc": "JITHIN",
       "assignee": "Safas Umar",
-      "team": "safas, Maznaz, Swapna, Karthik, Sreekanth, Sheikh Yahya",
+      "team": "safas, Maznaz, Karthik, Amna",
       "people": [
         "safas",
         "maznaz",
-        "swapna",
         "karthik",
-        "sreekanth",
-        "sheikh yahya"
+        "amna"
       ],
-      "peopleCount": 6,
+      "peopleCount": 4,
       "status": "In-progress",
       "priority": "High",
       "description": "SD SUBMITTED ON DEC 10TH, DD SUBMISSION ON APIRL 28TH , TENDER SUBMISSION ON JUN 18TH",
@@ -1985,7 +2004,11 @@
       "endDate": "2026-06-18",
       "milestones": [
         "2024-12-10"
-      ]
+      ],
+      "invoiceable": "Yes",
+      "resourcePeople": "3",
+      "resourceDays": "20",
+      "bimDate": "2026-06-26"
     },
     {
       "title": "3594- The Valley Community Retail Centre",
@@ -2024,17 +2047,21 @@
         "sheikh yahya"
       ],
       "peopleCount": 6,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "SD SUBMISSIION ON FEB 23 FINAL PACKAGE ON 27, TENDER ON MAY 8TH REVISED TENDER ON MAY 18TH",
       "group": "TEAM 6",
-      "stage": "TENDER",
+      "stage": "REVISED TENDER",
       "startDate": "2025-02-23",
       "endDate": "2026-06-12",
       "milestones": [
         "2025-02-23",
         "2025-04-21"
-      ]
+      ],
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "2077-Residential Apartments on DHE",
@@ -2076,19 +2103,20 @@
       "title": "3043-MODON - East and West",
       "qaqc": "PRASANA",
       "assignee": "shastidharan",
-      "team": "jesto, Syed, Anshu, Shasti",
+      "team": "Anshu, Bareera, Jegan, Mohit Das, Rammeshkhan",
       "people": [
-        "jesto",
-        "syed",
         "anshu",
-        "shasti"
+        "bareera",
+        "jegan",
+        "mohit das",
+        "rammeshkhan"
       ],
-      "peopleCount": 4,
+      "peopleCount": 5,
       "status": "In-progress",
       "priority": "Medium",
-      "description": "ADDENDUM TENDER SUBMISSION/MODEL , TENDER ADDENDUM SUBMITTED ON 3 VILLA ON NOV 3RD MODEL CLASHES WITH SHEET CHANGES, MINOR UPDATE TO SUBMIT ON 29TH APRIL ,IFC 3 REVISED JUN 5TH",
+      "description": "ADDENDUM TENDER SUBMISSION/MODEL , TENDER ADDENDUM SUBMITTED ON 3 VILLA ON NOV 3RD MODEL CLASHES WITH SHEET CHANGES, MINOR UPDATE TO SUBMIT ON 29TH APRIL ,IFC 3 REVISED JUN 12TH",
       "group": "COMMON",
-      "stage": "IFC",
+      "stage": "REVISED IFC",
       "startDate": "2024-11-03",
       "endDate": "2026-06-12",
       "milestones": [
@@ -2096,7 +2124,8 @@
       ],
       "invoiceable": "No",
       "resourcePeople": "5",
-      "resourceDays": ""
+      "resourceDays": "",
+      "bimDate": "2026-06-12"
     },
     {
       "title": "3983- Abu Dhabi Project 4 Plots",
@@ -2323,5 +2352,5 @@
       "id": "lv-1781173664540-k52w"
     }
   ],
-  "exportedAt": "2026-06-11T10:34:35.898Z"
+  "exportedAt": "2026-06-11T12:12:56.143Z"
 }
