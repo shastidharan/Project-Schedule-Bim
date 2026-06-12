@@ -1,6 +1,66 @@
 {
   "projects": [
     {
+      "title": "3712- DWD - Phase 1 Plot 14, Dubai",
+      "qaqc": "ABILASH",
+      "assignee": "Mohammed Asif",
+      "team": "",
+      "status": "To do",
+      "priority": "Medium",
+      "description": "",
+      "group": "TEAM 4",
+      "stage": "SD",
+      "startDate": "2026-07-27",
+      "endDate": "2026-08-28",
+      "milestones": [],
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": "",
+      "people": [],
+      "peopleCount": 0
+    },
+    {
+      "title": "3863- Development of Luluat Al Raha Plot P1, P2 and P6",
+      "qaqc": "ABILASH",
+      "assignee": "Mohamed asif",
+      "team": "",
+      "status": "To do",
+      "priority": "Medium",
+      "description": "",
+      "group": "TEAM 4",
+      "stage": "SD",
+      "startDate": "2026-07-15",
+      "endDate": "2026-09-25",
+      "milestones": [],
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": "",
+      "people": [],
+      "peopleCount": 0
+    },
+    {
+      "title": "4291- Bloom - Raha Beach Residence - PC703",
+      "qaqc": "TBC",
+      "assignee": "",
+      "team": "",
+      "status": "To do",
+      "priority": "Medium",
+      "description": "",
+      "group": "TEAM1",
+      "stage": "SD",
+      "startDate": "2026-07-13",
+      "endDate": "2026-09-11",
+      "milestones": [],
+      "invoiceable": "No",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": "",
+      "people": [],
+      "peopleCount": 0
+    },
+    {
       "title": "4232- ADEK School at Jabal Hafeet",
       "qaqc": "TBC",
       "assignee": "Jovanie Apa",
@@ -55,8 +115,8 @@
       "description": "",
       "group": "TEAM1",
       "stage": "SD",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-06-22",
+      "endDate": "2026-07-31",
       "milestones": [],
       "people": [
         "akshaya",
@@ -65,7 +125,10 @@
         "arya"
       ],
       "peopleCount": 4,
-      "invoiceable": "Yes"
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "3735- Dubai South - AGD Residential - Plot RF-48,49 & 50",
@@ -215,7 +278,7 @@
       "peopleCount": 1,
       "invoiceable": "No",
       "resourcePeople": "2",
-      "resourceDays": "85",
+      "resourceDays": "95",
       "bimDate": "2026-06-30"
     },
     {
@@ -835,7 +898,7 @@
       "milestones": [
         "2025-02-20"
       ],
-      "invoiceable": "Yes",
+      "invoiceable": "No",
       "resourcePeople": "3",
       "resourceDays": "60",
       "bimDate": ""
@@ -2426,5 +2489,5 @@
       "id": "lv-1781173664540-k52w"
     }
   ],
-  "exportedAt": "2026-06-11T13:21:17.292Z"
+  "exportedAt": "2026-06-12T08:54:04.151Z"
 }
