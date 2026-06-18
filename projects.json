@@ -109,25 +109,26 @@
       "title": "4180- BNW - Branded Residences & Hotel Apartment on Plot R-03D & R-03E at RAK Central",
       "qaqc": "TBC",
       "assignee": "Akshaya Jayakrishnan",
-      "team": "Akshaya, Athira, Sreelakshmi, Arya",
-      "status": "To do",
+      "team": "Akshaya, Athira, Sreelakshmi, Arya, Mohit Das",
+      "status": "In-progress",
       "priority": "Medium",
       "description": "",
       "group": "TEAM1",
       "stage": "SD",
       "startDate": "2026-06-22",
-      "endDate": "2026-07-31",
+      "endDate": "2026-07-23",
       "milestones": [],
       "people": [
         "akshaya",
         "athira",
         "sreelakshmi",
-        "arya"
+        "arya",
+        "mohit das"
       ],
-      "peopleCount": 4,
+      "peopleCount": 5,
       "invoiceable": "Yes",
-      "resourcePeople": "",
-      "resourceDays": "",
+      "resourcePeople": "4",
+      "resourceDays": "30",
       "bimDate": ""
     },
     {
@@ -199,7 +200,7 @@
       "title": "4067- ALEF - The Palace Branded Residences",
       "qaqc": "ABILASH",
       "assignee": "Aparna Lakshmi",
-      "team": "Shasti, Harirao, Swapna, Jose",
+      "team": "Shasti, Swapna, Jose, Jibin",
       "status": "In-progress",
       "priority": "Medium",
       "description": "SD SUBMISSION JUN 12TH",
@@ -210,9 +211,9 @@
       "milestones": [],
       "people": [
         "shasti",
-        "harirao",
         "swapna",
-        "jose"
+        "jose",
+        "jibin"
       ],
       "peopleCount": 4,
       "invoiceable": "Yes",
@@ -393,7 +394,7 @@
         "arya"
       ],
       "peopleCount": 3,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "SD SUBMITTED ON AUG 7TH AND 50% DD IS ON 20TH FEB AND 100 % DD ON MARCH 20TH  REVISED DD ON 18TH MAY,CLOUD UPDATE SUBMISSION ON JUN 10TH",
       "group": "TEAM1",
@@ -488,30 +489,33 @@
       "title": "3291- Emirates Palace Development-Abu Dhabi",
       "qaqc": "VIPIN",
       "assignee": "Akshaya Jayakrishnan",
-      "team": "akshaya, Lincy, Sreelakshmi, Athira, Arya, Narsha, Jasna, Rammeshkhan, Bareera",
+      "team": "akshaya, Sreelakshmi, Athira, Arya, Narsha, Jasna, Rammeshkhan, Bareera, Mohit Das",
       "people": [
         "akshaya",
-        "lincy",
         "sreelakshmi",
         "athira",
         "arya",
         "narsha",
         "jasna",
         "rammeshkhan",
-        "bareera"
+        "bareera",
+        "mohit das"
       ],
       "peopleCount": 9,
-      "status": "Done",
+      "status": "In-progress",
       "priority": "High",
-      "description": "50% DD SUBMISSION ON FEB 25 AND 100%DD ON MARCH 13TH ",
+      "description": "50% SD SUBMISSION ON FEB 25 AND 100%SD ON MAY 12TH DD SUBMISSION ON JULY 31",
       "group": "TEAM1",
       "stage": "SD",
       "startDate": "2025-02-25",
-      "endDate": "2026-05-12",
+      "endDate": "2026-08-07",
       "milestones": [
         "2025-02-25"
       ],
-      "invoiceable": "Yes"
+      "invoiceable": "Yes",
+      "resourcePeople": "7",
+      "resourceDays": "45",
+      "bimDate": ""
     },
     {
       "title": "3243-ESD-PLOT GA07",
@@ -1010,7 +1014,7 @@
       "group": "TEAM 2",
       "stage": "REVISED DD",
       "startDate": "2025-02-16",
-      "endDate": "2026-06-16",
+      "endDate": "2026-06-19",
       "milestones": [
         "2025-02-16"
       ],
@@ -1370,29 +1374,30 @@
     },
     {
       "title": "3993-New Shakhbout School",
-      "qaqc": "AJAY",
+      "qaqc": "PRASANA",
       "assignee": "Jovanie Apa",
-      "team": "syed, LINCY, SREELAKSHMI, Jovanie",
+      "team": "syed, Jovanie",
       "people": [
         "syed",
-        "lincy",
-        "sreelakshmi",
         "jovanie"
       ],
-      "peopleCount": 4,
-      "status": "Done",
-      "priority": "Low",
-      "description": "DRIECT DD SUBMISSION  ON NOV 24TH,REVISED DD SUBMISSION ON JAN 19TH, APRIL 4TH RFI SUBMISSION ",
+      "peopleCount": 2,
+      "status": "In-progress",
+      "priority": "Medium",
+      "description": "DRIECT DD SUBMISSION  ON NOV 24TH,REVISED DD SUBMISSION ON JAN 19TH, APRIL 4TH RFI SUBMISSION , RESUBMISSION ON JUN 23",
       "group": "TEAM 3",
-      "stage": "DD",
+      "stage": "REVISED DD",
       "startDate": "2024-11-24",
-      "endDate": "2026-04-04",
+      "endDate": "2026-06-23",
       "milestones": [
         "2024-11-24",
         "2025-01-19",
         "2025-04-04"
       ],
-      "invoiceable": "Yes"
+      "invoiceable": "No",
+      "resourcePeople": "2",
+      "resourceDays": "10",
+      "bimDate": ""
     },
     {
       "title": "3935- Mirasol II, Mina Al Arab, RAK",
@@ -1879,30 +1884,33 @@
     },
     {
       "title": "3373- AL NOUD SCHOOL-2",
-      "qaqc": "AJAY",
+      "qaqc": "PRASANA",
       "assignee": "Mohamed asif",
-      "team": "raghul, ASIF, LAURA, Jaberdhueen",
+      "team": "ASIF, Anshu, Jegan, Ananthu",
       "people": [
-        "raghul",
         "asif",
-        "laura",
-        "jaberdhueen"
+        "anshu",
+        "jegan",
+        "ananthu"
       ],
       "peopleCount": 4,
-      "status": "Done",
+      "status": "In-progress",
       "priority": "High",
-      "description": "100% DD SUBMITTED ON OCT 29TH REVISED DD ON DEC 12, AGAIN DD ON FEB 27 18TH MARCH OF DD RESUBMISSION ",
+      "description": "100% DD SUBMITTED ON OCT 29TH REVISED DD ON DEC 12, AGAIN DD ON FEB 27 18TH MARCH OF DD RESUBMISSION , DD RESUBMISSION on JUN 26TH ",
       "group": "TEAM 4",
-      "stage": "DD",
+      "stage": "REVISED DD",
       "startDate": "2024-10-29",
-      "endDate": "2026-03-16",
+      "endDate": "2026-06-26",
       "milestones": [
         "2024-10-29",
         "2024-12-12",
         "2025-02-27",
         "2025-03-18"
       ],
-      "invoiceable": "Yes"
+      "invoiceable": "No",
+      "resourcePeople": "4",
+      "resourceDays": "10",
+      "bimDate": ""
     },
     {
       "title": "3718- Beyond Development - Plot OS-07b (Office Building)",
@@ -2246,7 +2254,7 @@
         "rammeshkhan"
       ],
       "peopleCount": 5,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "ADDENDUM TENDER SUBMISSION/MODEL , TENDER ADDENDUM SUBMITTED ON 3 VILLA ON NOV 3RD MODEL CLASHES WITH SHEET CHANGES, MINOR UPDATE TO SUBMIT ON 29TH APRIL ,IFC 3 REVISED JUN 12TH",
       "group": "COMMON",
@@ -2336,27 +2344,25 @@
       "title": "3862- RAK Nikki Beach Collection Villas",
       "qaqc": "ABILASH",
       "assignee": "Akshaya Jayakrishnan",
-      "team": "Akshaya, Sreelakshmi, Athira, Arya, Shasti, Ananthu",
-      "status": "TBC",
+      "team": "Akshaya, Athira, Shasti",
+      "status": "In-progress",
       "priority": "Medium",
       "description": "SD SUBMISSION ON JUN 12TH",
       "group": "TEAM1",
       "stage": "SD",
       "startDate": "2026-05-07",
-      "endDate": "2026-06-12",
+      "endDate": "2026-07-17",
       "milestones": [],
       "people": [
         "akshaya",
-        "sreelakshmi",
         "athira",
-        "arya",
-        "shasti",
-        "ananthu"
+        "shasti"
       ],
-      "peopleCount": 6,
+      "peopleCount": 3,
       "invoiceable": "No",
       "resourcePeople": "",
-      "resourceDays": ""
+      "resourceDays": "",
+      "bimDate": ""
     }
   ],
   "leaves": [
@@ -2489,5 +2495,5 @@
       "id": "lv-1781173664540-k52w"
     }
   ],
-  "exportedAt": "2026-06-12T08:54:04.151Z"
+  "exportedAt": "2026-06-18T12:38:15.078Z"
 }
