@@ -1,6 +1,32 @@
 {
   "projects": [
     {
+      "title": "4213- Aldar - Plot C9-C10 Saadiyat Mixed Use Development in Abu Dhabi",
+      "qaqc": "ABILASH",
+      "assignee": "APARNA",
+      "team": "Shasti, Rashid, Jose, Naveen, Bareera",
+      "status": "To do",
+      "priority": "Medium",
+      "description": "",
+      "group": "TEAM 2",
+      "stage": "SD",
+      "startDate": "2026-08-03",
+      "endDate": "2026-10-30",
+      "milestones": [],
+      "invoiceable": "No",
+      "resourcePeople": "5",
+      "resourceDays": "45",
+      "bimDate": "",
+      "people": [
+        "shasti",
+        "rashid",
+        "jose",
+        "naveen",
+        "bareera"
+      ],
+      "peopleCount": 5
+    },
+    {
       "title": "3712- DWD - Phase 1 Plot 14, Dubai",
       "qaqc": "ABILASH",
       "assignee": "Mohammed Asif",
@@ -173,30 +199,6 @@
       "invoiceable": "Yes"
     },
     {
-      "title": "3118-District One West (Clubhouse 2)",
-      "qaqc": "TBC",
-      "assignee": "Safas Umar",
-      "team": "Safas, Swapna, Maznaz, Karthik, Sreekanth, Sheikh Yahya",
-      "status": "To do",
-      "priority": "Medium",
-      "description": "",
-      "group": "TEAM 6",
-      "stage": "SD",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31",
-      "milestones": [],
-      "people": [
-        "safas",
-        "swapna",
-        "maznaz",
-        "karthik",
-        "sreekanth",
-        "sheikh yahya"
-      ],
-      "peopleCount": 6,
-      "invoiceable": "Yes"
-    },
-    {
       "title": "4067- ALEF - The Palace Branded Residences",
       "qaqc": "ABILASH",
       "assignee": "Aparna Lakshmi",
@@ -205,7 +207,7 @@
       "priority": "Medium",
       "description": "SD SUBMISSION JUN 12TH",
       "group": "TEAM 2",
-      "stage": "SD",
+      "stage": "BIM Submission",
       "startDate": "2026-04-27",
       "endDate": "2026-06-19",
       "milestones": [],
@@ -219,7 +221,7 @@
       "invoiceable": "Yes",
       "resourcePeople": "4",
       "resourceDays": "45",
-      "bimDate": ""
+      "bimDate": "2026-06-26"
     },
     {
       "title": "3788-LAC 718-719 - City View Bu Kadra",
@@ -262,21 +264,23 @@
     },
     {
       "title": "3941- EMAAR - Dubai Hills Estate- Plot F12-12",
-      "qaqc": "TBC",
+      "qaqc": "ABILASH",
       "assignee": "Jesto Joy",
-      "team": "Jesto",
+      "team": "Jesto, Amna, Jibin",
       "status": "In-progress",
       "priority": "Medium",
       "description": "EXCEPTED SD SUBMISSION ON 30TH JUNE",
       "group": "TEAM 5",
-      "stage": "BIM Submission",
+      "stage": "SD",
       "startDate": "2026-05-08",
-      "endDate": "2026-06-30",
+      "endDate": "2026-07-21",
       "milestones": [],
       "people": [
-        "jesto"
+        "jesto",
+        "amna",
+        "jibin"
       ],
-      "peopleCount": 1,
+      "peopleCount": 3,
       "invoiceable": "No",
       "resourcePeople": "2",
       "resourceDays": "95",
@@ -886,23 +890,24 @@
       "title": "3574-City View-Sofitel Project",
       "qaqc": "VIPIN",
       "assignee": "Aparna Lakshmi",
-      "team": "Naveen, Aparna",
+      "team": "Naveen, Shasti, Syed",
       "people": [
         "naveen",
-        "aparna"
+        "shasti",
+        "syed"
       ],
-      "peopleCount": 2,
+      "peopleCount": 3,
       "status": "In-progress",
       "priority": "Medium",
       "description": "SD submission on MARCH 6TH,50% DD SUBMISSION ON 18TH JUNE",
       "group": "TEAM 2",
-      "stage": "50% DD",
+      "stage": "DD",
       "startDate": "2025-02-20",
-      "endDate": "2026-06-18",
+      "endDate": "2026-07-06",
       "milestones": [
         "2025-02-20"
       ],
-      "invoiceable": "No",
+      "invoiceable": "Yes",
       "resourcePeople": "3",
       "resourceDays": "60",
       "bimDate": ""
@@ -1382,7 +1387,7 @@
         "jovanie"
       ],
       "peopleCount": 2,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "DRIECT DD SUBMISSION  ON NOV 24TH,REVISED DD SUBMISSION ON JAN 19TH, APRIL 4TH RFI SUBMISSION , RESUBMISSION ON JUN 23",
       "group": "TEAM 3",
@@ -1916,26 +1921,27 @@
       "title": "3718- Beyond Development - Plot OS-07b (Office Building)",
       "qaqc": "ABILASH",
       "assignee": "Mohamed asif",
-      "team": "Rahul, Mohit",
+      "team": "Rahul, Akhila, Asif",
       "people": [
         "rahul",
-        "mohit"
+        "akhila",
+        "asif"
       ],
-      "peopleCount": 2,
+      "peopleCount": 3,
       "status": "In-progress",
       "priority": "High",
       "description": "50% SD SUBMISSION ON 28 NOV, 100%SD ON DEC 12TH,REVISED SD SUBMISSION ON JAN 13TH TENDER ADDENDUM ON APRIL 7TH, TENDER ADDENDUM 02 ON APR 29 IFC SUBMISSION ON MAY 22TH, IFC SUBMISSION ON JUN 19TH ",
       "group": "TEAM 4",
-      "stage": "IFC",
+      "stage": "TENDER ADDENDUM",
       "startDate": "2024-11-28",
-      "endDate": "2026-06-19",
+      "endDate": "2026-06-26",
       "milestones": [
         "2024-11-28",
         "2024-12-12",
         "2025-01-13",
         "2025-04-07"
       ],
-      "invoiceable": "Yes",
+      "invoiceable": "No",
       "resourcePeople": "3",
       "resourceDays": "10",
       "bimDate": "2026-06-30"
@@ -2140,7 +2146,7 @@
       "group": "TEAM 6",
       "stage": "TENDER",
       "startDate": "2024-12-10",
-      "endDate": "2026-06-18",
+      "endDate": "2026-06-30",
       "milestones": [
         "2024-12-10"
       ],
@@ -2495,5 +2501,5 @@
       "id": "lv-1781173664540-k52w"
     }
   ],
-  "exportedAt": "2026-06-18T12:38:15.078Z"
+  "exportedAt": "2026-06-24T10:28:30.909Z"
 }
