@@ -988,11 +988,11 @@
       "peopleCount": 3,
       "status": "In-progress",
       "priority": "Medium",
-      "description": "CONCEPT MODEL IS DONE, NEW LAYOUT OD MODEL IS SUBMIITED ON NOV 3RD , SD SUBMISSION ON JAN 14 TH SD RESUBMISSION ON JUN 5TH, Revised SD ON jun 26th",
+      "description": "CONCEPT MODEL IS DONE, NEW LAYOUT OD MODEL IS SUBMIITED ON NOV 3RD , SD SUBMISSION ON JAN 14 TH SD RESUBMISSION ON JUN 5TH, Revised SD ON jun 26th, Revised SD ON july 3rd",
       "group": "TEAM 2",
       "stage": "REVISED SD",
       "startDate": "2024-11-03",
-      "endDate": "2026-06-26",
+      "endDate": "2026-07-03",
       "milestones": [
         "2024-11-03",
         "2025-01-14",
@@ -1017,7 +1017,7 @@
       "priority": "Medium",
       "description": "SD RESUBMISSION ON FEB 16TH, SD CLOSE OUT ON 24TH APRIL, DD SUBMISSION IS ON 13TH MAY, Revised DD SUBMISSION 16TH JUN",
       "group": "TEAM 2",
-      "stage": "REVISED DD",
+      "stage": "BIM Submission",
       "startDate": "2025-02-16",
       "endDate": "2026-06-19",
       "milestones": [
@@ -1365,7 +1365,7 @@
       "priority": "Medium",
       "description": "50 % SD SUBMISSION ON SEPT 12TH,100% DD IS SUBMITTED ON MAR 18TH, MODEL COORDINATION GOING ON, REVISED DD ON MAY 18",
       "group": "TEAM 3",
-      "stage": "TENDER",
+      "stage": "BIM Submission",
       "startDate": "2024-09-12",
       "endDate": "2026-06-19",
       "milestones": [
@@ -1434,7 +1434,7 @@
         "arya"
       ],
       "peopleCount": 3,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "SD SUBMISSION ON 11 MARCH _DD SUBISSMISION ON APRIL 24TH ,ATHURITY SUBMISSION ON MODEL ON JUN 5TH ",
       "group": "TEAM 3",
@@ -1905,7 +1905,7 @@
       "group": "TEAM 4",
       "stage": "REVISED DD",
       "startDate": "2024-10-29",
-      "endDate": "2026-06-26",
+      "endDate": "2026-06-30",
       "milestones": [
         "2024-10-29",
         "2024-12-12",
@@ -1928,7 +1928,7 @@
         "asif"
       ],
       "peopleCount": 3,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "High",
       "description": "50% SD SUBMISSION ON 28 NOV, 100%SD ON DEC 12TH,REVISED SD SUBMISSION ON JAN 13TH TENDER ADDENDUM ON APRIL 7TH, TENDER ADDENDUM 02 ON APR 29 IFC SUBMISSION ON MAY 22TH, IFC SUBMISSION ON JUN 19TH ",
       "group": "TEAM 4",
@@ -1987,7 +1987,7 @@
       "group": "TEAM 4",
       "stage": "DD",
       "startDate": "2025-04-08",
-      "endDate": "2026-06-30",
+      "endDate": "2026-07-03",
       "milestones": [
         "2025-04-30"
       ],
@@ -2146,7 +2146,7 @@
       "group": "TEAM 6",
       "stage": "TENDER",
       "startDate": "2024-12-10",
-      "endDate": "2026-06-30",
+      "endDate": "2026-07-07",
       "milestones": [
         "2024-12-10"
       ],
@@ -2501,5 +2501,5 @@
       "id": "lv-1781173664540-k52w"
     }
   ],
-  "exportedAt": "2026-06-24T10:28:30.909Z"
+  "exportedAt": "2026-07-01T05:43:47.298Z"
 }
