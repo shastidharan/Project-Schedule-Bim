@@ -3,7 +3,7 @@
     {
       "title": "4213- Aldar - Plot C9-C10 Saadiyat Mixed Use Development in Abu Dhabi",
       "qaqc": "ABILASH",
-      "assignee": "APARNA",
+      "assignee": "Aparna Lakshmi",
       "team": "Shasti, Rashid, Jose, Naveen, Bareera",
       "status": "To do",
       "priority": "Medium",
@@ -29,7 +29,7 @@
     {
       "title": "3712- DWD - Phase 1 Plot 14, Dubai",
       "qaqc": "ABILASH",
-      "assignee": "Mohammed Asif",
+      "assignee": "Mohamed asif",
       "team": "",
       "status": "To do",
       "priority": "Medium",
@@ -202,22 +202,23 @@
       "title": "4067- ALEF - The Palace Branded Residences",
       "qaqc": "ABILASH",
       "assignee": "Aparna Lakshmi",
-      "team": "Shasti, Swapna, Jose, Jibin",
+      "team": "Shasti, Swapna, Jibin, Safas, Maznaz",
       "status": "In-progress",
       "priority": "Medium",
-      "description": "SD SUBMISSION JUN 12TH",
+      "description": "SD SUBMISSION JUN 19TH , revised SD on july 31",
       "group": "TEAM 2",
-      "stage": "BIM Submission",
+      "stage": "REVISED SD",
       "startDate": "2026-04-27",
-      "endDate": "2026-06-19",
+      "endDate": "2026-07-31",
       "milestones": [],
       "people": [
         "shasti",
         "swapna",
-        "jose",
-        "jibin"
+        "jibin",
+        "safas",
+        "maznaz"
       ],
-      "peopleCount": 4,
+      "peopleCount": 5,
       "invoiceable": "Yes",
       "resourcePeople": "4",
       "resourceDays": "45",
@@ -266,7 +267,7 @@
       "title": "3941- EMAAR - Dubai Hills Estate- Plot F12-12",
       "qaqc": "ABILASH",
       "assignee": "Jesto Joy",
-      "team": "Jesto, Amna, Jibin",
+      "team": "Jesto, Amna, Jibin, Mohan, Narsha",
       "status": "In-progress",
       "priority": "Medium",
       "description": "EXCEPTED SD SUBMISSION ON 30TH JUNE",
@@ -278,9 +279,11 @@
       "people": [
         "jesto",
         "amna",
-        "jibin"
+        "jibin",
+        "mohan",
+        "narsha"
       ],
-      "peopleCount": 3,
+      "peopleCount": 5,
       "invoiceable": "No",
       "resourcePeople": "2",
       "resourceDays": "95",
@@ -424,7 +427,7 @@
         "athira"
       ],
       "peopleCount": 2,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "SD SUBMISSION ON JAN 7TH,DD SUBMISSION IS ON MARCH 31 REVISED DD ON APRIL 30TH ",
       "group": "TEAM1",
@@ -468,26 +471,28 @@
       "title": "4003- Dubai Islands - Landscape and Pool",
       "qaqc": "ABILASH",
       "assignee": "Akshaya Jayakrishnan",
-      "team": "akshaya, athira, Sreelakshmi, Arya, Fatima",
+      "team": "akshaya, athira, Sreelakshmi, Arya",
       "people": [
         "akshaya",
         "athira",
         "sreelakshmi",
-        "arya",
-        "fatima"
+        "arya"
       ],
-      "peopleCount": 5,
-      "status": "Done",
-      "priority": "Low",
-      "description": "100 % DD SUBMISSION ON JAN 30 ",
+      "peopleCount": 4,
+      "status": "In-progress",
+      "priority": "Medium",
+      "description": "100 % DD SUBMISSION ON JAN 30 , DD submission ON FEB 3RD REVISED DD 15TH JULY",
       "group": "TEAM1",
-      "stage": "SD",
+      "stage": "REVISED DD",
       "startDate": "2025-01-30",
-      "endDate": "2026-01-30",
+      "endDate": "2026-07-15",
       "milestones": [
         "2025-01-30"
       ],
-      "invoiceable": "Yes"
+      "invoiceable": "No",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "3291- Emirates Palace Development-Abu Dhabi",
@@ -897,11 +902,11 @@
         "syed"
       ],
       "peopleCount": 3,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "SD submission on MARCH 6TH,50% DD SUBMISSION ON 18TH JUNE",
       "group": "TEAM 2",
-      "stage": "DD",
+      "stage": "BIM Submission",
       "startDate": "2025-02-20",
       "endDate": "2026-07-06",
       "milestones": [
@@ -988,11 +993,11 @@
       "peopleCount": 3,
       "status": "In-progress",
       "priority": "Medium",
-      "description": "CONCEPT MODEL IS DONE, NEW LAYOUT OD MODEL IS SUBMIITED ON NOV 3RD , SD SUBMISSION ON JAN 14 TH SD RESUBMISSION ON JUN 5TH, Revised SD ON jun 26th, Revised SD ON july 3rd",
+      "description": "CONCEPT MODEL IS DONE, NEW LAYOUT OD MODEL IS SUBMIITED ON NOV 3RD , SD SUBMISSION ON JAN 14 TH SD RESUBMISSION ON JUN 5TH, Revised SD ON jun 26th, Revised SD ON july 20th",
       "group": "TEAM 2",
       "stage": "REVISED SD",
       "startDate": "2024-11-03",
-      "endDate": "2026-07-03",
+      "endDate": "2026-07-20",
       "milestones": [
         "2024-11-03",
         "2025-01-14",
@@ -1259,13 +1264,14 @@
       "title": "3923- EMAAR - Dubai Creek Harbour - Plot F13",
       "qaqc": "PRASANA",
       "assignee": "Jesto Joy",
-      "team": "NARSHA, Mohan, Jesto",
+      "team": "Mohan, Jesto, Amna, Jibin",
       "people": [
-        "narsha",
         "mohan",
-        "jesto"
+        "jesto",
+        "amna",
+        "jibin"
       ],
-      "peopleCount": 3,
+      "peopleCount": 4,
       "status": "In-progress",
       "priority": "Medium",
       "description": "SD SUBMISSION APRIL 14TH , DD SUBMISSION ON TBC",
@@ -1285,19 +1291,19 @@
       "title": "3920- EMAAR - Dubai Creek Harbour - Plot F6",
       "qaqc": "PRASANA",
       "assignee": "Jesto Joy",
-      "team": "jesto, Mohit Das",
+      "team": "jesto, Mohan",
       "people": [
         "jesto",
-        "mohit das"
+        "mohan"
       ],
       "peopleCount": 2,
-      "status": "Done",
+      "status": "In-progress",
       "priority": "Medium",
-      "description": "SD SUBMISSION IS ON MAY MID, MODEL SUBMISSION IS GOING ON JUN 9TH",
+      "description": "SD SUBMISSION IS ON MAY MID, MODEL SUBMISSION IS GOING ON JUN 9TH , 50 % DD AUG 14TH",
       "group": "TEAM 5",
-      "stage": "SD",
+      "stage": "50% DD",
       "startDate": "2026-02-13",
-      "endDate": "2026-06-05",
+      "endDate": "2026-08-14",
       "milestones": [],
       "invoiceable": "Yes",
       "resourcePeople": "",
@@ -1463,11 +1469,11 @@
       "peopleCount": 3,
       "status": "In-progress",
       "priority": "High",
-      "description": "50 % DD SUBMISSION ON 30TH MAY, 100% DD ON JULY 3RD ",
+      "description": "50 % DD SUBMISSION ON 30TH MAY, 100% DD ON JULY 3RD , revised DD on July 22nd",
       "group": "TEAM 3",
-      "stage": "DD",
+      "stage": "REVISED DD",
       "startDate": "2025-04-29",
-      "endDate": "2026-07-03",
+      "endDate": "2026-07-22",
       "milestones": [
         "2025-04-29"
       ],
@@ -1899,7 +1905,7 @@
         "ananthu"
       ],
       "peopleCount": 4,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "High",
       "description": "100% DD SUBMITTED ON OCT 29TH REVISED DD ON DEC 12, AGAIN DD ON FEB 27 18TH MARCH OF DD RESUBMISSION , DD RESUBMISSION on JUN 26TH ",
       "group": "TEAM 4",
@@ -1981,7 +1987,7 @@
         "akhila"
       ],
       "peopleCount": 3,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "High",
       "description": "SD SUBMISSION 30TH APRIL REVISED SD ON MAY 15TH, 100 % DD ON JUN 30TH ",
       "group": "TEAM 4",
@@ -2501,5 +2507,5 @@
       "id": "lv-1781173664540-k52w"
     }
   ],
-  "exportedAt": "2026-07-01T05:43:47.298Z"
+  "exportedAt": "2026-07-10T06:47:07.364Z"
 }
