@@ -1,6 +1,30 @@
 {
   "projects": [
     {
+      "title": "3937- AZIZI Venice Boulevard Mall",
+      "qaqc": "ABHILASH",
+      "assignee": "Mohamed asif",
+      "team": "Asif, Ananthu, Rahul",
+      "status": "To do",
+      "priority": "Medium",
+      "description": "50% SD ON AUG 7TH AND 100 %SD ON SEPT 4TH ",
+      "group": "TEAM 4",
+      "stage": "SD",
+      "startDate": "2026-07-16",
+      "endDate": "2026-09-04",
+      "milestones": [],
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": "",
+      "people": [
+        "asif",
+        "ananthu",
+        "rahul"
+      ],
+      "peopleCount": 3
+    },
+    {
       "title": "4213- Aldar - Plot C9-C10 Saadiyat Mixed Use Development in Abu Dhabi",
       "qaqc": "ABILASH",
       "assignee": "Aparna Lakshmi",
@@ -49,12 +73,12 @@
     {
       "title": "3863- Development of Luluat Al Raha Plot P1, P2 and P6",
       "qaqc": "ABILASH",
-      "assignee": "Mohamed asif",
-      "team": "",
+      "assignee": "Safas Umar",
+      "team": "Safas, Maznaz, Sreekanth",
       "status": "To do",
       "priority": "Medium",
       "description": "",
-      "group": "TEAM 4",
+      "group": "TEAM 6",
       "stage": "SD",
       "startDate": "2026-07-15",
       "endDate": "2026-09-25",
@@ -63,8 +87,12 @@
       "resourcePeople": "",
       "resourceDays": "",
       "bimDate": "",
-      "people": [],
-      "peopleCount": 0
+      "people": [
+        "safas",
+        "maznaz",
+        "sreekanth"
+      ],
+      "peopleCount": 3
     },
     {
       "title": "4291- Bloom - Raha Beach Residence - PC703",
@@ -274,7 +302,7 @@
       "group": "TEAM 5",
       "stage": "SD",
       "startDate": "2026-05-08",
-      "endDate": "2026-07-21",
+      "endDate": "2026-07-24",
       "milestones": [],
       "people": [
         "jesto",
@@ -481,11 +509,11 @@
       "peopleCount": 4,
       "status": "In-progress",
       "priority": "Medium",
-      "description": "100 % DD SUBMISSION ON JAN 30 , DD submission ON FEB 3RD REVISED DD 15TH JULY",
+      "description": "100 % DD SUBMISSION ON JAN 30 , DD submission ON FEB 3RD REVISED DD 17TH JULY",
       "group": "TEAM1",
       "stage": "REVISED DD",
       "startDate": "2025-01-30",
-      "endDate": "2026-07-15",
+      "endDate": "2026-07-17",
       "milestones": [
         "2025-01-30"
       ],
@@ -1031,7 +1059,7 @@
       "invoiceable": "No",
       "resourcePeople": "2",
       "resourceDays": "25",
-      "bimDate": ""
+      "bimDate": "2026-07-24"
     },
     {
       "title": "3096-Dalma Mens Club",
@@ -1274,11 +1302,11 @@
       "peopleCount": 4,
       "status": "In-progress",
       "priority": "Medium",
-      "description": "SD SUBMISSION APRIL 14TH , DD SUBMISSION ON TBC",
+      "description": "SD SUBMISSION APRIL 14TH , 50% DD SUBMISSION ON 1o july 100% DD ON 24TH JULY",
       "group": "TEAM 5",
       "stage": "DD",
       "startDate": "2025-04-14",
-      "endDate": "2026-07-10",
+      "endDate": "2026-07-24",
       "milestones": [
         "2025-04-14"
       ],
@@ -1381,7 +1409,7 @@
       "invoiceable": "No",
       "resourcePeople": "2",
       "resourceDays": "25",
-      "bimDate": "2026-06-19"
+      "bimDate": "2026-07-24"
     },
     {
       "title": "3993-New Shakhbout School",
@@ -2146,8 +2174,8 @@
         "amna"
       ],
       "peopleCount": 4,
-      "status": "In-progress",
-      "priority": "High",
+      "status": "Done",
+      "priority": "Low",
       "description": "SD SUBMITTED ON DEC 10TH, DD SUBMISSION ON APIRL 28TH , TENDER SUBMISSION ON JUN 18TH",
       "group": "TEAM 6",
       "stage": "TENDER",
@@ -2507,5 +2535,5 @@
       "id": "lv-1781173664540-k52w"
     }
   ],
-  "exportedAt": "2026-07-10T06:47:07.364Z"
+  "exportedAt": "2026-07-17T05:46:17.978Z"
 }
