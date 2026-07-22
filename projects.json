@@ -1,11 +1,35 @@
 {
   "projects": [
     {
+      "title": "3970- EMAAR - Dubai Hills Estate- Plot F12-06",
+      "qaqc": "ABILASH",
+      "assignee": "Akshaya Jayakrishnan",
+      "team": "Akshaya, Athira, Shasti",
+      "status": "In-progress",
+      "priority": "Medium",
+      "description": "",
+      "group": "TEAM1",
+      "stage": "SD",
+      "startDate": "2026-07-20",
+      "endDate": "2026-10-21",
+      "milestones": [],
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": "",
+      "people": [
+        "akshaya",
+        "athira",
+        "shasti"
+      ],
+      "peopleCount": 3
+    },
+    {
       "title": "3937- AZIZI Venice Boulevard Mall",
       "qaqc": "ABHILASH",
       "assignee": "Mohamed asif",
       "team": "Asif, Ananthu, Rahul",
-      "status": "To do",
+      "status": "In-progress",
       "priority": "Medium",
       "description": "50% SD ON AUG 7TH AND 100 %SD ON SEPT 4TH ",
       "group": "TEAM 4",
@@ -161,7 +185,7 @@
     },
     {
       "title": "4180- BNW - Branded Residences & Hotel Apartment on Plot R-03D & R-03E at RAK Central",
-      "qaqc": "TBC",
+      "qaqc": "VIPIN",
       "assignee": "Akshaya Jayakrishnan",
       "team": "Akshaya, Athira, Sreelakshmi, Arya, Mohit Das",
       "status": "In-progress",
@@ -170,7 +194,7 @@
       "group": "TEAM1",
       "stage": "SD",
       "startDate": "2026-06-22",
-      "endDate": "2026-07-23",
+      "endDate": "2026-08-14",
       "milestones": [],
       "people": [
         "akshaya",
@@ -187,27 +211,30 @@
     },
     {
       "title": "3735- Dubai South - AGD Residential - Plot RF-48,49 & 50",
-      "qaqc": "TBC",
+      "qaqc": "ABILASH",
       "assignee": "Mohamed asif",
-      "team": "Asif, Rahul, Anathu, Akhila, Jegan, Mohit",
-      "status": "To do",
+      "team": "Rahul, Anathu, Akhila, Jegan, Mohit, Asif",
+      "status": "In-progress",
       "priority": "Medium",
       "description": "",
       "group": "TEAM 4",
       "stage": "SD",
-      "startDate": "2026-07-09",
-      "endDate": "2026-08-20",
+      "startDate": "2026-07-22",
+      "endDate": "2026-08-07",
       "milestones": [],
       "people": [
-        "asif",
         "rahul",
         "anathu",
         "akhila",
         "jegan",
-        "mohit"
+        "mohit",
+        "asif"
       ],
       "peopleCount": 6,
-      "invoiceable": "Yes"
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "4057- Dubai South - Plot No. RB-7 - Meraki",
@@ -507,7 +534,7 @@
         "arya"
       ],
       "peopleCount": 4,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "100 % DD SUBMISSION ON JAN 30 , DD submission ON FEB 3RD REVISED DD 17TH JULY",
       "group": "TEAM1",
@@ -1012,11 +1039,11 @@
       "title": "3762- DID-Plot DIB-MU-0005",
       "qaqc": "ABILASH",
       "assignee": "Aparna Lakshmi",
-      "team": "Rashid, Jose, Jasna",
+      "team": "Rashid, Naveen, Bareera",
       "people": [
         "rashid",
-        "jose",
-        "jasna"
+        "naveen",
+        "bareera"
       ],
       "peopleCount": 3,
       "status": "In-progress",
@@ -1040,10 +1067,10 @@
       "title": "4059- Dubai South - Beachfront Plot- RN-795",
       "qaqc": "PRASANA",
       "assignee": "Aparna Lakshmi",
-      "team": "Naveen, Aparna",
+      "team": "Jose, Syed",
       "people": [
-        "naveen",
-        "aparna"
+        "jose",
+        "syed"
       ],
       "peopleCount": 2,
       "status": "In-progress",
@@ -1501,7 +1528,7 @@
       "group": "TEAM 3",
       "stage": "REVISED DD",
       "startDate": "2025-04-29",
-      "endDate": "2026-07-22",
+      "endDate": "2026-07-31",
       "milestones": [
         "2025-04-29"
       ],
@@ -1991,13 +2018,13 @@
         "anathu"
       ],
       "peopleCount": 3,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
-      "description": "100% DD DIRECT ON APTIL 7TH MODEL COORDINATION IS GOING ON APRIL 24TH,REVISED SHEETS ON MAY 15TH",
+      "description": "100% DD DIRECT ON APTIL 7TH MODEL COORDINATION IS GOING ON APRIL 24TH,REVISED SHEETS ON MAY 15TH,TENDER SUBMISSION ON 17TH JULY",
       "group": "TEAM 4",
-      "stage": "BIM Submission",
+      "stage": "TENDER",
       "startDate": "2026-01-07",
-      "endDate": "2026-05-15",
+      "endDate": "2026-07-17",
       "milestones": [],
       "invoiceable": "No",
       "resourcePeople": "3",
@@ -2385,7 +2412,7 @@
       "qaqc": "ABILASH",
       "assignee": "Akshaya Jayakrishnan",
       "team": "Akshaya, Athira, Shasti",
-      "status": "In-progress",
+      "status": "TBC",
       "priority": "Medium",
       "description": "SD SUBMISSION ON JUN 12TH",
       "group": "TEAM1",
@@ -2535,5 +2562,5 @@
       "id": "lv-1781173664540-k52w"
     }
   ],
-  "exportedAt": "2026-07-17T05:46:17.978Z"
+  "exportedAt": "2026-07-22T08:38:29.156Z"
 }
