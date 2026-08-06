@@ -104,7 +104,7 @@
       "description": "",
       "group": "TEAM 6",
       "stage": "SD",
-      "startDate": "2026-07-15",
+      "startDate": "2026-08-10",
       "endDate": "2026-09-25",
       "milestones": [],
       "invoiceable": "Yes",
@@ -188,7 +188,7 @@
       "qaqc": "VIPIN",
       "assignee": "Akshaya Jayakrishnan",
       "team": "Akshaya, Athira, Sreelakshmi, Arya, Mohit Das",
-      "status": "In-progress",
+      "status": "TBC",
       "priority": "Medium",
       "description": "",
       "group": "TEAM1",
@@ -220,7 +220,7 @@
       "group": "TEAM 4",
       "stage": "SD",
       "startDate": "2026-07-22",
-      "endDate": "2026-08-07",
+      "endDate": "2026-08-11",
       "milestones": [],
       "people": [
         "rahul",
@@ -256,26 +256,28 @@
     {
       "title": "4067- ALEF - The Palace Branded Residences",
       "qaqc": "ABILASH",
-      "assignee": "Aparna Lakshmi",
-      "team": "Shasti, Swapna, Jibin, Safas, Maznaz",
+      "assignee": "Safas Umar",
+      "team": "Shasti, Swapna, Jibin, Safas, Maznaz, Sheikh Yahya, Sreekanth",
       "status": "In-progress",
       "priority": "Medium",
-      "description": "SD SUBMISSION JUN 19TH , revised SD on july 31",
-      "group": "TEAM 2",
+      "description": "SD SUBMISSION JUN 19TH , revised SD on Aug 10th",
+      "group": "TEAM 6",
       "stage": "REVISED SD",
       "startDate": "2026-04-27",
-      "endDate": "2026-07-31",
+      "endDate": "2026-08-10",
       "milestones": [],
       "people": [
         "shasti",
         "swapna",
         "jibin",
         "safas",
-        "maznaz"
+        "maznaz",
+        "sheikh yahya",
+        "sreekanth"
       ],
-      "peopleCount": 5,
-      "invoiceable": "Yes",
-      "resourcePeople": "4",
+      "peopleCount": 7,
+      "invoiceable": "No",
+      "resourcePeople": "6",
       "resourceDays": "45",
       "bimDate": "2026-06-26"
     },
@@ -284,13 +286,13 @@
       "qaqc": "TBC",
       "assignee": "Akshaya Jayakrishnan",
       "team": "Akshaya, Sreelakshmi, Athira, Arya",
-      "status": "To do",
+      "status": "In-progress",
       "priority": "Medium",
       "description": "",
       "group": "TEAM1",
       "stage": "SD",
-      "startDate": "2026-07-01",
-      "endDate": "2026-08-27",
+      "startDate": "2026-08-04",
+      "endDate": "2026-08-24",
       "milestones": [],
       "people": [
         "akshaya",
@@ -299,7 +301,10 @@
         "arya"
       ],
       "peopleCount": 4,
-      "invoiceable": "Yes"
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "4157- Dubai Islands - The Bay Apartments–Plot C",
@@ -323,7 +328,7 @@
       "qaqc": "ABILASH",
       "assignee": "Jesto Joy",
       "team": "Jesto, Amna, Jibin, Mohan, Narsha",
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "EXCEPTED SD SUBMISSION ON 30TH JUNE",
       "group": "TEAM 5",
@@ -566,7 +571,7 @@
         "mohit das"
       ],
       "peopleCount": 9,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "High",
       "description": "50% SD SUBMISSION ON FEB 25 AND 100%SD ON MAY 12TH DD SUBMISSION ON JULY 31",
       "group": "TEAM1",
@@ -1046,7 +1051,7 @@
         "bareera"
       ],
       "peopleCount": 3,
-      "status": "In-progress",
+      "status": "TBC",
       "priority": "Medium",
       "description": "CONCEPT MODEL IS DONE, NEW LAYOUT OD MODEL IS SUBMIITED ON NOV 3RD , SD SUBMISSION ON JAN 14 TH SD RESUBMISSION ON JUN 5TH, Revised SD ON jun 26th, Revised SD ON july 20th",
       "group": "TEAM 2",
@@ -1073,7 +1078,7 @@
         "syed"
       ],
       "peopleCount": 2,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "SD RESUBMISSION ON FEB 16TH, SD CLOSE OUT ON 24TH APRIL, DD SUBMISSION IS ON 13TH MAY, Revised DD SUBMISSION 16TH JUN",
       "group": "TEAM 2",
@@ -1294,26 +1299,30 @@
     },
     {
       "title": "3569- Residential Dev't on Plot 3466891, Business Bay, Dubai",
-      "qaqc": "PRASANA",
+      "qaqc": "ABILASH",
       "assignee": "Jesto Joy",
-      "team": "Amna, jibin, Jesto",
+      "team": "jibin, Jesto, Jasna, Narsha",
       "people": [
-        "amna",
         "jibin",
-        "jesto"
+        "jesto",
+        "jasna",
+        "narsha"
       ],
-      "peopleCount": 3,
-      "status": "Done",
+      "peopleCount": 4,
+      "status": "In-progress",
       "priority": "Medium",
-      "description": "CONCEPT MODEL IS IN PROGESS, \nSD SUBMISSION  IS ON NOV 5TH",
+      "description": "CONCEPT MODEL IS IN PROGESS, \nSD SUBMISSION  IS ON NOV 5TH, REVISED SD ON AUG 10TH ",
       "group": "TEAM 5",
-      "stage": "DD",
+      "stage": "REVISED SD",
       "startDate": "2024-11-05",
-      "endDate": "2026-05-20",
+      "endDate": "2026-08-10",
       "milestones": [
         "2024-11-05"
       ],
-      "invoiceable": "Yes"
+      "invoiceable": "No",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "3923- EMAAR - Dubai Creek Harbour - Plot F13",
@@ -1327,13 +1336,13 @@
         "jibin"
       ],
       "peopleCount": 4,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "SD SUBMISSION APRIL 14TH , 50% DD SUBMISSION ON 1o july 100% DD ON 24TH JULY",
       "group": "TEAM 5",
       "stage": "DD",
       "startDate": "2025-04-14",
-      "endDate": "2026-07-24",
+      "endDate": "2026-07-27",
       "milestones": [
         "2025-04-14"
       ],
@@ -1369,24 +1378,28 @@
       "title": "3310- Plot GA15",
       "qaqc": "ABILASH",
       "assignee": "Jovanie Apa",
-      "team": "shasti",
+      "team": "shasti, Jovanie",
       "people": [
-        "shasti"
+        "shasti",
+        "jovanie"
       ],
-      "peopleCount": 1,
-      "status": "Done",
+      "peopleCount": 2,
+      "status": "In-progress",
       "priority": "Medium",
-      "description": "REVISED DD SUBMISSION, DD SUBMISSION ON NOV 24, TENDER SUBMISSION ON JAN 12TH TENDER ADDENDUM FEB 23, VE CHANGES TO BE SUBMITTED ON APRIL 27 ",
+      "description": "REVISED DD SUBMISSION, DD SUBMISSION ON NOV 24, TENDER SUBMISSION ON JAN 12TH TENDER ADDENDUM FEB 23, VE CHANGES TO BE SUBMITTED ON APRIL 27, IFC SUBMISSION ON AUG 17TH",
       "group": "TEAM 3",
-      "stage": "TENDER ADDENDUM",
+      "stage": "IFC",
       "startDate": "2024-11-24",
-      "endDate": "2026-04-27",
+      "endDate": "2026-08-17",
       "milestones": [
         "2024-11-24",
         "2025-01-12",
         "2025-02-23"
       ],
-      "invoiceable": "Yes"
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "2043-PA15.0001",
@@ -1422,7 +1435,7 @@
         "gnayaprakash"
       ],
       "peopleCount": 2,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "50 % SD SUBMISSION ON SEPT 12TH,100% DD IS SUBMITTED ON MAR 18TH, MODEL COORDINATION GOING ON, REVISED DD ON MAY 18",
       "group": "TEAM 3",
@@ -1472,17 +1485,20 @@
       "team": "",
       "people": [],
       "peopleCount": 0,
-      "status": "Done",
-      "priority": "Low",
-      "description": "SD SUBMITTED ON JAN 9TH IN CAD, DD IS IN PROGRESS ",
+      "status": "In-progress",
+      "priority": "High",
+      "description": "SD SUBMITTED ON JAN 9TH IN CAD, DD IS on AUG 14TH",
       "group": "TEAM 3",
-      "stage": "SD",
+      "stage": "DD",
       "startDate": "2025-01-09",
-      "endDate": "2026-01-09",
+      "endDate": "2026-08-24",
       "milestones": [
         "2025-01-09"
       ],
-      "invoiceable": "Yes"
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "3946- ADEK Schools Lagoons",
@@ -1528,7 +1544,7 @@
       "group": "TEAM 3",
       "stage": "REVISED DD",
       "startDate": "2025-04-29",
-      "endDate": "2026-07-31",
+      "endDate": "2026-08-14",
       "milestones": [
         "2025-04-29"
       ],
@@ -1788,27 +1804,28 @@
     },
     {
       "title": "3320- Plot GA06",
-      "qaqc": "LINCY",
-      "assignee": "Lincy Kirubaharan",
-      "team": "jesto, jibin, Rashid, LINCY",
+      "qaqc": "ABILASH",
+      "assignee": "Akshaya Jayakrishnan",
+      "team": "Akshaya, Athira",
       "people": [
-        "jesto",
-        "jibin",
-        "rashid",
-        "lincy"
+        "akshaya",
+        "athira"
       ],
-      "peopleCount": 4,
-      "status": "Done",
-      "priority": "Low",
-      "description": "REVISED DD SUBMISSION march 27 ,TENDER SUBMISSTTED ON APRIL 22",
+      "peopleCount": 2,
+      "status": "In-progress",
+      "priority": "Medium",
+      "description": "REVISED DD SUBMISSION march 27 ,TENDER SUBMISSTTED ON APRIL 22, IFC SUBMISSION ON AUG 17TH ",
       "group": "TEAM1",
-      "stage": "TENDER ADDENDUM",
+      "stage": "IFC",
       "startDate": "2024-04-22",
-      "endDate": "2025-04-22",
+      "endDate": "2026-08-17",
       "milestones": [
         "2024-04-22"
       ],
-      "invoiceable": "Yes"
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "1522-Rove Hotel and Branded Apartments",
@@ -2430,6 +2447,80 @@
       "resourcePeople": "",
       "resourceDays": "",
       "bimDate": ""
+    },
+    {
+      "title": "4318- Luxury Villa on Plot A42 at NAIA Island",
+      "qaqc": "TBC",
+      "assignee": "",
+      "team": "",
+      "status": "To do",
+      "priority": "Medium",
+      "description": "",
+      "group": "COMMON",
+      "stage": "SD",
+      "startDate": "2026-07-27",
+      "endDate": "2026-10-28",
+      "milestones": [],
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": "",
+      "people": [],
+      "peopleCount": 0
+    },
+    {
+      "title": "4368- Emaar DCH- F8 KTL",
+      "qaqc": "ABILASH",
+      "assignee": "Safas Umar",
+      "team": "Safas, Maznaz, Sreekanth, Sheikh Yahya, Swapna, Syed",
+      "status": "In-progress",
+      "priority": "Medium",
+      "description": "",
+      "group": "TEAM 6",
+      "stage": "SD",
+      "startDate": "2026-08-10",
+      "endDate": "2026-10-02",
+      "milestones": [],
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": "",
+      "people": [
+        "safas",
+        "maznaz",
+        "sreekanth",
+        "sheikh yahya",
+        "swapna",
+        "syed"
+      ],
+      "peopleCount": 6
+    },
+    {
+      "title": "4367- Emaar South  GC09&GC10 -KTL",
+      "qaqc": "TBC",
+      "assignee": "Akshaya Jayakrishnan",
+      "team": "Akshaya, Sreelakshmi, Athira, Arya, Mohit Das, Syed",
+      "status": "In-progress",
+      "priority": "Medium",
+      "description": "",
+      "group": "TEAM1",
+      "stage": "SD",
+      "startDate": "2026-08-03",
+      "endDate": "2026-10-02",
+      "milestones": [],
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": "",
+      "people": [
+        "akshaya",
+        "sreelakshmi",
+        "athira",
+        "arya",
+        "mohit das",
+        "syed"
+      ],
+      "peopleCount": 6
     }
   ],
   "leaves": [
@@ -2560,7 +2651,391 @@
       "to": "2026-07-31",
       "note": "",
       "id": "lv-1781173664540-k52w"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "jesto",
+      "type": "Annual",
+      "from": "2026-06-12",
+      "to": "2026-06-29",
+      "note": "",
+      "id": "lv-1781173540030-4ktc"
+    },
+    {
+      "person": "anshu",
+      "type": "Annual",
+      "from": "2026-06-30",
+      "to": "2026-07-31",
+      "note": "",
+      "id": "lv-1781173664540-k52w"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "jesto",
+      "type": "Annual",
+      "from": "2026-06-12",
+      "to": "2026-06-29",
+      "note": "",
+      "id": "lv-1781173540030-4ktc"
+    },
+    {
+      "person": "anshu",
+      "type": "Annual",
+      "from": "2026-06-30",
+      "to": "2026-07-31",
+      "note": "",
+      "id": "lv-1781173664540-k52w"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "jesto",
+      "type": "Annual",
+      "from": "2026-06-12",
+      "to": "2026-06-29",
+      "note": "",
+      "id": "lv-1781173540030-4ktc"
+    },
+    {
+      "person": "anshu",
+      "type": "Annual",
+      "from": "2026-06-30",
+      "to": "2026-07-31",
+      "note": "",
+      "id": "lv-1781173664540-k52w"
     }
   ],
-  "exportedAt": "2026-07-22T08:38:29.156Z"
+  "exportedAt": "2026-08-06T11:32:50.342Z"
 }
