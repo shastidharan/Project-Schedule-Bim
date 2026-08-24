@@ -11,7 +11,7 @@
       "group": "TEAM1",
       "stage": "SD",
       "startDate": "2026-07-20",
-      "endDate": "2026-10-21",
+      "endDate": "2026-09-16",
       "milestones": [],
       "invoiceable": "Yes",
       "resourcePeople": "",
@@ -292,7 +292,7 @@
       "group": "TEAM1",
       "stage": "SD",
       "startDate": "2026-08-04",
-      "endDate": "2026-08-24",
+      "endDate": "2026-08-26",
       "milestones": [],
       "people": [
         "akshaya",
@@ -1318,7 +1318,7 @@
         "narsha"
       ],
       "peopleCount": 4,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "CONCEPT MODEL IS IN PROGESS, \nSD SUBMISSION  IS ON NOV 5TH, REVISED SD ON AUG 10TH ",
       "group": "TEAM 5",
@@ -1372,11 +1372,11 @@
       "peopleCount": 2,
       "status": "In-progress",
       "priority": "Medium",
-      "description": "SD SUBMISSION IS ON MAY MID, MODEL SUBMISSION IS GOING ON JUN 9TH , 50 % DD AUG 14TH",
+      "description": "SD SUBMISSION IS ON MAY MID, MODEL SUBMISSION IS GOING ON JUN 9TH , 50 % DD AUG 14TH,100%DD SUBMISSION ON AUG 28TH",
       "group": "TEAM 5",
-      "stage": "50% DD",
+      "stage": "DD",
       "startDate": "2026-02-13",
-      "endDate": "2026-08-14",
+      "endDate": "2026-08-28",
       "milestones": [],
       "invoiceable": "Yes",
       "resourcePeople": "",
@@ -1393,7 +1393,7 @@
         "jovanie"
       ],
       "peopleCount": 2,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "REVISED DD SUBMISSION, DD SUBMISSION ON NOV 24, TENDER SUBMISSION ON JAN 12TH TENDER ADDENDUM FEB 23, VE CHANGES TO BE SUBMITTED ON APRIL 27, IFC SUBMISSION ON AUG 17TH",
       "group": "TEAM 3",
@@ -1494,7 +1494,7 @@
       "team": "",
       "people": [],
       "peopleCount": 0,
-      "status": "In-progress",
+      "status": "TBC",
       "priority": "High",
       "description": "SD SUBMITTED ON JAN 9TH IN CAD, DD IS on AUG 14TH",
       "group": "TEAM 3",
@@ -1524,7 +1524,7 @@
       "priority": "Medium",
       "description": "SD SUBMISSION ON 11 MARCH _DD SUBISSMISION ON APRIL 24TH ,ATHURITY SUBMISSION ON MODEL ON JUN 5TH ,BIM SUBMISSION ON AUG 21",
       "group": "TEAM 3",
-      "stage": "REVISED DD",
+      "stage": "BIM Submission",
       "startDate": "2025-03-11",
       "endDate": "2026-08-21",
       "milestones": [
@@ -1547,13 +1547,13 @@
         "jibin"
       ],
       "peopleCount": 3,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "High",
-      "description": "50 % DD SUBMISSION ON 30TH MAY, 100% DD ON JULY 3RD , revised DD on July 22nd",
+      "description": "50 % DD SUBMISSION ON 30TH MAY, 100% DD ON JULY 3RD , revised DD on July 22nd , TENDER SUBMISSION ON AUG 21ST",
       "group": "TEAM 3",
-      "stage": "REVISED DD",
+      "stage": "TENDER",
       "startDate": "2025-04-29",
-      "endDate": "2026-08-14",
+      "endDate": "2026-08-21",
       "milestones": [
         "2025-04-29"
       ],
@@ -1795,7 +1795,7 @@
         "abhilash"
       ],
       "peopleCount": 4,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Low",
       "description": "SD SUBMISSION ON JUN 17TH DD SUBMISSION ON JULY 14,DD REVISED SEPT 5,TENDER SUBMISSION ON SEPT 26, REVISED TENDER SUBMISSION ON NOV 5TH, TENDER ADDENDUM STAGE 4 ",
       "group": "TEAM 3",
@@ -1824,7 +1824,7 @@
         "athira"
       ],
       "peopleCount": 2,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
       "description": "REVISED DD SUBMISSION march 27 ,TENDER SUBMISSTTED ON APRIL 22, IFC SUBMISSION ON AUG 17TH ",
       "group": "TEAM1",
@@ -2509,16 +2509,16 @@
     },
     {
       "title": "4367- Emaar South  GC09&GC10 -KTL",
-      "qaqc": "TBC",
+      "qaqc": "ABILASH",
       "assignee": "Akshaya Jayakrishnan",
       "team": "Akshaya, Sreelakshmi, Athira, Arya, Mohit Das, Syed",
       "status": "In-progress",
-      "priority": "Medium",
+      "priority": "High",
       "description": "",
       "group": "TEAM1",
       "stage": "SD",
       "startDate": "2026-08-03",
-      "endDate": "2026-10-02",
+      "endDate": "2026-09-04",
       "milestones": [],
       "invoiceable": "Yes",
       "resourcePeople": "",
@@ -3561,5 +3561,5 @@
       "id": "lv-1781173664540-k52w"
     }
   ],
-  "exportedAt": "2026-08-13T12:48:40.641Z"
+  "exportedAt": "2026-08-24T05:12:44.390Z"
 }
