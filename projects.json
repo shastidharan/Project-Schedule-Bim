@@ -1,6 +1,54 @@
 {
   "projects": [
     {
+      "title": "4235- Expo City Dubai - Multi-storey Car Park",
+      "qaqc": "ABILASH",
+      "assignee": "Safas Umar",
+      "team": "Karthik, Sreekanth",
+      "status": "BIM Submission",
+      "priority": "Low",
+      "description": "concept model submission on AUG 18TH",
+      "group": "TEAM 6",
+      "stage": "SD",
+      "startDate": "2026-08-05",
+      "endDate": "2026-09-18",
+      "milestones": [],
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": "",
+      "people": [
+        "karthik",
+        "sreekanth"
+      ],
+      "peopleCount": 2
+    },
+    {
+      "title": "3596- Al Marwan Sharjah",
+      "qaqc": "ABHILASH",
+      "assignee": "JESTO",
+      "team": "Jesto, Narsha, Mohan, Mohit Das",
+      "status": "In-progress",
+      "priority": "High",
+      "description": "SD SUBMISSION FOR PHASE 1 & 2 ON AUG 21ST , PHASE 1 DD SUBMISSION ON AUG 28TH ",
+      "group": "TEAM 5",
+      "stage": "DD",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-28",
+      "milestones": [],
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": "",
+      "people": [
+        "jesto",
+        "narsha",
+        "mohan",
+        "mohit das"
+      ],
+      "peopleCount": 4
+    },
+    {
       "title": "3970- EMAAR - Dubai Hills Estate- Plot F12-06",
       "qaqc": "ABILASH",
       "assignee": "Akshaya Jayakrishnan",
@@ -170,7 +218,7 @@
       "group": "TEAM 6",
       "stage": "SD",
       "startDate": "2026-07-09",
-      "endDate": "2026-08-07",
+      "endDate": "2026-10-23",
       "milestones": [],
       "people": [
         "safas",
@@ -181,7 +229,10 @@
         "sheikh yahya"
       ],
       "peopleCount": 6,
-      "invoiceable": "Yes"
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "4180- BNW - Branded Residences & Hotel Apartment on Plot R-03D & R-03E at RAK Central",
@@ -2222,21 +2273,21 @@
       "title": "3734- Kifak Residential Project",
       "qaqc": "JITHIN",
       "assignee": "Safas Umar",
-      "team": "safas, Maznaz, Karthik, Amna",
+      "team": "safas, Maznaz, Karthik, Sheikh Yahya",
       "people": [
         "safas",
         "maznaz",
         "karthik",
-        "amna"
+        "sheikh yahya"
       ],
       "peopleCount": 4,
-      "status": "Done",
-      "priority": "Low",
-      "description": "SD SUBMITTED ON DEC 10TH, DD SUBMISSION ON APIRL 28TH , TENDER SUBMISSION ON JUN 18TH",
+      "status": "In-progress",
+      "priority": "High",
+      "description": "SD SUBMITTED ON DEC 10TH, DD SUBMISSION ON APIRL 28TH , TENDER SUBMISSION ON JUN 18TH,TENDER ADDENDUM ON SEPT 4TH ",
       "group": "TEAM 6",
-      "stage": "TENDER",
+      "stage": "TENDER ADDENDUM",
       "startDate": "2024-12-10",
-      "endDate": "2026-07-07",
+      "endDate": "2026-09-04",
       "milestones": [
         "2024-12-10"
       ],
@@ -2487,11 +2538,11 @@
       "team": "Safas, Maznaz, Sreekanth, Sheikh Yahya, Swapna, Syed",
       "status": "In-progress",
       "priority": "Medium",
-      "description": "",
+      "description": "SD SUBMISSION ON SEPT 16TH",
       "group": "TEAM 6",
       "stage": "SD",
       "startDate": "2026-08-10",
-      "endDate": "2026-10-02",
+      "endDate": "2026-09-16",
       "milestones": [],
       "invoiceable": "Yes",
       "resourcePeople": "",
@@ -3561,5 +3612,5 @@
       "id": "lv-1781173664540-k52w"
     }
   ],
-  "exportedAt": "2026-08-24T05:12:44.390Z"
+  "exportedAt": "2026-08-24T05:22:15.560Z"
 }
