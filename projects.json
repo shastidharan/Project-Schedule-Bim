@@ -5,13 +5,13 @@
       "qaqc": "ABILASH",
       "assignee": "Safas Umar",
       "team": "Karthik, Sreekanth",
-      "status": "BIM Submission",
+      "status": "Done",
       "priority": "Low",
       "description": "concept model submission on AUG 18TH",
       "group": "TEAM 6",
       "stage": "SD",
       "startDate": "2026-08-05",
-      "endDate": "2026-09-18",
+      "endDate": "2026-08-21",
       "milestones": [],
       "invoiceable": "Yes",
       "resourcePeople": "",
@@ -100,7 +100,7 @@
       "title": "4213- Aldar - Plot C9-C10 Saadiyat Mixed Use Development in Abu Dhabi",
       "qaqc": "ABILASH",
       "assignee": "Aparna Lakshmi",
-      "team": "Shasti, Rashid, Jose, Naveen, Bareera",
+      "team": "",
       "status": "To do",
       "priority": "Medium",
       "description": "",
@@ -113,14 +113,8 @@
       "resourcePeople": "5",
       "resourceDays": "45",
       "bimDate": "",
-      "people": [
-        "shasti",
-        "rashid",
-        "jose",
-        "naveen",
-        "bareera"
-      ],
-      "peopleCount": 5
+      "people": [],
+      "peopleCount": 0
     },
     {
       "title": "3712- DWD - Phase 1 Plot 14, Dubai",
@@ -135,7 +129,7 @@
       "startDate": "2026-07-27",
       "endDate": "2026-08-28",
       "milestones": [],
-      "invoiceable": "Yes",
+      "invoiceable": "No",
       "resourcePeople": "",
       "resourceDays": "",
       "bimDate": "",
@@ -146,38 +140,14 @@
       "title": "3863- Development of Luluat Al Raha Plot P1, P2 and P6",
       "qaqc": "ABILASH",
       "assignee": "Safas Umar",
-      "team": "Safas, Maznaz, Sreekanth",
-      "status": "To do",
-      "priority": "Medium",
-      "description": "",
-      "group": "TEAM 6",
-      "stage": "SD",
-      "startDate": "2026-08-10",
-      "endDate": "2026-09-25",
-      "milestones": [],
-      "invoiceable": "Yes",
-      "resourcePeople": "",
-      "resourceDays": "",
-      "bimDate": "",
-      "people": [
-        "safas",
-        "maznaz",
-        "sreekanth"
-      ],
-      "peopleCount": 3
-    },
-    {
-      "title": "4291- Bloom - Raha Beach Residence - PC703",
-      "qaqc": "TBC",
-      "assignee": "",
       "team": "",
       "status": "To do",
       "priority": "Medium",
       "description": "",
-      "group": "TEAM1",
-      "stage": "SD",
-      "startDate": "2026-07-13",
-      "endDate": "2026-09-11",
+      "group": "TEAM 6",
+      "stage": "",
+      "startDate": "2026-08-10",
+      "endDate": "2026-09-25",
       "milestones": [],
       "invoiceable": "No",
       "resourcePeople": "",
@@ -190,7 +160,7 @@
       "title": "4232- ADEK School at Jabal Hafeet",
       "qaqc": "TBC",
       "assignee": "Jovanie Apa",
-      "team": "Jovanie, Syed, Adthiyan",
+      "team": "",
       "status": "To do",
       "priority": "Medium",
       "description": "",
@@ -199,19 +169,18 @@
       "startDate": "2026-07-01",
       "endDate": "2026-08-13",
       "milestones": [],
-      "people": [
-        "jovanie",
-        "syed",
-        "adthiyan"
-      ],
-      "peopleCount": 3,
-      "invoiceable": "Yes"
+      "people": [],
+      "peopleCount": 0,
+      "invoiceable": "No",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "3931- Wadi Al Safa-WASL RESIDENTIAL TOWERS",
       "qaqc": "TBC",
       "assignee": "Safas Umar",
-      "team": "Safas, Swapna, Maznaz, Karthik, Sreekanth, Sheikh Yahya",
+      "team": "",
       "status": "To do",
       "priority": "Medium",
       "description": "",
@@ -220,16 +189,9 @@
       "startDate": "2026-07-09",
       "endDate": "2026-10-23",
       "milestones": [],
-      "people": [
-        "safas",
-        "swapna",
-        "maznaz",
-        "karthik",
-        "sreekanth",
-        "sheikh yahya"
-      ],
-      "peopleCount": 6,
-      "invoiceable": "Yes",
+      "people": [],
+      "peopleCount": 0,
+      "invoiceable": "No",
       "resourcePeople": "",
       "resourceDays": "",
       "bimDate": ""
@@ -302,7 +264,10 @@
       "milestones": [],
       "people": [],
       "peopleCount": 0,
-      "invoiceable": "Yes"
+      "invoiceable": "No",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "4067- ALEF - The Palace Branded Residences",
@@ -372,7 +337,10 @@
       "milestones": [],
       "people": [],
       "peopleCount": 0,
-      "invoiceable": "Yes"
+      "invoiceable": "No",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "3941- EMAAR - Dubai Hills Estate- Plot F12-12",
@@ -1561,7 +1529,7 @@
         "2025-01-09"
       ],
       "invoiceable": "Yes",
-      "resourcePeople": "",
+      "resourcePeople": "3",
       "resourceDays": "",
       "bimDate": ""
     },
@@ -2524,14 +2492,14 @@
       "assignee": "",
       "team": "",
       "status": "To do",
-      "priority": "Medium",
+      "priority": "Low",
       "description": "",
       "group": "COMMON",
       "stage": "SD",
       "startDate": "2026-07-27",
       "endDate": "2026-10-28",
       "milestones": [],
-      "invoiceable": "Yes",
+      "invoiceable": "No",
       "resourcePeople": "",
       "resourceDays": "",
       "bimDate": "",
@@ -3619,5 +3587,5 @@
       "id": "lv-1781173664540-k52w"
     }
   ],
-  "exportedAt": "2026-09-04T10:28:08.939Z"
+  "exportedAt": "2026-09-04T10:44:02.173Z"
 }
