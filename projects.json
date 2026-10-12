@@ -1,17 +1,44 @@
 {
   "projects": [
     {
+      "title": "3929- EMAAR - Dubai Hills Estate- Plot F12-05",
+      "qaqc": "ABHILASH",
+      "assignee": "Jesto Joy",
+      "team": "Jesto, Amna, Narsha, Jasna, Jibin, Mohan",
+      "status": "In-progress",
+      "priority": "High",
+      "description": "SD SUBMISSION ON 16TH OCT",
+      "group": "TEAM 5",
+      "stage": "SD",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-16",
+      "milestones": [],
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": "",
+      "people": [
+        "jesto",
+        "amna",
+        "narsha",
+        "jasna",
+        "jibin",
+        "mohan"
+      ],
+      "peopleCount": 6
+    },
+    {
       "title": "4235- Expo City Dubai - Multi-storey Car Park",
       "qaqc": "ABILASH",
       "assignee": "Safas Umar",
-      "team": "Karthik, Sreekanth",
+      "team": "Karthik, Sreekanth, Sheikh Yahya, Swapna",
       "status": "Done",
-      "priority": "Low",
-      "description": "concept model submission on AUG 18TH",
+      "priority": "High",
+      "description": "concept model submission on SEPT 18TH, SD SUBMISSION ON TBC",
       "group": "TEAM 6",
       "stage": "SD",
       "startDate": "2026-08-05",
-      "endDate": "2026-08-21",
+      "endDate": "2026-09-18",
       "milestones": [],
       "invoiceable": "Yes",
       "resourcePeople": "",
@@ -19,9 +46,11 @@
       "bimDate": "",
       "people": [
         "karthik",
-        "sreekanth"
+        "sreekanth",
+        "sheikh yahya",
+        "swapna"
       ],
-      "peopleCount": 2
+      "peopleCount": 4
     },
     {
       "title": "3596- Al Marwan Sharjah",
@@ -77,9 +106,9 @@
       "qaqc": "ABHILASH",
       "assignee": "Mohamed asif",
       "team": "Asif, Ananthu, Rahul",
-      "status": "In-progress",
+      "status": "Done",
       "priority": "Medium",
-      "description": "50% SD ON AUG 7TH AND 100 %SD ON SEPT 25TH ",
+      "description": "50% SD ON AUG 7TH AND 100 %SD ON OCT 9TH ",
       "group": "TEAM 4",
       "stage": "SD",
       "startDate": "2026-07-16",
@@ -274,13 +303,13 @@
       "qaqc": "ABILASH",
       "assignee": "Safas Umar",
       "team": "Shasti, Swapna, Jibin, Safas, Maznaz, Sheikh Yahya, Sreekanth",
-      "status": "Done",
+      "status": "In-progress",
       "priority": "Medium",
-      "description": "SD SUBMISSION JUN 19TH , revised SD on SEPT 25TH ",
+      "description": "SD SUBMISSION JUN 19TH , revised SD on SEPT 25TH , DD SUBMISSION ON TBC",
       "group": "TEAM 6",
-      "stage": "REVISED SD",
+      "stage": "DD",
       "startDate": "2026-04-27",
-      "endDate": "2026-09-25",
+      "endDate": "2026-11-13",
       "milestones": [],
       "people": [
         "shasti",
@@ -590,9 +619,9 @@
         "mohit das"
       ],
       "peopleCount": 9,
-      "status": "In-progress",
+      "status": "Done",
       "priority": "High",
-      "description": "50% SD SUBMISSION ON FEB 25 AND 100%SD ON MAY 12TH DD SUBMISSION ON OCT 2ND",
+      "description": "50% SD SUBMISSION ON FEB 25 AND 100%SD ON MAY 12TH DD SUBMISSION ON TBC",
       "group": "TEAM1",
       "stage": "SD",
       "startDate": "2025-02-25",
@@ -998,26 +1027,24 @@
     },
     {
       "title": "3521- Plot GB 19 at Emaar South Development",
-      "qaqc": "AJAY",
-      "assignee": "Aparna Lakshmi",
-      "team": "Rashid, ANSHU, Elbin, Aparna, Jose, Naveen, Bareera",
+      "qaqc": "ABHILASH",
+      "assignee": "Jesto Joy",
+      "team": "Naveen, Jesto, Narsha, Jasna, Mohan",
       "people": [
-        "rashid",
-        "anshu",
-        "elbin",
-        "aparna",
-        "jose",
         "naveen",
-        "bareera"
+        "jesto",
+        "narsha",
+        "jasna",
+        "mohan"
       ],
-      "peopleCount": 7,
-      "status": "Done",
-      "priority": "Medium",
-      "description": "SD SUBMITTED ON 26 JUN 2025, 50% DD IS ON OCT 9TH 100 %DD SUBMISSION ON NOV 10TH, REVISED DD SUBMITTED ON NOV 18TH, REVISED DD ON JAN 26,TENDER SUBMISSION FEB 23",
-      "group": "TEAM 2",
+      "peopleCount": 5,
+      "status": "In-progress",
+      "priority": "High",
+      "description": "SD SUBMITTED ON 26 JUN 2025, 50% DD IS ON OCT 9TH 100 %DD SUBMISSION ON NOV 10TH, REVISED DD SUBMITTED ON NOV 18TH, REVISED DD ON JAN 26,TENDER SUBMISSION FEB 23 IFC SUBMISSION ON OCT 12TH",
+      "group": "TEAM 5",
       "stage": "TENDER",
       "startDate": "2024-06-26",
-      "endDate": "2026-02-23",
+      "endDate": "2026-10-12",
       "milestones": [
         "2024-06-26",
         "2024-10-09",
@@ -1026,29 +1053,32 @@
         "2025-01-26",
         "2025-02-23"
       ],
-      "invoiceable": "Yes"
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "3522- Plot GB 20 at Emaar South Development",
-      "qaqc": "AJAY",
-      "assignee": "Aparna Lakshmi",
-      "team": "ANSHU, Jose, Afsal, Naveen, Bareera, Rashid",
+      "qaqc": "ABHILASH",
+      "assignee": "Jesto Joy",
+      "team": "Jose, Naveen, Jesto, Narsha, Jasna, Mohan",
       "people": [
-        "anshu",
         "jose",
-        "afsal",
         "naveen",
-        "bareera",
-        "rashid"
+        "jesto",
+        "narsha",
+        "jasna",
+        "mohan"
       ],
       "peopleCount": 6,
-      "status": "Done",
-      "priority": "Low",
-      "description": "SD SUBMISSION ON JUL 2ND 2025,50% DD IS ON OCT 9TH 100 %DD SUBMISSION ON NOV 10TH, REVISED DD 4TH DEC, REVISED DD ON JAN 26,TENDER SUBMISSION FEB 23",
-      "group": "TEAM 2",
-      "stage": "TENDER",
+      "status": "In-progress",
+      "priority": "High",
+      "description": "SD SUBMISSION ON JUL 2ND 2025,50% DD IS ON OCT 9TH 100 %DD SUBMISSION ON NOV 10TH, REVISED DD 4TH DEC, REVISED DD ON JAN 26,TENDER SUBMISSION FEB 23, IFC SUBMISSION ON OCT 12TH",
+      "group": "TEAM 5",
+      "stage": "IFC",
       "startDate": "2024-07-02",
-      "endDate": "2026-02-23",
+      "endDate": "2026-10-12",
       "milestones": [
         "2024-07-02",
         "2024-10-09",
@@ -1057,7 +1087,10 @@
         "2025-01-26",
         "2025-02-23"
       ],
-      "invoiceable": "Yes"
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "3762- DID-Plot DIB-MU-0005",
@@ -1979,7 +2012,7 @@
     },
     {
       "title": "3349-AL NABBAGH SCHOOL-1",
-      "qaqc": "AJAY",
+      "qaqc": "ABHILASH",
       "assignee": "Mohamed asif",
       "team": "ASIF, Rahul, Anathu",
       "people": [
@@ -1990,22 +2023,25 @@
       "peopleCount": 3,
       "status": "Done",
       "priority": "Low",
-      "description": "SD SUBMISSION DONE MAY 16TH 100% DD SUBMITTED ON OCT 29TH,REVISED DD ON DEC 12, REVISED DD ON JAN 2ND MODEL COORDINATION IS GOING ON ",
+      "description": "SD SUBMISSION DONE MAY 16TH 100% DD SUBMITTED ON OCT 29TH,REVISED DD ON DEC 12, REVISED DD ON JAN 2ND MODEL COORDINATION IS GOING ON , REVISED DD ON SEPT 28TH",
       "group": "TEAM 4",
       "stage": "REVISED DD",
       "startDate": "2024-05-16",
-      "endDate": "2026-01-06",
+      "endDate": "2026-09-28",
       "milestones": [
         "2024-05-16",
         "2024-10-29",
         "2024-12-12",
         "2025-01-02"
       ],
-      "invoiceable": "Yes"
+      "invoiceable": "Yes",
+      "resourcePeople": "",
+      "resourceDays": "",
+      "bimDate": ""
     },
     {
       "title": "3373- AL NOUD SCHOOL-2",
-      "qaqc": "PRASANA",
+      "qaqc": "ABILASH",
       "assignee": "Mohamed asif",
       "team": "ASIF, Anshu, Jegan, Ananthu",
       "people": [
@@ -2017,18 +2053,18 @@
       "peopleCount": 4,
       "status": "Done",
       "priority": "High",
-      "description": "100% DD SUBMITTED ON OCT 29TH REVISED DD ON DEC 12, AGAIN DD ON FEB 27 18TH MARCH OF DD RESUBMISSION , DD RESUBMISSION on JUN 26TH ",
+      "description": "100% DD SUBMITTED ON OCT 29TH REVISED DD ON DEC 12, AGAIN DD ON FEB 27 18TH MARCH OF DD RESUBMISSION , DD RESUBMISSION on JUN 26TH TENDER SUBMISSION ON OCT 8TH ",
       "group": "TEAM 4",
-      "stage": "REVISED DD",
+      "stage": "TENDER",
       "startDate": "2024-10-29",
-      "endDate": "2026-06-30",
+      "endDate": "2026-10-08",
       "milestones": [
         "2024-10-29",
         "2024-12-12",
         "2025-02-27",
         "2025-03-18"
       ],
-      "invoiceable": "No",
+      "invoiceable": "Yes",
       "resourcePeople": "4",
       "resourceDays": "10",
       "bimDate": ""
@@ -2090,20 +2126,23 @@
       "title": "3994- NASG-Mosque Landscape",
       "qaqc": "JITHIN",
       "assignee": "Mohamed asif",
-      "team": "ASIF, Rahul, Akhila",
+      "team": "Akhila, Ananthu, Mohit Valapil, Jegan, Rashid, Asif",
       "people": [
-        "asif",
-        "rahul",
-        "akhila"
+        "akhila",
+        "ananthu",
+        "mohit valapil",
+        "jegan",
+        "rashid",
+        "asif"
       ],
-      "peopleCount": 3,
-      "status": "Done",
+      "peopleCount": 6,
+      "status": "In-progress",
       "priority": "High",
-      "description": "SD SUBMISSION 30TH APRIL REVISED SD ON MAY 15TH, 100 % DD ON JUN 30TH ",
+      "description": "SD SUBMISSION 30TH APRIL REVISED SD ON MAY 15TH, 100 % DD ON JUN 30TH , IFC SUBMISSION ON OCT 2ND PHASE 3, SD SUBMISSION ON PHASE 2 ON 26TH OCT",
       "group": "TEAM 4",
-      "stage": "DD",
+      "stage": "SD",
       "startDate": "2025-04-08",
-      "endDate": "2026-07-03",
+      "endDate": "2026-10-26",
       "milestones": [
         "2025-04-30"
       ],
@@ -2513,11 +2552,11 @@
       "team": "Safas, Maznaz, Sreekanth, Sheikh Yahya, Swapna, Syed",
       "status": "In-progress",
       "priority": "Medium",
-      "description": "SD SUBMISSION ON SEPT 16TH",
+      "description": "SD SUBMISSION ON OCT 12TH",
       "group": "TEAM 6",
       "stage": "SD",
       "startDate": "2026-08-10",
-      "endDate": "2026-10-09",
+      "endDate": "2026-10-12",
       "milestones": [],
       "invoiceable": "Yes",
       "resourcePeople": "",
@@ -2538,13 +2577,13 @@
       "qaqc": "ABILASH",
       "assignee": "Akshaya Jayakrishnan",
       "team": "Akshaya, Sreelakshmi, Athira, Arya, Mohit Das, Syed",
-      "status": "Done",
+      "status": "In-progress",
       "priority": "High",
-      "description": "SD SUBMISSION SPET 14TH ",
+      "description": "SD SUBMISSION SPET 14TH , DD SUBMISSION ON TBC",
       "group": "TEAM1",
-      "stage": "SD",
+      "stage": "DD",
       "startDate": "2026-08-03",
-      "endDate": "2026-09-14",
+      "endDate": "2026-11-20",
       "milestones": [],
       "invoiceable": "Yes",
       "resourcePeople": "",
@@ -4609,7 +4648,1031 @@
       "to": "2026-07-31",
       "note": "",
       "id": "lv-1781173664540-k52w"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "jesto",
+      "type": "Annual",
+      "from": "2026-06-12",
+      "to": "2026-06-29",
+      "note": "",
+      "id": "lv-1781173540030-4ktc"
+    },
+    {
+      "person": "anshu",
+      "type": "Annual",
+      "from": "2026-06-30",
+      "to": "2026-07-31",
+      "note": "",
+      "id": "lv-1781173664540-k52w"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "jesto",
+      "type": "Annual",
+      "from": "2026-06-12",
+      "to": "2026-06-29",
+      "note": "",
+      "id": "lv-1781173540030-4ktc"
+    },
+    {
+      "person": "anshu",
+      "type": "Annual",
+      "from": "2026-06-30",
+      "to": "2026-07-31",
+      "note": "",
+      "id": "lv-1781173664540-k52w"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "jesto",
+      "type": "Annual",
+      "from": "2026-06-12",
+      "to": "2026-06-29",
+      "note": "",
+      "id": "lv-1781173540030-4ktc"
+    },
+    {
+      "person": "anshu",
+      "type": "Annual",
+      "from": "2026-06-30",
+      "to": "2026-07-31",
+      "note": "",
+      "id": "lv-1781173664540-k52w"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "jesto",
+      "type": "Annual",
+      "from": "2026-06-12",
+      "to": "2026-06-29",
+      "note": "",
+      "id": "lv-1781173540030-4ktc"
+    },
+    {
+      "person": "anshu",
+      "type": "Annual",
+      "from": "2026-06-30",
+      "to": "2026-07-31",
+      "note": "",
+      "id": "lv-1781173664540-k52w"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "jesto",
+      "type": "Annual",
+      "from": "2026-06-12",
+      "to": "2026-06-29",
+      "note": "",
+      "id": "lv-1781173540030-4ktc"
+    },
+    {
+      "person": "anshu",
+      "type": "Annual",
+      "from": "2026-06-30",
+      "to": "2026-07-31",
+      "note": "",
+      "id": "lv-1781173664540-k52w"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "jesto",
+      "type": "Annual",
+      "from": "2026-06-12",
+      "to": "2026-06-29",
+      "note": "",
+      "id": "lv-1781173540030-4ktc"
+    },
+    {
+      "person": "anshu",
+      "type": "Annual",
+      "from": "2026-06-30",
+      "to": "2026-07-31",
+      "note": "",
+      "id": "lv-1781173664540-k52w"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "jesto",
+      "type": "Annual",
+      "from": "2026-06-12",
+      "to": "2026-06-29",
+      "note": "",
+      "id": "lv-1781173540030-4ktc"
+    },
+    {
+      "person": "anshu",
+      "type": "Annual",
+      "from": "2026-06-30",
+      "to": "2026-07-31",
+      "note": "",
+      "id": "lv-1781173664540-k52w"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "asif",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-01",
+      "note": "",
+      "id": "lv-1777032441156-bxe9"
+    },
+    {
+      "person": "aparna",
+      "type": "Annual",
+      "from": "2026-04-13",
+      "to": "2026-04-17",
+      "note": "",
+      "id": "lv-1776846236035-qwgw"
+    },
+    {
+      "person": "syed",
+      "type": "Annual",
+      "from": "2026-05-08",
+      "to": "2026-06-02",
+      "note": "",
+      "id": "lv-1776857945904-7vcw"
+    },
+    {
+      "person": "akshaya",
+      "type": "Annual",
+      "from": "2026-04-27",
+      "to": "2026-05-01",
+      "note": "",
+      "id": "lv-1776858159917-8we0"
+    },
+    {
+      "person": "jesto",
+      "type": "Annual",
+      "from": "2026-06-12",
+      "to": "2026-06-29",
+      "note": "",
+      "id": "lv-1781173540030-4ktc"
+    },
+    {
+      "person": "anshu",
+      "type": "Annual",
+      "from": "2026-06-30",
+      "to": "2026-07-31",
+      "note": "",
+      "id": "lv-1781173664540-k52w"
     }
   ],
-  "exportedAt": "2026-10-06T11:01:03.393Z"
+  "exportedAt": "2026-10-12T07:31:56.168Z"
 }
